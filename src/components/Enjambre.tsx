@@ -60,7 +60,7 @@ export function Enjambre() {
         y1: 0.5 + Math.sin(ang) * (1.15 + Math.random()),
         giro: (Math.random() - 0.5) * 0.6,
         fase: Math.random() * 6.28,
-        texto: TEXTOS[i % TEXTOS.length],
+        texto: TEXTOS[i % TEXTOS.length]!,
       };
     });
 
@@ -126,10 +126,10 @@ export function Enjambre() {
 
     const io = new IntersectionObserver(
       ([entrada]) => {
-        if (entrada.isIntersecting && !visible) {
+        if (entrada?.isIntersecting && !visible) {
           visible = true;
           id = requestAnimationFrame(dibujar);
-        } else if (!entrada.isIntersecting && visible) {
+        } else if (!entrada?.isIntersecting && visible) {
           visible = false;
           cancelAnimationFrame(id);
         }
