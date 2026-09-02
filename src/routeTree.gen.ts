@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PrivacidadRouteImport } from './routes/privacidad'
+import { Route as TerminosRouteImport } from './routes/terminos'
+import { Route as MuestrasAntesYDespuesRouteImport } from './routes/muestras.antes-y-despues'
+import { Route as MuestrasFichaDeGoogleRouteImport } from './routes/muestras.ficha-de-google'
+import { Route as MuestrasSitioEnCelularRouteImport } from './routes/muestras.sitio-en-celular'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacidadRoute = PrivacidadRouteImport.update({
+  id: '/privacidad',
+  path: '/privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerminosRoute = TerminosRouteImport.update({
+  id: '/terminos',
+  path: '/terminos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MuestrasAntesYDespuesRoute = MuestrasAntesYDespuesRouteImport.update({
+  id: '/muestras/antes-y-despues',
+  path: '/muestras/antes-y-despues',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MuestrasFichaDeGoogleRoute = MuestrasFichaDeGoogleRouteImport.update({
+  id: '/muestras/ficha-de-google',
+  path: '/muestras/ficha-de-google',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MuestrasSitioEnCelularRoute = MuestrasSitioEnCelularRouteImport.update({
+  id: '/muestras/sitio-en-celular',
+  path: '/muestras/sitio-en-celular',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/privacidad': typeof PrivacidadRoute
+  '/terminos': typeof TerminosRoute
+  '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
+  '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
+  '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/privacidad': typeof PrivacidadRoute
+  '/terminos': typeof TerminosRoute
+  '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
+  '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
+  '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/privacidad': typeof PrivacidadRoute
+  '/terminos': typeof TerminosRoute
+  '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
+  '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
+  '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/privacidad'
+    | '/terminos'
+    | '/muestras/antes-y-despues'
+    | '/muestras/ficha-de-google'
+    | '/muestras/sitio-en-celular'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/privacidad'
+    | '/terminos'
+    | '/muestras/antes-y-despues'
+    | '/muestras/ficha-de-google'
+    | '/muestras/sitio-en-celular'
+  id:
+    | '__root__'
+    | '/'
+    | '/privacidad'
+    | '/terminos'
+    | '/muestras/antes-y-despues'
+    | '/muestras/ficha-de-google'
+    | '/muestras/sitio-en-celular'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PrivacidadRoute: typeof PrivacidadRoute
+  TerminosRoute: typeof TerminosRoute
+  MuestrasAntesYDespuesRoute: typeof MuestrasAntesYDespuesRoute
+  MuestrasFichaDeGoogleRoute: typeof MuestrasFichaDeGoogleRoute
+  MuestrasSitioEnCelularRoute: typeof MuestrasSitioEnCelularRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacidad': {
+      id: '/privacidad'
+      path: '/privacidad'
+      fullPath: '/privacidad'
+      preLoaderRoute: typeof PrivacidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terminos': {
+      id: '/terminos'
+      path: '/terminos'
+      fullPath: '/terminos'
+      preLoaderRoute: typeof TerminosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/muestras/antes-y-despues': {
+      id: '/muestras/antes-y-despues'
+      path: '/muestras/antes-y-despues'
+      fullPath: '/muestras/antes-y-despues'
+      preLoaderRoute: typeof MuestrasAntesYDespuesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/muestras/ficha-de-google': {
+      id: '/muestras/ficha-de-google'
+      path: '/muestras/ficha-de-google'
+      fullPath: '/muestras/ficha-de-google'
+      preLoaderRoute: typeof MuestrasFichaDeGoogleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/muestras/sitio-en-celular': {
+      id: '/muestras/sitio-en-celular'
+      path: '/muestras/sitio-en-celular'
+      fullPath: '/muestras/sitio-en-celular'
+      preLoaderRoute: typeof MuestrasSitioEnCelularRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PrivacidadRoute: PrivacidadRoute,
+  TerminosRoute: TerminosRoute,
+  MuestrasAntesYDespuesRoute: MuestrasAntesYDespuesRoute,
+  MuestrasFichaDeGoogleRoute: MuestrasFichaDeGoogleRoute,
+  MuestrasSitioEnCelularRoute: MuestrasSitioEnCelularRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
