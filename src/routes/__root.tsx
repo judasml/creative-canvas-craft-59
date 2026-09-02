@@ -11,6 +11,10 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { TelonProvider } from "../components/Telon";
+import { ScrollSuave } from "../components/ScrollSuave";
+import { Encabezado } from "../components/Encabezado";
+import { PiePagina } from "../components/PiePagina";
 
 function NotFoundComponent() {
   return (
