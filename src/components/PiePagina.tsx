@@ -1,6 +1,7 @@
 import { CORREO } from "@/lib/site";
 import { URL_WHATSAPP } from "@/lib/site";
 import { EnlaceInterno } from "./Telon";
+import marcaBlanca from "@/assets/mkweb_white.png.asset.json";
 
 const enlace =
   "text-[15px] uppercase text-white transition-colors hover:text-coral";
