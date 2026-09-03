@@ -1,6 +1,7 @@
 import { CORREO } from "@/lib/site";
 import { URL_WHATSAPP } from "@/lib/site";
 import { EnlaceInterno } from "./Telon";
+import marcaBlanca from "@/assets/mkweb_white.png.asset.json";
 
 const enlace =
   "text-[15px] uppercase text-white transition-colors hover:text-coral";
@@ -9,6 +10,17 @@ const cabecera = "etiqueta text-[13px] text-[#7a8dad]";
 export function PiePagina() {
   return (
     <footer id="contacto" className="overflow-hidden bg-navy pt-[var(--paso)]">
+      <div className="contenedor mb-10">
+        <img
+          src={marcaBlanca.url}
+          alt="MK Web Studio"
+          className="h-[44px] w-auto md:h-[54px]"
+          width={1672}
+          height={941}
+          loading="lazy"
+        />
+      </div>
+
       <div className="contenedor grid gap-10 sm:grid-cols-3">
         <div className="flex flex-col gap-3">
           <p className={cabecera}>Menú</p>
