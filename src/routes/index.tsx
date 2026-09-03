@@ -6,7 +6,7 @@ import { Muestras } from "@/components/secciones/Muestras";
 import { TarjetasApiladas } from "@/components/secciones/TarjetasApiladas";
 import { Precios } from "@/components/secciones/Precios";
 import { Cintas } from "@/components/secciones/Cintas";
-import fotoCta from "@/assets/cta-negocio.jpg";
+import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 
 const TITULO =
   "MK Web Studio — Fichas de Google y sitios web para negocios en Tegucigalpa, Honduras";
