@@ -68,13 +68,13 @@ function Index() {
       <Precios />
       <Cintas />
 
-      <section className="relative flex min-h-screen items-center overflow-hidden">
+<section className="relative flex min-h-screen items-center overflow-hidden">
         <img
-          src={fotoCta}
-          alt="Dueño de un negocio revisando su celular dentro de su local"
+          src={oficinaAsset.url}
+          alt="Interior del estudio de MK Web Studio con su equipo trabajando"
           loading="lazy"
-          width={1600}
-          height={1008}
+          width={1672}
+          height={941}
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-navy/[0.72]" aria-hidden="true" />
