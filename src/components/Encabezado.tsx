@@ -1,6 +1,7 @@
 import { EnlaceLetras } from "./EnlaceLetras";
 import { CtaWhatsApp } from "./CtaWhatsApp";
 import { useTelon } from "./Telon";
+import marcaNavy from "@/assets/marca_mkweb.png.asset.json";
 
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
