@@ -22,10 +22,16 @@ export function Encabezado() {
             if (window.location.pathname === "/") return;
             navegarConTelon("/", e);
           }}
-          className="text-[16px] uppercase tracking-[-0.02em] text-navy"
-          style={{ fontFamily: "var(--display)", fontWeight: 800 }}
+          className="flex items-center"
+          aria-label="MK Web Studio — inicio"
         >
-          MK Web Studio
+          <img
+            src={marcaNavy.url}
+            alt="MK Web Studio"
+            className="h-[34px] w-auto md:h-[38px]"
+            width={1672}
+            height={941}
+          />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
