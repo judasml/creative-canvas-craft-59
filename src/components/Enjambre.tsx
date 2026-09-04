@@ -24,6 +24,16 @@ export const CRITICOS = new Set([
   '"SITIO NO SEGURO"',
 ]);
 
+type Color = { fondo: string; borde: string; texto: string };
+
+const PALETA: Color[] = [
+  { fondo: "#011a40", borde: "#394c6a", texto: "#f6f7f8" },
+  { fondo: "#394c6a", borde: "#011a40", texto: "#f6f7f8" },
+  { fondo: "#fd5c41", borde: "#c94a32", texto: "#f6f7f8" },
+  { fondo: "#afde00", borde: "#8bb300", texto: "#011a40" },
+  { fondo: "#dee1e6", borde: "#b5b9c1", texto: "#011a40" },
+];
+
 type Particula = {
   x0: number;
   y0: number;
@@ -32,6 +42,7 @@ type Particula = {
   giro: number;
   fase: number;
   texto: string;
+  color: Color;
 };
 
 export function Enjambre() {
@@ -61,6 +72,7 @@ export function Enjambre() {
         giro: (Math.random() - 0.5) * 0.6,
         fase: Math.random() * 6.28,
         texto: TEXTOS[i % TEXTOS.length]!,
+        color: PALETA[Math.floor(Math.random() * PALETA.length)]!,
       };
     });
 
@@ -98,21 +110,20 @@ export function Enjambre() {
           const y = (q.y0 + (q.y1 - q.y0) * e + vai) * alto;
           const w = movil ? 44 : Math.max(60, ctx.measureText(q.texto).width + 16);
           const h = movil ? 14 : 20;
-          const critico = CRITICOS.has(q.texto);
 
           ctx.save();
           ctx.globalAlpha = opacidad;
           ctx.translate(x, y);
           ctx.rotate(q.giro * e);
-          ctx.fillStyle = critico ? "#E8D5D5" : "#EDEDED";
-          ctx.strokeStyle = critico ? "#D9A5A5" : "#D0D0D0";
+          ctx.fillStyle = q.color.fondo;
+          ctx.strokeStyle = q.color.borde;
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.roundRect(-w / 2, -h / 2, w, h, 6);
           ctx.fill();
           ctx.stroke();
           if (!movil) {
-            ctx.fillStyle = "#8A8A8A";
+            ctx.fillStyle = q.color.texto;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillText(q.texto, 0, 1);
