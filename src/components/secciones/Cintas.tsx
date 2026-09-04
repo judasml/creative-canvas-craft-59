@@ -53,7 +53,7 @@ function Pista({ rubros, inversa }: { rubros: Rubro[]; inversa?: boolean }) {
 
 export function Cintas() {
   return (
-    <section className="overflow-x-hidden py-[var(--paso)]">
+    <section className="cuadricula overflow-x-hidden py-[var(--paso)]">
       <p className="etiqueta contenedor mb-10 text-center text-gris-texto">
         Cada rubro necesita verse distinto. Esto es lo que le recomendamos a cada
         uno.
