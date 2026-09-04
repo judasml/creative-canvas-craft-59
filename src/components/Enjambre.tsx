@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const TEXTOS = [
+export const TEXTOS = [
   "SIN FOTOS",
   "HORARIO VIEJO",
   '"CERRADO PERMANENTEMENTE"',
