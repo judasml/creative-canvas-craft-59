@@ -1,6 +1,20 @@
 import { useEffect, useRef } from "react";
 
-import { TEXTOS, CRITICOS } from "./Enjambre";
+import { TEXTOS } from "./Enjambre";
+
+type Color = {
+  fondo: string;
+  borde: string;
+  texto: string;
+};
+
+const PALETA: Color[] = [
+  { fondo: "#011a40", borde: "#394c6a", texto: "#f6f7f8" },
+  { fondo: "#394c6a", borde: "#011a40", texto: "#f6f7f8" },
+  { fondo: "#fd5c41", borde: "#c94a32", texto: "#f6f7f8" },
+  { fondo: "#afde00", borde: "#8bb300", texto: "#011a40" },
+  { fondo: "#dee1e6", borde: "#b5b9c1", texto: "#011a40" },
+];
 
 type Flotante = {
   x: number;
@@ -9,6 +23,7 @@ type Flotante = {
   fase: number;
   giro: number;
   texto: string;
+  color: Color;
 };
 
 export function ParticulasHero() {
@@ -25,6 +40,8 @@ export function ParticulasHero() {
     const total = movil ? 6 : 12;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
+    const colorAleatorio = () => PALETA[Math.floor(Math.random() * PALETA.length)]!;
+
     const particulas: Flotante[] = Array.from({ length: total }, (_, i) => ({
       x: Math.random(),
       y: Math.random(),
@@ -32,6 +49,7 @@ export function ParticulasHero() {
       fase: Math.random() * 6.28,
       giro: (Math.random() - 0.5) * 0.16,
       texto: TEXTOS[(i * 3) % TEXTOS.length]!,
+      color: colorAleatorio(),
     }));
 
     let ancho = 0;
@@ -61,26 +79,26 @@ export function ParticulasHero() {
           q.y = 1.12;
           q.x = Math.random();
           q.texto = TEXTOS[Math.floor(Math.random() * TEXTOS.length)]!;
+          q.color = colorAleatorio();
         }
         const x = (q.x + Math.sin(t / 2200 + q.fase) * 0.012) * ancho;
         const y = q.y * alto;
         const w = movil ? 44 : Math.max(60, ctx.measureText(q.texto).width + 16);
         const h = movil ? 14 : 20;
-        const critico = CRITICOS.has(q.texto);
 
         ctx.save();
         ctx.globalAlpha = 0.42;
         ctx.translate(x, y);
         ctx.rotate(q.giro);
-        ctx.fillStyle = critico ? "#E8D5D5" : "#EDEDED";
-        ctx.strokeStyle = critico ? "#D9A5A5" : "#D0D0D0";
+        ctx.fillStyle = q.color.fondo;
+        ctx.strokeStyle = q.color.borde;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.roundRect(-w / 2, -h / 2, w, h, 6);
         ctx.fill();
         ctx.stroke();
         if (!movil) {
-          ctx.fillStyle = "#8A8A8A";
+          ctx.fillStyle = q.color.texto;
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
           ctx.fillText(q.texto, 0, 1);
@@ -103,7 +121,7 @@ export function ParticulasHero() {
     <canvas
       ref={lienzo}
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 -z-[1] h-full w-full"
+      className="pointer-events-none absolute inset-0 z-[1] h-full w-full"
     />
   );
 }
