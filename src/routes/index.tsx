@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { CtaWhatsApp } from "@/components/CtaWhatsApp";
 import { Enjambre } from "@/components/Enjambre";
+import { ParticulasHero } from "@/components/ParticulasHero";
 import { Muestras } from "@/components/secciones/Muestras";
 import { TarjetasApiladas } from "@/components/secciones/TarjetasApiladas";
 import { Precios } from "@/components/secciones/Precios";
