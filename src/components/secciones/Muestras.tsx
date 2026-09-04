@@ -29,7 +29,7 @@ const TARJETAS = [
 
 export function Muestras() {
   return (
-    <section id="muestras" className="contenedor py-[var(--paso)]">
+    <section id="muestras" className="cuadricula contenedor py-[var(--paso)]">
       <p className="etiqueta flex items-center gap-3 text-gris-texto">
         <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
         No tenemos testimonios todavía. Tenemos esto.

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const TEXTOS = [
+export const TEXTOS = [
   "SIN FOTOS",
   "HORARIO VIEJO",
   '"CERRADO PERMANENTEMENTE"',
@@ -18,7 +18,7 @@ const TEXTOS = [
   "FOTO DE 2019",
 ];
 
-const CRITICOS = new Set([
+export const CRITICOS = new Set([
   '"CERRADO PERMANENTEMENTE"',
   "FORMULARIO ROTO",
   '"SITIO NO SEGURO"',

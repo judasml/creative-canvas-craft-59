@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { CtaWhatsApp } from "@/components/CtaWhatsApp";
 import { Enjambre } from "@/components/Enjambre";
+import { ParticulasHero } from "@/components/ParticulasHero";
 import { Muestras } from "@/components/secciones/Muestras";
 import { TarjetasApiladas } from "@/components/secciones/TarjetasApiladas";
 import { Precios } from "@/components/secciones/Precios";
@@ -28,7 +29,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
-      <section className="contenedor pb-[var(--paso)] pt-16 md:pt-24">
+      <section className="contenedor relative isolate overflow-hidden pb-[var(--paso)] pt-16 md:pt-24">
+        <ParticulasHero />
         <p className="etiqueta flex items-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
           Fichas de Google y sitios web para negocios
