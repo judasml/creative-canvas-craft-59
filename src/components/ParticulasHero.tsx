@@ -21,7 +21,11 @@ type Flotante = {
   y: number;
   vel: number;
   fase: number;
+  faseX: number;
+  frecX: number;
+  ampX: number;
   giro: number;
+  vaiven: number;
   texto: string;
   color: Color;
 };
@@ -37,7 +41,7 @@ export function ParticulasHero() {
     if (!ctx) return;
 
     const movil = window.innerWidth < 768;
-    const total = movil ? 6 : 12;
+    const total = movil ? 12 : 26;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     const colorAleatorio = () => PALETA[Math.floor(Math.random() * PALETA.length)]!;
@@ -45,9 +49,13 @@ export function ParticulasHero() {
     const particulas: Flotante[] = Array.from({ length: total }, (_, i) => ({
       x: Math.random(),
       y: Math.random(),
-      vel: 0.012 + Math.random() * 0.014,
+      vel: 0.018 + Math.random() * 0.05,
       fase: Math.random() * 6.28,
-      giro: (Math.random() - 0.5) * 0.16,
+      faseX: Math.random() * 6.28,
+      frecX: 0.35 + Math.random() * 0.9,
+      ampX: 0.02 + Math.random() * 0.06,
+      giro: (Math.random() - 0.5) * 0.26,
+      vaiven: 0.4 + Math.random() * 1.4,
       texto: TEXTOS[(i * 3) % TEXTOS.length]!,
       color: colorAleatorio(),
     }));
@@ -81,15 +89,19 @@ export function ParticulasHero() {
           q.texto = TEXTOS[Math.floor(Math.random() * TEXTOS.length)]!;
           q.color = colorAleatorio();
         }
-        const x = (q.x + Math.sin(t / 2200 + q.fase) * 0.012) * ancho;
-        const y = q.y * alto;
+        const seg = t / 1000;
+        const deriva =
+          Math.sin(seg * q.frecX + q.faseX) * q.ampX +
+          Math.sin(seg * q.frecX * 2.3 + q.fase) * q.ampX * 0.35;
+        const x = (q.x + deriva) * ancho;
+        const y = (q.y + Math.sin(seg * q.vaiven + q.fase) * 0.012) * alto;
         const w = movil ? 44 : Math.max(60, ctx.measureText(q.texto).width + 16);
         const h = movil ? 14 : 20;
 
         ctx.save();
-        ctx.globalAlpha = 0.42;
+        ctx.globalAlpha = 0.95;
         ctx.translate(x, y);
-        ctx.rotate(q.giro);
+        ctx.rotate(q.giro + Math.sin(seg * q.vaiven + q.faseX) * 0.06);
         ctx.fillStyle = q.color.fondo;
         ctx.strokeStyle = q.color.borde;
         ctx.lineWidth = 1;
