@@ -6,7 +6,7 @@ import marcaNavy from "@/assets/marca_mkweb.png.asset.json";
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
   { texto: "Precios", href: "/#precios" },
-  { texto: "Muestras", href: "/#muestras" },
+  { texto: "Muestras", href: "/muestras" },
   { texto: "Contacto", href: "/#contacto" },
 ];
 
