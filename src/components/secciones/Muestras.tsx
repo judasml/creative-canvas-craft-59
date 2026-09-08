@@ -72,6 +72,19 @@ export function Muestras() {
           </EnlaceInterno>
         ))}
       </div>
+
+      <div className="mt-12">
+        <a
+          href="/plantillas/catalogo-variantes/index.html"
+          className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
+        >
+          Ver plantillas
+          <span aria-hidden="true">↗</span>
+        </a>
+        <p className="etiqueta mt-3 text-[13px] text-gris-texto">
+          18 diseños de muestra para 6 tipos de negocio.
+        </p>
+      </div>
     </section>
   );
 }

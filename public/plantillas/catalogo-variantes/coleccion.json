@@ -1,0 +1,295 @@
+[
+  {
+    "key": "medico-a",
+    "rubro": "medico",
+    "variant": "a",
+    "folder": "ejemplo-medico-a",
+    "name": "Vitalis",
+    "style": "Médico personal",
+    "detail": "Perfil médico protagonista, ficha de especialidad y recorrido de atención.",
+    "bg": "#f2f5f2",
+    "ink": "#173c3a",
+    "headline": [
+      "Medicina que",
+      "te escucha."
+    ],
+    "bytes": 49265
+  },
+  {
+    "key": "medico-b",
+    "rubro": "medico",
+    "variant": "b",
+    "folder": "ejemplo-medico-b",
+    "name": "Serena",
+    "style": "Consulta especializada",
+    "detail": "Retrato editorial, composición lateral y consulta especializada con cita.",
+    "bg": "#f5efeb",
+    "ink": "#593c4b",
+    "headline": [
+      "Tu salud merece",
+      "su propio espacio."
+    ],
+    "bytes": 49330
+  },
+  {
+    "key": "medico-c",
+    "rubro": "medico",
+    "variant": "c",
+    "folder": "ejemplo-medico-c",
+    "name": "Ámbito",
+    "style": "Centro médico",
+    "detail": "Portada panorámica, panel de atención y tarjetas para organizar la visita.",
+    "bg": "#edf1f7",
+    "ink": "#203951",
+    "headline": [
+      "Tu salud,",
+      "en perspectiva."
+    ],
+    "bytes": 49420
+  },
+  {
+    "key": "consultorio-a",
+    "rubro": "consultorio",
+    "variant": "a",
+    "folder": "ejemplo-consultorio-a",
+    "name": "Alba",
+    "style": "Santuario dental",
+    "detail": "Arcos arquitectónicos, composición editorial y servicios desplegables.",
+    "bg": "#f4f1e9",
+    "ink": "#293e34",
+    "headline": [
+      "La tranquilidad",
+      "de sonreír."
+    ],
+    "bytes": 43478
+  },
+  {
+    "key": "consultorio-b",
+    "rubro": "consultorio",
+    "variant": "b",
+    "folder": "ejemplo-consultorio-b",
+    "name": "Forma",
+    "style": "Estudio de la sonrisa",
+    "detail": "Portada fotográfica envolvente y recorrido de atención por etapas.",
+    "bg": "#1d302c",
+    "ink": "#f3efdf",
+    "headline": [
+      "Una sonrisa.",
+      "Toda tu esencia."
+    ],
+    "bytes": 43282
+  },
+  {
+    "key": "consultorio-c",
+    "rubro": "consultorio",
+    "variant": "c",
+    "folder": "ejemplo-consultorio-c",
+    "name": "Nítida",
+    "style": "Clínica contemporánea",
+    "detail": "Retícula clínica, tarjetas flotantes y selector de atención.",
+    "bg": "#eef3f9",
+    "ink": "#163760",
+    "headline": [
+      "Tu siguiente",
+      "gran sonrisa."
+    ],
+    "bytes": 43357
+  },
+  {
+    "key": "taller-a",
+    "rubro": "taller",
+    "variant": "a",
+    "folder": "ejemplo-taller-a",
+    "name": "Torque",
+    "style": "Performance garage",
+    "detail": "Fotografía cinematográfica, retícula técnica y líneas de velocidad.",
+    "bg": "#101112",
+    "ink": "#f4f4eb",
+    "headline": [
+      "PRECISIÓN",
+      "EN MOVIMIENTO."
+    ],
+    "bytes": 43079
+  },
+  {
+    "key": "taller-b",
+    "rubro": "taller",
+    "variant": "b",
+    "folder": "ejemplo-taller-b",
+    "name": "Distrito Motor",
+    "style": "El taller, reimaginado",
+    "detail": "Cartel industrial, fotografía recortada y tarjetas de servicio interactivas.",
+    "bg": "#eeece2",
+    "ink": "#22251f",
+    "headline": [
+      "Mecánica seria.",
+      "Cero vueltas."
+    ],
+    "bytes": 43279
+  },
+  {
+    "key": "taller-c",
+    "rubro": "taller",
+    "variant": "c",
+    "folder": "ejemplo-taller-c",
+    "name": "Apex",
+    "style": "Automotive lab",
+    "detail": "Cabina de diagnóstico, coordenadas visuales y panel de consulta.",
+    "bg": "#101b2a",
+    "ink": "#edf4ff",
+    "headline": [
+      "CONTROL.",
+      "CONFIANZA.",
+      "CAMINO."
+    ],
+    "bytes": 43608
+  },
+  {
+    "key": "veterinaria-a",
+    "rubro": "veterinaria",
+    "variant": "a",
+    "folder": "ejemplo-veterinaria-a",
+    "name": "Mimo",
+    "style": "Cuidado con personalidad",
+    "detail": "Recortes orgánicos, tipografía amable y fichas de atención por mascota.",
+    "bg": "#fcf5e9",
+    "ink": "#393c28",
+    "headline": [
+      "Su mundo",
+      "eres tú.",
+      "Su cuidado, aquí."
+    ],
+    "bytes": 43273
+  },
+  {
+    "key": "veterinaria-b",
+    "rubro": "veterinaria",
+    "variant": "b",
+    "folder": "ejemplo-veterinaria-b",
+    "name": "Numa",
+    "style": "Animal wellness",
+    "detail": "Díptico natural, composición de revista y recorrido sereno.",
+    "bg": "#223d35",
+    "ink": "#faf5e8",
+    "headline": [
+      "Su bienestar.",
+      "Nuestra",
+      "naturaleza."
+    ],
+    "bytes": 43269
+  },
+  {
+    "key": "veterinaria-c",
+    "rubro": "veterinaria",
+    "variant": "c",
+    "folder": "ejemplo-veterinaria-c",
+    "name": "Pata Club",
+    "style": "Una vida juntos",
+    "detail": "Cartel lúdico, sellos gráficos y mosaico de cuidados.",
+    "bg": "#eee9fb",
+    "ink": "#382f5b",
+    "headline": [
+      "Más juegos.",
+      "Más paseos.",
+      "Más juntos."
+    ],
+    "bytes": 43190
+  },
+  {
+    "key": "salon-a",
+    "rubro": "salon",
+    "variant": "a",
+    "folder": "ejemplo-salon-a",
+    "name": "Savia",
+    "style": "Hair atelier",
+    "detail": "Editorial de moda, retratos desfasados y carta de rituales.",
+    "bg": "#f1eadf",
+    "ink": "#3d302a",
+    "headline": [
+      "Tu esencia,",
+      "en otra luz."
+    ],
+    "bytes": 43438
+  },
+  {
+    "key": "salon-b",
+    "rubro": "salon",
+    "variant": "b",
+    "folder": "ejemplo-salon-b",
+    "name": "Noir",
+    "style": "Beauty, after ordinary",
+    "detail": "Campaña a pantalla completa, texto gigante y detalles luminosos.",
+    "bg": "#171210",
+    "ink": "#faf0e5",
+    "headline": [
+      "NO SIGAS",
+      "EL ESTILO.",
+      "SÉ EL ESTILO."
+    ],
+    "bytes": 43284
+  },
+  {
+    "key": "salon-c",
+    "rubro": "salon",
+    "variant": "c",
+    "folder": "ejemplo-salon-c",
+    "name": "Aura",
+    "style": "The beauty edit",
+    "detail": "Composición asimétrica, curvas suaves y reserva guiada.",
+    "bg": "#f5e8e4",
+    "ink": "#51363f",
+    "headline": [
+      "Un momento",
+      "solo para ti."
+    ],
+    "bytes": 43279
+  },
+  {
+    "key": "restaurante-a",
+    "rubro": "restaurante",
+    "variant": "a",
+    "folder": "ejemplo-restaurante-a",
+    "name": "Brasa",
+    "style": "Cocina de origen",
+    "detail": "Portada gastronómica inmersiva, carta editorial y reserva contextual.",
+    "bg": "#1e211a",
+    "ink": "#f7eedb",
+    "headline": [
+      "EL FUEGO",
+      "NOS REÚNE."
+    ],
+    "bytes": 43620
+  },
+  {
+    "key": "restaurante-b",
+    "rubro": "restaurante",
+    "variant": "b",
+    "folder": "ejemplo-restaurante-b",
+    "name": "Casa Oliva",
+    "style": "La buena mesa",
+    "detail": "Mesa editorial, sello circular y menú desplegable.",
+    "bg": "#f3eddf",
+    "ink": "#354332",
+    "headline": [
+      "Quédate",
+      "un poco más."
+    ],
+    "bytes": 44129
+  },
+  {
+    "key": "restaurante-c",
+    "rubro": "restaurante",
+    "variant": "c",
+    "folder": "ejemplo-restaurante-c",
+    "name": "Mesa 504",
+    "style": "Sabor sin formalidades",
+    "detail": "Cartel gastronómico, fotos circulares y pedido por especialidad.",
+    "bg": "#fae9cd",
+    "ink": "#712f20",
+    "headline": [
+      "MUCHO SABOR.",
+      "CERO EXCUSAS."
+    ],
+    "bytes": 43573
+  }
+]

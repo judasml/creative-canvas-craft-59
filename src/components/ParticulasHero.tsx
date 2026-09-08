@@ -41,7 +41,7 @@ export function ParticulasHero() {
     if (!ctx) return;
 
     const movil = window.innerWidth < 768;
-    const total = movil ? 12 : 26;
+    const total = movil ? 2 : 3;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     const colorAleatorio = () => PALETA[Math.floor(Math.random() * PALETA.length)]!;
