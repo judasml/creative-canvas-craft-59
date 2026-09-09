@@ -1,0 +1,7 @@
+const scene=document.querySelector('.aurai'),halo=document.querySelector('.halo');
+scene.addEventListener('pointermove',e=>{if(reduce.matches||document.documentElement.classList.contains('motion-paused'))return;const r=scene.getBoundingClientRect();scene.style.setProperty('--px',(e.clientX/r.width-.5)*2);scene.style.setProperty('--py',((e.clientY-r.top)/r.height-.5)*2);halo.style.transform=`translate(${e.clientX-r.left-18}px,${e.clientY-r.top-18}px)`;halo.style.opacity=e.target.closest('button,a,input')?'0':'1'},{passive:true});
+scene.addEventListener('pointerleave',()=>{scene.style.setProperty('--px',0);scene.style.setProperty('--py',0);halo.style.opacity='0'});
+scene.addEventListener('pointerdown',e=>{if(reduce.matches||document.documentElement.classList.contains('motion-paused')||e.target.closest('button,a,input'))return;const r=scene.getBoundingClientRect(),ripple=document.createElement('span');ripple.className='ripple';ripple.style.left=`${e.clientX-r.left}px`;ripple.style.top=`${e.clientY-r.top}px`;scene.append(ripple);ripple.addEventListener('animationend',()=>ripple.remove())});
+const breath=document.getElementById('breath');
+document.querySelector('[data-open=breath]').addEventListener('click',()=>{breath.querySelector('.breath-orb').getAnimations().forEach(a=>a.currentTime=0)});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').close()));

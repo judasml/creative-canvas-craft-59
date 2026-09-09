@@ -73,18 +73,34 @@ export function Muestras() {
         ))}
       </div>
 
-      <div className="mt-12">
-        <a
-          href="/plantillas/catalogo-variantes/index.html"
-          className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
-        >
-          Ver plantillas
-          <span aria-hidden="true">↗</span>
-        </a>
-        <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-          18 diseños de muestra para 6 tipos de negocio.
-        </p>
+      <div className="mt-12 flex flex-wrap items-start gap-4">
+        <div>
+          <a
+            href="/plantillas/catalogo-variantes/index.html"
+            className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
+          >
+            Ver plantillas
+            <span aria-hidden="true">↗</span>
+          </a>
+          <p className="etiqueta mt-3 text-[13px] text-gris-texto">
+            18 diseños de muestra para 6 tipos de negocio.
+          </p>
+        </div>
+
+        <div>
+          <EnlaceInterno
+            to="/catalogo-premium"
+            className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] border border-navy px-7 py-4 text-navy transition-colors hover:bg-navy hover:text-hueso"
+          >
+            Páginas Premium
+            <span aria-hidden="true">→</span>
+          </EnlaceInterno>
+          <p className="etiqueta mt-3 text-[13px] text-gris-texto">
+            Tres experiencias en movimiento.
+          </p>
+        </div>
       </div>
+
     </section>
   );
 }
