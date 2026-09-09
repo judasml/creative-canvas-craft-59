@@ -1,0 +1,11 @@
+const projects=[...document.querySelectorAll('.project')],reduced=matchMedia('(prefers-reduced-motion: reduce)');
+const viewer=document.querySelector('.viewer');
+function scale(){projects.forEach(p=>{const stage=p.querySelector('.stage');const iframe=stage.querySelector('iframe');iframe.style.transform=`scale(${stage.clientWidth/1440})`})}
+function load(p){const f=p.querySelector('iframe');if(!f.hasAttribute('src'))f.src=f.dataset.src}
+function send(p,active){const f=p.querySelector('iframe');f.contentWindow?.postMessage({type:'mk-visibility',active},'*')}
+const io=new IntersectionObserver(es=>es.forEach(e=>{const p=e.target;p.dataset.active=e.isIntersecting?'true':'false';if(e.isIntersecting)load(p);send(p,e.isIntersecting&&!viewer.open)}),{threshold:.1});
+projects.forEach(p=>{io.observe(p);p.querySelector('iframe').addEventListener('load',()=>{send(p,p.dataset.active==='true'&&!viewer.open);p.querySelector('iframe').contentWindow.postMessage({type:'mk-pause',paused:p.dataset.paused==='true'},'*')});p.querySelector('[data-pause]').addEventListener('click',e=>{const paused=p.dataset.paused!=='true';p.dataset.paused=String(paused);e.currentTarget.textContent=paused?'▶':'Ⅱ';e.currentTarget.setAttribute('aria-label',paused?'Reanudar movimiento':'Pausar movimiento');e.currentTarget.setAttribute('aria-pressed',String(paused));p.querySelector('iframe').contentWindow.postMessage({type:'mk-pause',paused},'*')});p.querySelectorAll('[data-mobile]').forEach(b=>b.addEventListener('click',()=>{viewer.querySelector('iframe').src=p.querySelector('iframe').dataset.src;viewer.querySelector('[data-viewer-title]').textContent=p.querySelector('h2').textContent+' · Móvil';viewer.showModal();projects.forEach(q=>send(q,false))}))});
+viewer.querySelector('button').addEventListener('click',()=>viewer.close());viewer.addEventListener('close',()=>{viewer.querySelector('iframe').removeAttribute('src');projects.forEach(p=>send(p,p.dataset.active==='true'))});
+new ResizeObserver(scale).observe(document.querySelector('.collection'));scale();
+// Allows the optional Lovable React wrapper to avoid nested vertical scrollbars.
+if(parent!==window)new ResizeObserver(()=>parent.postMessage({type:'mk-premium-height',height:document.documentElement.scrollHeight},'*')).observe(document.body);
