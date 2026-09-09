@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CatalogoPremiumRouteImport } from './routes/catalogo-premium'
 import { Route as PrivacidadRouteImport } from './routes/privacidad'
 import { Route as TerminosRouteImport } from './routes/terminos'
 import { Route as MuestrasIndexRouteImport } from './routes/muestras.index'
@@ -21,6 +22,11 @@ import { Route as MuestrasSitiosWebRouteImport } from './routes/muestras.sitios-
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogoPremiumRoute = CatalogoPremiumRouteImport.update({
+  id: '/catalogo-premium',
+  path: '/catalogo-premium',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacidadRoute = PrivacidadRouteImport.update({
@@ -61,6 +67,7 @@ const MuestrasSitiosWebRoute = MuestrasSitiosWebRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/catalogo-premium': typeof CatalogoPremiumRoute
   '/privacidad': typeof PrivacidadRoute
   '/terminos': typeof TerminosRoute
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
@@ -71,6 +78,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/catalogo-premium': typeof CatalogoPremiumRoute
   '/privacidad': typeof PrivacidadRoute
   '/terminos': typeof TerminosRoute
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
@@ -82,6 +90,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/catalogo-premium': typeof CatalogoPremiumRoute
   '/privacidad': typeof PrivacidadRoute
   '/terminos': typeof TerminosRoute
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
@@ -94,6 +103,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/catalogo-premium'
     | '/privacidad'
     | '/terminos'
     | '/muestras/antes-y-despues'
@@ -104,6 +114,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/catalogo-premium'
     | '/privacidad'
     | '/terminos'
     | '/muestras/antes-y-despues'
@@ -114,6 +125,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/catalogo-premium'
     | '/privacidad'
     | '/terminos'
     | '/muestras/antes-y-despues'
@@ -125,6 +137,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CatalogoPremiumRoute: typeof CatalogoPremiumRoute
   PrivacidadRoute: typeof PrivacidadRoute
   TerminosRoute: typeof TerminosRoute
   MuestrasAntesYDespuesRoute: typeof MuestrasAntesYDespuesRoute
@@ -141,6 +154,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalogo-premium': {
+      id: '/catalogo-premium'
+      path: '/catalogo-premium'
+      fullPath: '/catalogo-premium'
+      preLoaderRoute: typeof CatalogoPremiumRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacidad': {
@@ -197,6 +217,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CatalogoPremiumRoute: CatalogoPremiumRoute,
   PrivacidadRoute: PrivacidadRoute,
   TerminosRoute: TerminosRoute,
   MuestrasAntesYDespuesRoute: MuestrasAntesYDespuesRoute,
