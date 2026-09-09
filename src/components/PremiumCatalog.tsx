@@ -14,5 +14,9 @@ export default function PremiumCatalog() {
     window.addEventListener('message', resize);
     return () => window.removeEventListener('message', resize);
   }, []);
-  return <iframe ref={frame} src="/premium/index.html" title="Catálogo Premium Motion — MK Web Studio" allow="autoplay" style={{ display: 'block', width: '100%', height, border: 0, background: '#161817' }} />;
+  const medir = () => {
+    const doc = frame.current?.contentDocument;
+    if (doc) setHeight(Math.ceil(doc.documentElement.scrollHeight));
+  };
+  return <iframe ref={frame} onLoad={medir} src="/premium/index.html" title="Catálogo Premium Motion — MK Web Studio" allow="autoplay" style={{ display: 'block', width: '100%', height, border: 0, background: '#161817' }} />;
 }
