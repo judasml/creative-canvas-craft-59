@@ -68,12 +68,14 @@ function Pagina() {
             rel="noreferrer"
             className="group block overflow-hidden rounded-[var(--radio)] border border-gris bg-white transition-transform duration-[400ms] hover:-translate-y-1.5"
           >
-            <div className="aspect-[4/3] overflow-hidden bg-navy">
+            <div className="aspect-[3/2] overflow-hidden bg-hueso">
               <img
                 src={`/plantillas/catalogo-variantes/previews/${t.key}.webp`}
                 alt={`Vista previa del diseño ${t.name}`}
                 loading="lazy"
-                className="size-full object-cover object-top transition-transform duration-[400ms] group-hover:scale-[1.04]"
+                width={1440}
+                height={960}
+                className="size-full object-contain transition-transform duration-[400ms] group-hover:scale-[1.03]"
               />
             </div>
             <div className="p-5">
