@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { CtaWhatsApp } from "@/components/CtaWhatsApp";
+import { CtaAuditor } from "@/components/CtaAuditor";
 import { Enjambre } from "@/components/Enjambre";
 import { ParticulasHero } from "@/components/ParticulasHero";
 import { Muestras } from "@/components/secciones/Muestras";
@@ -51,6 +52,9 @@ function Index() {
           <p className="etiqueta mt-4 text-[13px] text-gris-texto">
             Sin formulario. Le escribe por WhatsApp y le mando el video.
           </p>
+          <div className="mt-6">
+            <CtaAuditor />
+          </div>
         </div>
       </section>
 
@@ -92,6 +96,9 @@ function Index() {
           </p>
           <div className="mt-10">
             <CtaWhatsApp />
+            <div className="mt-6">
+              <CtaAuditor tono="oscuro" />
+            </div>
           </div>
           <p className="etiqueta mt-4 text-[13px] text-white/60">
             Le respondemos el mismo día.

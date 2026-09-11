@@ -57,7 +57,7 @@ export function Precios() {
                 "Dominio del primer año y hosting",
                 "Monitoreo",
                 "Todos sus accesos entregados por escrito",
-                "Los primeros 30 días de servicio incluidos",
+                "Los primeros 3 meses de servicio incluidos",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -113,7 +113,8 @@ export function Precios() {
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
             Si paga 12 meses por adelantado, un mes va incluido: L 6,600.
             <br />
-            Modificación adicional: L 200 — o cinco por L 800.
+            Modificación adicional: L 200 — o cinco por L 800. Ficha adicional de
+            otra sucursal: L 300 al mes.
           </p>
 
           <div className="mt-10">
@@ -133,8 +134,11 @@ export function Precios() {
         <div>
           <h3 className="editorial text-[28px]">Puede cancelar cuando quiera.</h3>
           <p className="parrafo mt-4 text-gris-texto">
-            El sitio y el dominio son suyos, no nuestros. Si cancela, se detiene el
-            servicio — no se le cae nada ni se le queda nada secuestrado.
+            El sitio y el dominio están a nombre suyo: si cancela, se los lleva.
+            Lo que se detiene es el servicio — el hosting, el monitoreo y la
+            atención de su ficha. Lo único que no se puede recuperar después es el
+            historial: Google solo guarda unos meses de datos, y los que no se
+            hayan sacado se pierden.
           </p>
         </div>
       </div>
