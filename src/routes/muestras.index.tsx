@@ -36,6 +36,14 @@ const OPCIONES = [
     img: celular,
     alt: "Sitio de negocio abierto en un celular",
   },
+  {
+    titulo: "Páginas Premium",
+    detalle:
+      "Tres experiencias en movimiento: efectos, video y animación para marcas que quieren destacar.",
+    ruta: "/catalogo-premium",
+    img: "/premium/assets/preview-aurai.webp",
+    alt: "Vista previa de una página premium con movimiento",
+  },
 ];
 
 function Pagina() {
@@ -57,7 +65,7 @@ function Pagina() {
         Todo lo que sigue lo hicimos nosotros. Elija por dónde empezar.
       </p>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-2">
+      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {OPCIONES.map((o) => (
           <EnlaceInterno
             key={o.ruta}
