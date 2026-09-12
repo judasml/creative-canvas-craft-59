@@ -13,7 +13,7 @@ import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 const TITULO =
   "MK Web Studio — Fichas de Google y sitios web para negocios en Tegucigalpa, Honduras";
 const DESCRIPCION =
-  "Ficha de Google y sitio web para celular. Precios cerrados: L 3,750 la entrada y L 600 al mes. Le mandamos un video con lo que un cliente ve al buscar su negocio.";
+  "Ficha de Google y sitio web para celular. Precios cerrados: L 3,750 de entrada, L 600 al mes. Le mandamos un video de lo que un cliente ve al buscar su negocio.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
