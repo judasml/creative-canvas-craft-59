@@ -11,9 +11,9 @@ import { Cintas } from "@/components/secciones/Cintas";
 import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 
 const TITULO =
-  "MK Web Studio — Fichas de Google y sitios web para negocios en Tegucigalpa, Honduras";
+  "MK Web Studio — Ficha de Google y sitio web para negocios en Honduras";
 const DESCRIPCION =
-  "Ficha de Google y sitio web para celular. Precios cerrados: L 3,750 de entrada, L 600 al mes. Le mandamos un video de lo que un cliente ve al buscar su negocio.";
+  "Ficha de Google y sitio web hecho para el celular. Precios cerrados: L 3,750 de entrada, L 600 al mes. Vea cómo aparece su negocio en Google, sin registrarse.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,13 +48,13 @@ function Index() {
         </p>
 
         <div className="mt-10">
-          <CtaWhatsApp />
-          <p className="etiqueta mt-4 text-[13px] text-gris-texto">
-            Sin formulario. Le escribe por WhatsApp y le mando el video.
-          </p>
-          <div className="mt-6">
+          <div className="mb-6 empty:hidden">
             <CtaAuditor />
           </div>
+          <CtaWhatsApp />
+          <p className="etiqueta mt-4 text-[13px] text-gris-texto">
+            Sin registro y sin dejar sus datos. Se hace en un minuto.
+          </p>
         </div>
       </section>
 
@@ -63,8 +63,8 @@ function Index() {
           className="contenedor text-[clamp(20px,3.2vw,34px)] italic"
           style={{ fontFamily: "var(--serifa)", fontWeight: 400 }}
         >
-          Le muestro en video qué encuentra un cliente cuando busca su negocio en
-          Google — y qué encuentra de su competencia.
+          Escriba el nombre de su negocio y vea lo que ve un cliente cuando lo
+          busca en Google — y lo que ve de su competencia.
         </p>
       </div>
 
@@ -95,10 +95,10 @@ function Index() {
             y sin que tenga que llenar nada.
           </p>
           <div className="mt-10">
-            <CtaWhatsApp />
-            <div className="mt-6">
+            <div className="mb-6 empty:hidden">
               <CtaAuditor tono="oscuro" />
             </div>
+            <CtaWhatsApp tono="oscuro" />
           </div>
           <p className="etiqueta mt-4 text-[13px] text-white/60">
             Le respondemos el mismo día.
