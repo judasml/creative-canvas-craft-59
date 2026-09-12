@@ -5,4 +5,5 @@
 - [x] Componentes de efectos: telón, letras que suben, enjambre canvas, tarjetas apiladas, cintas, Lenis
 - [x] Portada completa con todas las secciones del brief
 - [x] Subpáginas /muestras/*, /terminos, /privacidad
+- [x] Segunda ronda de comunicación: auditor, muestras, tarjetas y precios
 - [ ] Metadatos, JSON-LD y datos pendientes (WhatsApp, correo, nombre legal)

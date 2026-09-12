@@ -52,9 +52,10 @@ function Index() {
           <div className="mb-6 empty:hidden">
             <CtaAuditor />
           </div>
-          <CtaWhatsApp />
+          <CtaWhatsApp secundario />
           <p className="etiqueta mt-4 text-[13px] text-gris-texto">
-            Sin registro y sin dejar sus datos. Se hace en un minuto.
+            Escriba el nombre de su negocio y vea cómo aparece en Google al lado
+            de su competencia. Sin registro, sin dejar sus datos. Un minuto.
           </p>
         </div>
       </section>
@@ -77,7 +78,10 @@ function Index() {
       <Preguntas />
 
 
-<section className="relative flex min-h-screen items-center overflow-hidden">
+      <section
+        id="diagnostico"
+        className="relative flex min-h-screen items-center overflow-hidden"
+      >
         <img
           src={oficinaAsset.url}
           alt="Equipo de MK Web Studio en su oficina en Tegucigalpa"
@@ -101,10 +105,11 @@ function Index() {
             <div className="mb-6 empty:hidden">
               <CtaAuditor tono="oscuro" />
             </div>
-            <CtaWhatsApp tono="oscuro" />
+            <CtaWhatsApp tono="oscuro" secundario />
           </div>
           <p className="etiqueta mt-4 text-[13px] text-white/60">
-            Le contesta [NOMBRE], no un sistema automático. El mismo día.
+            Le contesta el equipo de MK Web Studio, no un sistema automático. El
+            mismo día.
           </p>
         </div>
       </section>

@@ -23,8 +23,8 @@ export function Precios() {
             </p>
             <ul className="mt-8">
               {[
-                "Sitio publicado, diseñado para su rubro y hecho para el celular",
-                "Creación o mejoramiento de su ficha de Google",
+                "Sitio de una página, hasta 7 secciones, diseñado para su rubro y hecho para el celular",
+                "Una ficha de Google, creada o mejorada, para una ubicación",
                 "Dominio a nombre suyo, hosting y monitoreo",
                 "Todos sus accesos entregados por escrito",
                 "Los primeros 2 meses de servicio incluidos",
@@ -38,16 +38,16 @@ export function Precios() {
           </div>
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
-            <p className="etiqueta text-gris-texto">Premium</p>
+            <p className="etiqueta text-gris-texto">Sitio web premium</p>
             <p className="editorial mt-6 text-[64px] leading-none">L 7,500</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
               Mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
-                "Todo lo de Entrada",
-                "Más páginas y más secciones",
-                "Para negocios con varios servicios o varias áreas",
+                "Sitio de hasta 5 páginas, con más secciones y más movimiento",
+                "Todo lo demás igual que Entrada: ficha de Google para una ubicación, dominio a su nombre, hosting, monitoreo, accesos por escrito y 2 meses de servicio incluidos",
+                "Para negocios con varios servicios o varias áreas que necesitan su propia página",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -59,7 +59,8 @@ export function Precios() {
         </div>
 
         <p className="etiqueta mt-10 text-center text-gris-texto">
-          Colegios, clínicas e instituciones con muchas secciones: lo conversamos.
+          ¿Necesita más de 5 páginas? Lo conversamos. Colegios, clínicas grandes,
+          instituciones.
         </p>
       </div>
 
@@ -89,14 +90,19 @@ export function Precios() {
           </ul>
 
           <p className="etiqueta mt-6 text-[13px] text-[#8A9BB8]">
-            Además: su ficha atendida, sus reseñas respondidas, sitio en línea con
-            dominio y hosting al día, y 2 modificaciones al mes resueltas en 48
-            horas.
+            Incluye además: su ficha atendida, sus reseñas respondidas, y el sitio
+            en línea con dominio y hosting al día.
+          </p>
+
+          <p className="etiqueta mt-6 text-[13px] text-[#8A9BB8]">
+            Incluye 2 cambios al mes en su sitio, resueltos en 48 horas. Un cambio
+            es un texto, una foto, un precio o un horario. No incluye secciones
+            nuevas.
           </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
-            Modificación adicional: L 200 — o cinco por L 800. Ficha adicional de
-            otra sucursal: L 300 al mes.
+            ¿Necesita más de 2 cambios en un mes? L 200 por cambio, o 5 cambios por
+            L 800. ¿Tiene otra sucursal? Su ficha adicional cuesta L 300 al mes.
           </p>
 
           <div className="mt-10">
