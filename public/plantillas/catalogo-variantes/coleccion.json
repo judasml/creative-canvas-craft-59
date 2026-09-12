@@ -13,7 +13,7 @@
       "Medicina que",
       "te escucha."
     ],
-    "bytes": 49265
+    "bytes": 49263
   },
   {
     "key": "medico-b",
@@ -29,7 +29,7 @@
       "Tu salud merece",
       "su propio espacio."
     ],
-    "bytes": 49330
+    "bytes": 49328
   },
   {
     "key": "medico-c",
@@ -45,7 +45,7 @@
       "Tu salud,",
       "en perspectiva."
     ],
-    "bytes": 49420
+    "bytes": 49418
   },
   {
     "key": "consultorio-a",
@@ -61,7 +61,7 @@
       "La tranquilidad",
       "de sonreír."
     ],
-    "bytes": 43478
+    "bytes": 43476
   },
   {
     "key": "consultorio-b",
@@ -77,7 +77,7 @@
       "Una sonrisa.",
       "Toda tu esencia."
     ],
-    "bytes": 43282
+    "bytes": 43280
   },
   {
     "key": "consultorio-c",
@@ -93,7 +93,7 @@
       "Tu siguiente",
       "gran sonrisa."
     ],
-    "bytes": 43357
+    "bytes": 43355
   },
   {
     "key": "taller-a",
@@ -109,7 +109,7 @@
       "PRECISIÓN",
       "EN MOVIMIENTO."
     ],
-    "bytes": 43079
+    "bytes": 43077
   },
   {
     "key": "taller-b",
@@ -125,7 +125,7 @@
       "Mecánica seria.",
       "Cero vueltas."
     ],
-    "bytes": 43279
+    "bytes": 43277
   },
   {
     "key": "taller-c",
@@ -142,7 +142,7 @@
       "CONFIANZA.",
       "CAMINO."
     ],
-    "bytes": 43608
+    "bytes": 43606
   },
   {
     "key": "veterinaria-a",
@@ -159,7 +159,7 @@
       "eres tú.",
       "Su cuidado, aquí."
     ],
-    "bytes": 43273
+    "bytes": 43271
   },
   {
     "key": "veterinaria-b",
@@ -176,7 +176,7 @@
       "Nuestra",
       "naturaleza."
     ],
-    "bytes": 43269
+    "bytes": 43267
   },
   {
     "key": "veterinaria-c",
@@ -193,7 +193,7 @@
       "Más paseos.",
       "Más juntos."
     ],
-    "bytes": 43190
+    "bytes": 43188
   },
   {
     "key": "salon-a",
@@ -209,7 +209,7 @@
       "Tu esencia,",
       "en otra luz."
     ],
-    "bytes": 43438
+    "bytes": 43436
   },
   {
     "key": "salon-b",
@@ -226,7 +226,7 @@
       "EL ESTILO.",
       "SÉ EL ESTILO."
     ],
-    "bytes": 43284
+    "bytes": 43282
   },
   {
     "key": "salon-c",
@@ -242,7 +242,7 @@
       "Un momento",
       "solo para ti."
     ],
-    "bytes": 43279
+    "bytes": 43277
   },
   {
     "key": "restaurante-a",
@@ -258,7 +258,7 @@
       "EL FUEGO",
       "NOS REÚNE."
     ],
-    "bytes": 43620
+    "bytes": 43618
   },
   {
     "key": "restaurante-b",
@@ -274,7 +274,7 @@
       "Quédate",
       "un poco más."
     ],
-    "bytes": 44129
+    "bytes": 44127
   },
   {
     "key": "restaurante-c",
@@ -290,6 +290,346 @@
       "MUCHO SABOR.",
       "CERO EXCUSAS."
     ],
-    "bytes": 43573
+    "bytes": 43571
+  },
+  {
+    "key": "ferreteria-a",
+    "rubro": "ferreteria",
+    "variant": "a",
+    "folder": "ejemplo-ferreteria-a",
+    "name": "Ferro",
+    "style": "Centro de proyectos",
+    "detail": "Almacén cinematográfico, contador de categorías y cotización directa.",
+    "bg": "#161a18",
+    "ink": "#f4f0e5",
+    "headline": [
+      "CONSTRUYE",
+      "SIN PAUSAS."
+    ],
+    "bytes": 59988
+  },
+  {
+    "key": "ferreteria-b",
+    "rubro": "ferreteria",
+    "variant": "b",
+    "folder": "ejemplo-ferreteria-b",
+    "name": "Trazo",
+    "style": "Catálogo técnico",
+    "detail": "Retícula de plano técnico, ficha de producto y navegación de precisión.",
+    "bg": "#e8ece8",
+    "ink": "#18372f",
+    "headline": [
+      "MIDE.",
+      "ELIGE.",
+      "CONSTRUYE."
+    ],
+    "bytes": 60178
+  },
+  {
+    "key": "ferreteria-c",
+    "rubro": "ferreteria",
+    "variant": "c",
+    "folder": "ejemplo-ferreteria-c",
+    "name": "Norte Suministros",
+    "style": "Distribución ágil",
+    "detail": "Cartel comercial, estantería visual y módulos de abastecimiento.",
+    "bg": "#f5efe2",
+    "ink": "#1f2520",
+    "headline": [
+      "LO QUE TU OBRA",
+      "NECESITA."
+    ],
+    "bytes": 59988
+  },
+  {
+    "key": "colegio-a",
+    "rubro": "colegio",
+    "variant": "a",
+    "folder": "ejemplo-colegio-a",
+    "name": "Lumen",
+    "style": "Campus contemporáneo",
+    "detail": "Portada institucional editorial, arcos y recorrido académico por etapas.",
+    "bg": "#f1eee4",
+    "ink": "#233b32",
+    "headline": [
+      "APRENDER",
+      "ES DESCUBRIR."
+    ],
+    "bytes": 59616
+  },
+  {
+    "key": "colegio-b",
+    "rubro": "colegio",
+    "variant": "b",
+    "folder": "ejemplo-colegio-b",
+    "name": "Nido",
+    "style": "Aprendizaje creativo",
+    "detail": "Cuaderno interactivo, notas ilustradas y bloques de experiencia escolar.",
+    "bg": "#f7eddb",
+    "ink": "#343052",
+    "headline": [
+      "PREGUNTAR.",
+      "CREAR.",
+      "CRECER."
+    ],
+    "bytes": 60073
+  },
+  {
+    "key": "colegio-c",
+    "rubro": "colegio",
+    "variant": "c",
+    "folder": "ejemplo-colegio-c",
+    "name": "Prisma",
+    "style": "Educación para el futuro",
+    "detail": "Sistema modular oscuro, ruta de aprendizaje y paneles de competencias.",
+    "bg": "#101c35",
+    "ink": "#f1f5ff",
+    "headline": [
+      "HOY APRENDEN.",
+      "MAÑANA TRANSFORMAN."
+    ],
+    "bytes": 59711
+  },
+  {
+    "key": "laboratorio-a",
+    "rubro": "laboratorio",
+    "variant": "a",
+    "folder": "ejemplo-laboratorio-a",
+    "name": "Nexo Lab",
+    "style": "Precisión clínica",
+    "detail": "Portada clínica luminosa, línea de proceso y consulta de servicios.",
+    "bg": "#edf6f6",
+    "ink": "#173a44",
+    "headline": [
+      "RESULTADOS CLAROS.",
+      "PROCESOS CUIDADOS."
+    ],
+    "bytes": 59787
+  },
+  {
+    "key": "laboratorio-b",
+    "rubro": "laboratorio",
+    "variant": "b",
+    "folder": "ejemplo-laboratorio-b",
+    "name": "Materia",
+    "style": "Ciencia humana",
+    "detail": "Laboratorio oscuro editorial, cápsulas de información y profundidad visual.",
+    "bg": "#10181c",
+    "ink": "#f2f7f4",
+    "headline": [
+      "CIENCIA QUE",
+      "ACOMPAÑA."
+    ],
+    "bytes": 60101
+  },
+  {
+    "key": "laboratorio-c",
+    "rubro": "laboratorio",
+    "variant": "c",
+    "folder": "ejemplo-laboratorio-c",
+    "name": "Vector",
+    "style": "Diagnóstico conectado",
+    "detail": "Panel de resultados conceptual, tarjetas flotantes y retícula tecnológica.",
+    "bg": "#eaf0ff",
+    "ink": "#152a57",
+    "headline": [
+      "INFORMACIÓN",
+      "QUE ORIENTA."
+    ],
+    "bytes": 60049
+  },
+  {
+    "key": "gimnasio-a",
+    "rubro": "gimnasio",
+    "variant": "a",
+    "folder": "ejemplo-gimnasio-a",
+    "name": "Pulso",
+    "style": "Movimiento funcional",
+    "detail": "Diagonal cinética, fotografía deportiva y recorrido de entrenamiento.",
+    "bg": "#111512",
+    "ink": "#f4f1e8",
+    "headline": [
+      "MUÉVETE",
+      "CON INTENCIÓN."
+    ],
+    "bytes": 59731
+  },
+  {
+    "key": "gimnasio-b",
+    "rubro": "gimnasio",
+    "variant": "b",
+    "folder": "ejemplo-gimnasio-b",
+    "name": "Carga",
+    "style": "Strength club",
+    "detail": "Tipografía brutalista, campaña a pantalla completa y tarjetas de alto contraste.",
+    "bg": "#e95b34",
+    "ink": "#171817",
+    "headline": [
+      "MÁS FUERTE.",
+      "MÁS TUYO."
+    ],
+    "bytes": 59476
+  },
+  {
+    "key": "gimnasio-c",
+    "rubro": "gimnasio",
+    "variant": "c",
+    "folder": "ejemplo-gimnasio-c",
+    "name": "Círculo",
+    "style": "Club de bienestar",
+    "detail": "Órbitas gráficas, módulos comunitarios y agenda de clases.",
+    "bg": "#eeeaf9",
+    "ink": "#302855",
+    "headline": [
+      "ENTRENA.",
+      "CONECTA.",
+      "REPITE."
+    ],
+    "bytes": 60064
+  },
+  {
+    "key": "hotel-a",
+    "rubro": "hotel",
+    "variant": "a",
+    "folder": "ejemplo-hotel-a",
+    "name": "Casa Marea",
+    "style": "Refugio tropical",
+    "detail": "Patio inmersivo, capas de profundidad y consulta de estancia.",
+    "bg": "#18362f",
+    "ink": "#f6efe1",
+    "headline": [
+      "BAJA EL RITMO.",
+      "LLEGA A TI."
+    ],
+    "bytes": 59837
+  },
+  {
+    "key": "hotel-b",
+    "rubro": "hotel",
+    "variant": "b",
+    "folder": "ejemplo-hotel-b",
+    "name": "Bruma",
+    "style": "Estancia editorial",
+    "detail": "Revista de viaje, tarjeta de reserva y composición de habitación.",
+    "bg": "#eee9df",
+    "ink": "#302f2a",
+    "headline": [
+      "QUÉDATE",
+      "CERCA DE TODO."
+    ],
+    "bytes": 59827
+  },
+  {
+    "key": "hotel-c",
+    "rubro": "hotel",
+    "variant": "c",
+    "folder": "ejemplo-hotel-c",
+    "name": "Postal",
+    "style": "Escapada local",
+    "detail": "Postales superpuestas, sello viajero y recorrido visual por espacios.",
+    "bg": "#d9ecf0",
+    "ink": "#194853",
+    "headline": [
+      "TU PRÓXIMA",
+      "HISTORIA EMPIEZA AQUÍ."
+    ],
+    "bytes": 59724
+  },
+  {
+    "key": "bufete-a",
+    "rubro": "bufete",
+    "variant": "a",
+    "folder": "ejemplo-bufete-a",
+    "name": "Atria Legal",
+    "style": "Consejo cercano",
+    "detail": "Retrato editorial sobrio, manifiesto y áreas de práctica ordenadas.",
+    "bg": "#eeeae1",
+    "ink": "#2b312d",
+    "headline": [
+      "CLARIDAD PARA",
+      "DECIDIR."
+    ],
+    "bytes": 60032
+  },
+  {
+    "key": "bufete-b",
+    "rubro": "bufete",
+    "variant": "b",
+    "folder": "ejemplo-bufete-b",
+    "name": "Códice",
+    "style": "Firma de autor",
+    "detail": "Editorial legal en negro, tipografía monumental y navegación por casos.",
+    "bg": "#121312",
+    "ink": "#f2eee5",
+    "headline": [
+      "EL CONTEXTO",
+      "LO CAMBIA TODO."
+    ],
+    "bytes": 59843
+  },
+  {
+    "key": "bufete-c",
+    "rubro": "bufete",
+    "variant": "c",
+    "folder": "ejemplo-bufete-c",
+    "name": "Norte Jurídico",
+    "style": "Práctica estratégica",
+    "detail": "Panel jurídico estructurado, expedientes abstractos y consulta guiada.",
+    "bg": "#e7edf2",
+    "ink": "#17304d",
+    "headline": [
+      "ANTICIPAR.",
+      "ORDENAR.",
+      "ACTUAR."
+    ],
+    "bytes": 60122
+  },
+  {
+    "key": "contable-a",
+    "rubro": "contable",
+    "variant": "a",
+    "folder": "ejemplo-contable-a",
+    "name": "Libro",
+    "style": "Contabilidad precisa",
+    "detail": "Libro mayor visual, retícula numérica y módulos de gestión.",
+    "bg": "#f2f0e8",
+    "ink": "#20352e",
+    "headline": [
+      "CUENTAS CLARAS.",
+      "NEGOCIO EN MARCHA."
+    ],
+    "bytes": 59921
+  },
+  {
+    "key": "contable-b",
+    "rubro": "contable",
+    "variant": "b",
+    "folder": "ejemplo-contable-b",
+    "name": "Balance",
+    "style": "Asesoría cercana",
+    "detail": "Composición luminosa, balanza abstracta y asesoría sin fricción.",
+    "bg": "#eaf4f0",
+    "ink": "#173e3c",
+    "headline": [
+      "ENTIENDE HOY.",
+      "DECIDE MEJOR."
+    ],
+    "bytes": 60045
+  },
+  {
+    "key": "contable-c",
+    "rubro": "contable",
+    "variant": "c",
+    "folder": "ejemplo-contable-c",
+    "name": "Cifra",
+    "style": "Control empresarial",
+    "detail": "Tablero ejecutivo, geometría de datos y bloques de servicio.",
+    "bg": "#101c2b",
+    "ink": "#edf4f9",
+    "headline": [
+      "DATOS EN ORDEN.",
+      "DECISIONES EN FOCO."
+    ],
+    "bytes": 60020
   }
 ]
