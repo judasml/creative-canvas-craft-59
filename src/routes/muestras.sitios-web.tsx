@@ -4,7 +4,7 @@ import coleccion from "../../public/plantillas/catalogo-variantes/coleccion.json
 
 const TITULO = "Sitios web de muestra incluidos en su plan — MK Web Studio";
 const DESCRIPCION =
-  "18 diseños de sitios web para 6 tipos de negocio. Todos incluidos en su plan, sin costo extra.";
+  "39 diseños de sitios web para 13 tipos de negocio. Todos incluidos en su plan, sin costo extra.";
 
 export const Route = createFileRoute("/muestras/sitios-web")({
   head: () => ({
@@ -45,7 +45,7 @@ function Pagina() {
         Diseños listos para su negocio
       </h1>
       <p className="parrafo mt-8 max-w-[62ch] text-[19px]">
-        18 diseños de muestra para 6 tipos de negocio. Ábralos y véalos por
+        39 diseños de muestra para 13 tipos de negocio. Ábralos y véalos por
         dentro: todos están incluidos en su plan.
       </p>
 
