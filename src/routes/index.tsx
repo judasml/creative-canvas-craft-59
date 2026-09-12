@@ -78,7 +78,10 @@ function Index() {
       <Preguntas />
 
 
-<section className="relative flex min-h-screen items-center overflow-hidden">
+      <section
+        id="diagnostico"
+        className="relative flex min-h-screen items-center overflow-hidden"
+      >
         <img
           src={oficinaAsset.url}
           alt="Equipo de MK Web Studio en su oficina en Tegucigalpa"
