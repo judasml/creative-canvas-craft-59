@@ -30,7 +30,7 @@ function Pagina() {
         {
           titulo: "Carga antes de que se aburra",
           texto:
-            "Sin plantillas pesadas ni animaciones que traban el teléfono. Si tarda más de tres segundos, ya se regresó a Google.",
+            "Sin peso de más ni animaciones que traban el teléfono. Si tarda más de tres segundos, ya se regresó a Google.",
         },
         {
           titulo: "Una sola acción",
@@ -45,7 +45,7 @@ function Pagina() {
         {
           titulo: "Se ve como su negocio",
           texto:
-            "Sus colores, sus fotos y su tono. No la misma plantilla que usan otros cincuenta negocios del país.",
+            "Sus colores, sus fotos y su tono. Diseñado para su rubro, no para cualquier negocio.",
         },
       ]}
     />
