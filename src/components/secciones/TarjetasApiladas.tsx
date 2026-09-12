@@ -19,18 +19,9 @@ const TARJETAS = [
     n: "03",
     titulo: "El servicio mensual",
     cuerpo:
-      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Un sitio sin mantenimiento se cae, se vence el dominio o deja de ser seguro. Esto es lo que hace que el trabajo del primer mes siga sirviendo en el mes veinte.",
+      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Un sitio sin mantenimiento se cae, se vence el dominio o deja de ser seguro. Cada mes usted recibe por WhatsApp un reporte que le dice a quién le está ganando, a quién puede alcanzar y qué dicen los clientes de su competencia. Esto es lo que hace que el trabajo del primer mes siga sirviendo en el mes veinte.",
     clase: "bg-hueso text-navy border border-gris",
     top: "12vh",
-  },
-  {
-    n: "04",
-    titulo: "Identidad y publicaciones",
-    cuerpo:
-      "Cuando su ficha y su sitio ya están firmes, el siguiente paso es que todo lo que publique se vea del mismo negocio: colores, tipografía y formatos propios. Todavía no lo vendemos. Se lo decimos ahora para que sepa hacia dónde va esto.",
-    clase: "bg-navy text-white",
-    top: "15vh",
-    proximamente: true,
   },
 ];
 
