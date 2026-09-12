@@ -27,7 +27,7 @@ const TARJETAS = [
     n: "04",
     titulo: "Identidad y publicaciones",
     cuerpo:
-      "Cuando su ficha y su sitio ya están firmes, el siguiente paso es que todo lo que publique se vea del mismo negocio: colores, tipografía y plantillas propias. Todavía no lo vendemos. Se lo decimos ahora para que sepa hacia dónde va esto.",
+      "Cuando su ficha y su sitio ya están firmes, el siguiente paso es que todo lo que publique se vea del mismo negocio: colores, tipografía y formatos propios. Todavía no lo vendemos. Se lo decimos ahora para que sepa hacia dónde va esto.",
     clase: "bg-navy text-white",
     top: "15vh",
     proximamente: true,

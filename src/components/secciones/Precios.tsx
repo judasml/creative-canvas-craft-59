@@ -8,7 +8,7 @@ export function Precios() {
       <div className="contenedor">
         <p className="etiqueta flex items-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-          Precios completos. Sin &quot;desde&quot;. Sin letra chiquita.
+          Precios completos. Todo está incluido. Sin letra chiquita.
         </p>
         <h2 className="editorial mt-6 text-[clamp(34px,6vw,64px)]">
           Los dos precios están aquí abajo.
@@ -16,14 +16,19 @@ export function Precios() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-[var(--radio)] border border-gris bg-white p-8">
-            <p className="etiqueta text-gris-texto">Puerta 1 · Se entrega en días</p>
-            <p className="editorial mt-6 text-[64px] leading-none">L 3,500</p>
-            <p className="etiqueta mt-3 text-[13px] text-gris-texto">Pago único</p>
+            <p className="etiqueta text-gris-texto">Entrada · Se entrega en días</p>
+            <p className="editorial mt-6 text-[64px] leading-none">L 3,750</p>
+            <p className="etiqueta mt-3 text-[13px] text-gris-texto">
+              Pago único · mitad al arrancar, mitad al publicar
+            </p>
             <ul className="mt-8">
               {[
-                "Su ficha de Google completa y correcta — alcance cerrado de 8 puntos",
-                "Los primeros 3 meses de servicio incluidos",
-                "Su primer reporte",
+                "Sitio publicado y diseñado para su rubro",
+                "Creación o mejoramiento de su ficha de Google",
+                "Dominio a nombre suyo",
+                "Hosting y monitoreo",
+                "Todos sus accesos entregados por escrito",
+                "Los primeros 2 meses de servicio incluidos",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -34,30 +39,20 @@ export function Precios() {
           </div>
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
-            <p className="etiqueta text-gris-texto">Puerta 2 · Sitio propio</p>
-            <div className="mt-6 flex flex-col gap-4">
-              <div className="flex items-baseline gap-4">
-                <p className="editorial text-[64px] leading-none">L 7,500</p>
-                <p className="etiqueta text-gris-texto">Presencia</p>
-              </div>
-              <div className="flex items-baseline gap-4">
-                <p className="editorial text-[64px] leading-none">L 12,000</p>
-                <p className="etiqueta text-gris-texto">
-                  Negocio · más secciones y servicios
-                </p>
-              </div>
-            </div>
+            <p className="etiqueta text-gris-texto">
+              Premium · Lo mismo, con más páginas y secciones
+            </p>
+            <p className="editorial mt-6 text-[64px] leading-none">L 7,500</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-              Mitad al arrancar, mitad al publicar
+              Pago único · mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
-                "Sitio publicado y hecho para el celular",
-                "Ficha de Google configurada",
-                "Dominio del primer año y hosting",
-                "Monitoreo",
-                "Todos sus accesos entregados por escrito",
-                "Los primeros 3 meses de servicio incluidos",
+                "Todo lo de Entrada",
+                "Más páginas y más secciones",
+                "Más servicios o más productos en pantalla",
+                "Ficha de Google atendida el primer día",
+                "Los primeros 2 meses de servicio incluidos",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -66,18 +61,6 @@ export function Precios() {
               ))}
             </ul>
           </div>
-        </div>
-
-        <div className="mt-6 border-l-[3px] border-coral bg-[#ECEEF1] p-6">
-          <p className="parrafo">
-            ¿Ya tiene el servicio activo? El sitio le cuesta L 6,000 (Presencia) o
-            L 10,000 (Negocio).
-          </p>
-          <p className="parrafo mt-4 text-gris-texto">
-            No es una promoción. Es que la ficha ya está configurada, la reunión ya
-            la hicimos y su contenido ya está en mano: son unas cuatro horas menos
-            de trabajo, y no se las vamos a cobrar.
-          </p>
         </div>
 
         <p className="etiqueta mt-10 text-center text-gris-texto">
@@ -92,7 +75,7 @@ export function Precios() {
             L 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-            Se cobra L 1,800 cada tres meses, por adelantado
+            Con opción trimestral: L 1,800 por adelantado
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
@@ -111,8 +94,6 @@ export function Precios() {
           </ul>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
-            Si paga 12 meses por adelantado, un mes va incluido: L 6,600.
-            <br />
             Modificación adicional: L 200 — o cinco por L 800. Ficha adicional de
             otra sucursal: L 300 al mes.
           </p>
