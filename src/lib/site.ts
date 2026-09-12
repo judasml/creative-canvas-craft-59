@@ -9,7 +9,7 @@ export const URL_WHATSAPP = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURICo
 
 export const TEXTO_CTA = "Hablar por WhatsApp";
 
-export const URL_AUDITOR = "https://ejemplo.org/auditor"; // [PENDIENTE] URL pública del auditor
+export const URL_AUDITOR = ""; // [PENDIENTE] URL pública del auditor
 export const TEXTO_AUDITOR = "Quiero ver mi diagnóstico";
 
 export const CORREO = "mkwebstudiohn@gmail.com";
