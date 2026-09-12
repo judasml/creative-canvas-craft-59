@@ -11,22 +11,21 @@ export function Precios() {
           Precios completos. Todo está incluido. Sin letra chiquita.
         </p>
         <h2 className="editorial mt-6 text-[clamp(34px,6vw,64px)]">
-          Los dos precios están aquí abajo.
+          Todo lo que cuesta está aquí abajo.
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-[var(--radio)] border border-gris bg-white p-8">
-            <p className="etiqueta text-gris-texto">Entrada · Se entrega en días</p>
+            <p className="etiqueta text-gris-texto">Entrada</p>
             <p className="editorial mt-6 text-[64px] leading-none">L 3,750</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-              Pago único · mitad al arrancar, mitad al publicar
+              Mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
-                "Sitio publicado y diseñado para su rubro",
+                "Sitio publicado, diseñado para su rubro y hecho para el celular",
                 "Creación o mejoramiento de su ficha de Google",
-                "Dominio a nombre suyo",
-                "Hosting y monitoreo",
+                "Dominio a nombre suyo, hosting y monitoreo",
                 "Todos sus accesos entregados por escrito",
                 "Los primeros 2 meses de servicio incluidos",
               ].map((l) => (
@@ -39,20 +38,16 @@ export function Precios() {
           </div>
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
-            <p className="etiqueta text-gris-texto">
-              Premium · Lo mismo, con más páginas y secciones
-            </p>
+            <p className="etiqueta text-gris-texto">Premium</p>
             <p className="editorial mt-6 text-[64px] leading-none">L 7,500</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-              Pago único · mitad al arrancar, mitad al publicar
+              Mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
                 "Todo lo de Entrada",
                 "Más páginas y más secciones",
-                "Más servicios o más productos en pantalla",
-                "Ficha de Google atendida el primer día",
-                "Los primeros 2 meses de servicio incluidos",
+                "Para negocios con varios servicios o varias áreas",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
