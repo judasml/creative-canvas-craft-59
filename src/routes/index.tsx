@@ -8,6 +8,7 @@ import { Muestras } from "@/components/secciones/Muestras";
 import { TarjetasApiladas } from "@/components/secciones/TarjetasApiladas";
 import { Precios } from "@/components/secciones/Precios";
 import { Cintas } from "@/components/secciones/Cintas";
+import { Preguntas } from "@/components/secciones/Preguntas";
 import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 
 const TITULO =
@@ -73,11 +74,13 @@ function Index() {
       <TarjetasApiladas />
       <Precios />
       <Cintas />
+      <Preguntas />
+
 
 <section className="relative flex min-h-screen items-center overflow-hidden">
         <img
           src={oficinaAsset.url}
-          alt="Interior del estudio de MK Web Studio con su equipo trabajando"
+          alt="Equipo de MK Web Studio en su oficina en Tegucigalpa"
           loading="lazy"
           width={1672}
           height={941}
@@ -87,12 +90,12 @@ function Index() {
         <div className="contenedor relative text-center">
           <p className="etiqueta text-coral">Sin costo y sin compromiso</p>
           <h2 className="editorial mx-auto mt-6 max-w-[18ch] text-[clamp(36px,7vw,76px)] text-white">
-            Analizamos su negocio y le mandamos un video de diagnóstico.
+            Vea su negocio como lo ve un cliente.
           </h2>
           <p className="mx-auto mt-8 max-w-[52ch] text-white/80">
-            Le grabamos la pantalla buscando su negocio en Google. Va a ver lo que
-            ve un cliente — y lo que ve de su competencia. Sin reunión, sin llamada
-            y sin que tenga que llenar nada.
+            Escriba el nombre de su negocio y vea cómo aparece en Google al lado
+            de su competencia. Sin registrarse, sin llenar nada y sin que nadie lo
+            llame. Si después quiere hablar, aquí está el WhatsApp.
           </p>
           <div className="mt-10">
             <div className="mb-6 empty:hidden">
@@ -101,7 +104,7 @@ function Index() {
             <CtaWhatsApp tono="oscuro" />
           </div>
           <p className="etiqueta mt-4 text-[13px] text-white/60">
-            Le respondemos el mismo día.
+            Le contesta [NOMBRE], no un sistema automático. El mismo día.
           </p>
         </div>
       </section>
