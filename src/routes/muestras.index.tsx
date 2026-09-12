@@ -39,7 +39,7 @@ const OPCIONES = [
   {
     titulo: "Páginas Premium",
     detalle:
-      "Tres experiencias en movimiento: efectos, video y animación para marcas que quieren destacar.",
+      "Tres experiencias en movimiento: efectos y animación para marcas que quieren destacar.",
     ruta: "/catalogo-premium",
     img: "/premium/assets/preview-aurai.webp",
     alt: "Vista previa de una página premium con movimiento",
