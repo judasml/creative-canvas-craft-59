@@ -11,22 +11,21 @@ export function Precios() {
           Precios completos. Todo está incluido. Sin letra chiquita.
         </p>
         <h2 className="editorial mt-6 text-[clamp(34px,6vw,64px)]">
-          Los dos precios están aquí abajo.
+          Todo lo que cuesta está aquí abajo.
         </h2>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-[var(--radio)] border border-gris bg-white p-8">
-            <p className="etiqueta text-gris-texto">Entrada · Se entrega en días</p>
+            <p className="etiqueta text-gris-texto">Entrada</p>
             <p className="editorial mt-6 text-[64px] leading-none">L 3,750</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-              Pago único · mitad al arrancar, mitad al publicar
+              Mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
-                "Sitio publicado y diseñado para su rubro",
+                "Sitio publicado, diseñado para su rubro y hecho para el celular",
                 "Creación o mejoramiento de su ficha de Google",
-                "Dominio a nombre suyo",
-                "Hosting y monitoreo",
+                "Dominio a nombre suyo, hosting y monitoreo",
                 "Todos sus accesos entregados por escrito",
                 "Los primeros 2 meses de servicio incluidos",
               ].map((l) => (
@@ -39,20 +38,16 @@ export function Precios() {
           </div>
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
-            <p className="etiqueta text-gris-texto">
-              Premium · Lo mismo, con más páginas y secciones
-            </p>
+            <p className="etiqueta text-gris-texto">Premium</p>
             <p className="editorial mt-6 text-[64px] leading-none">L 7,500</p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-              Pago único · mitad al arrancar, mitad al publicar
+              Mitad al arrancar, mitad al publicar
             </p>
             <ul className="mt-8">
               {[
                 "Todo lo de Entrada",
                 "Más páginas y más secciones",
-                "Más servicios o más productos en pantalla",
-                "Ficha de Google atendida el primer día",
-                "Los primeros 2 meses de servicio incluidos",
+                "Para negocios con varios servicios o varias áreas",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -75,16 +70,16 @@ export function Precios() {
             L 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-            Con opción trimestral: L 1,800 por adelantado
+            O L 1,800 cada tres meses, por adelantado
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
             {[
-              "Su ficha atendida: horarios de feriados, fotos nuevas, publicaciones",
-              "Sus reseñas respondidas",
-              "Reporte cada mes",
-              "2 modificaciones al mes en su sitio, resueltas en 48 horas",
-              "Sitio en línea, dominio y hosting al día, monitoreo",
+              "El rival alcanzable. A quién puede adelantar y cuántas reseñas le faltan para lograrlo.",
+              "El mapa de su zona. Quién le gana y a quién le gana, en rojo y verde.",
+              "Voz del cliente. Qué elogian y qué critican los clientes de su competencia.",
+              "Salud de su ficha, de 0 a 100. Un número que sube cada mes.",
+              "Código QR para reseñas. Lo pega en la caja y sus clientes le dejan reseña desde el celular.",
             ].map((l) => (
               <li key={l} className="flex gap-3">
                 <span className="mt-2 size-[7px] shrink-0 bg-lima" aria-hidden="true" />
@@ -92,6 +87,12 @@ export function Precios() {
               </li>
             ))}
           </ul>
+
+          <p className="etiqueta mt-6 text-[13px] text-[#8A9BB8]">
+            Además: su ficha atendida, sus reseñas respondidas, sitio en línea con
+            dominio y hosting al día, y 2 modificaciones al mes resueltas en 48
+            horas.
+          </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
             Modificación adicional: L 200 — o cinco por L 800. Ficha adicional de
@@ -106,7 +107,7 @@ export function Precios() {
 
       <div className="contenedor mt-[var(--paso)] grid gap-10 md:grid-cols-2">
         <div>
-          <h3 className="editorial text-[28px]">Su cuota mensual no le sube nunca.</h3>
+          <h3 className="editorial text-[28px]">Su precio no sube mientras siga activo.</h3>
           <p className="parrafo mt-4 text-gris-texto">
             El precio que contrata hoy es el que paga en tres años. Si mañana
             subimos el precio, sube para los nuevos, no para usted.

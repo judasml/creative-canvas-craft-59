@@ -19,18 +19,9 @@ const TARJETAS = [
     n: "03",
     titulo: "El servicio mensual",
     cuerpo:
-      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Un sitio sin mantenimiento se cae, se vence el dominio o deja de ser seguro. Esto es lo que hace que el trabajo del primer mes siga sirviendo en el mes veinte.",
+      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Un sitio sin mantenimiento se cae, se vence el dominio o deja de ser seguro. Cada mes usted recibe por WhatsApp un reporte que le dice a quién le está ganando, a quién puede alcanzar y qué dicen los clientes de su competencia. Esto es lo que hace que el trabajo del primer mes siga sirviendo en el mes veinte.",
     clase: "bg-hueso text-navy border border-gris",
     top: "12vh",
-  },
-  {
-    n: "04",
-    titulo: "Identidad y publicaciones",
-    cuerpo:
-      "Cuando su ficha y su sitio ya están firmes, el siguiente paso es que todo lo que publique se vea del mismo negocio: colores, tipografía y formatos propios. Todavía no lo vendemos. Se lo decimos ahora para que sepa hacia dónde va esto.",
-    clase: "bg-navy text-white",
-    top: "15vh",
-    proximamente: true,
   },
 ];
 
@@ -40,7 +31,7 @@ export function TarjetasApiladas() {
       <div className="contenedor">
         <p className="etiqueta flex items-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-          Por qué estas cuatro cosas y en este orden
+          Por qué estas tres cosas y en este orden
         </p>
       </div>
 
@@ -53,11 +44,6 @@ export function TarjetasApiladas() {
           >
             <div className="flex items-center justify-between">
               <span className="etiqueta opacity-70">{t.n}</span>
-              {t.proximamente && (
-                <span className="etiqueta text-[12px] text-lima">
-                  Próximamente
-                </span>
-              )}
             </div>
             <div>
               <h3 className="editorial text-[clamp(34px,6vw,44px)]">
