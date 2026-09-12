@@ -1,12 +1,14 @@
-import { TEXTO_CTA, URL_AUDITOR, URL_WHATSAPP } from "@/lib/site";
+import { TEXTO_CTA, URL_WHATSAPP } from "@/lib/site";
 
 export function CtaWhatsApp({
   tamano = "grande",
   tono = "claro",
+  secundario = false,
   className = "",
 }: {
   tamano?: "grande" | "compacto";
   tono?: "claro" | "oscuro";
+  secundario?: boolean;
   className?: string;
 }) {
   const base =
@@ -16,8 +18,7 @@ export function CtaWhatsApp({
       ? "h-14 px-8 text-[17px]"
       : "h-10 px-4 text-[13px] uppercase tracking-tight";
 
-  // Con auditor disponible, WhatsApp pasa a segundo paso (contorno).
-  const estilo = URL_AUDITOR
+  const estilo = secundario
     ? tono === "oscuro"
       ? "border-2 border-hueso text-hueso"
       : "border-2 border-navy text-navy"

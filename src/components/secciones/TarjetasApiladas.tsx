@@ -27,7 +27,7 @@ const TARJETAS = [
 
 export function TarjetasApiladas() {
   return (
-    <section id="metodo" className="py-[var(--paso)]">
+    <section id="metodo" className="pt-[var(--paso)] pb-0">
       <div className="contenedor">
         <p className="etiqueta flex items-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
@@ -39,7 +39,7 @@ export function TarjetasApiladas() {
         {TARJETAS.map((t) => (
           <div
             key={t.n}
-            className={`sticky mx-auto mb-6 flex h-[85vh] w-[92%] flex-col justify-between rounded-2xl p-8 shadow-[0_-8px_30px_-12px_rgba(0,0,0,.35)] md:p-14 ${t.clase}`}
+            className={`sticky mx-auto mb-6 flex h-[85vh] w-[92%] flex-col justify-between rounded-2xl p-8 shadow-[0_-8px_30px_-12px_rgba(0,0,0,.35)] last:mb-0 md:p-14 ${t.clase}`}
             style={{ top: t.top }}
           >
             <div className="flex items-center justify-between">
@@ -54,7 +54,6 @@ export function TarjetasApiladas() {
           </div>
         ))}
       </div>
-      <div className="h-[40vh]" aria-hidden="true" />
     </section>
   );
 }

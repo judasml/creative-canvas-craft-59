@@ -32,13 +32,13 @@ export function Muestras() {
     <section id="muestras" className="cuadricula contenedor py-[var(--paso)]">
       <p className="etiqueta flex items-center gap-3 text-gris-texto">
         <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-        No tenemos testimonios todavía. Tenemos esto.
+        Así trabajamos. Ábralo y véalo por dentro.
       </p>
 
       <p className="parrafo mt-6 text-[19px]">
-        Somos nuevos y no vamos a inventar clientes. Lo que sí podemos mostrarle
-        es exactamente cómo trabajamos: abra cualquiera de estas tres y véalo por
-        dentro.
+        Tres piezas para que vea exactamente qué recibe: cómo queda una ficha de
+        Google bien hecha, cómo se ve su negocio en un celular, y la misma ficha
+        antes y después.
       </p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -83,7 +83,8 @@ export function Muestras() {
             <span aria-hidden="true">↗</span>
           </a>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            18 diseños de muestra, cada uno hecho para un tipo de negocio.
+            39 diseños para 13 tipos de negocio. Si el suyo no aparece,
+            pregúntenos: se adapta.
           </p>
         </div>
 
@@ -96,7 +97,7 @@ export function Muestras() {
             <span aria-hidden="true">→</span>
           </EnlaceInterno>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            Tres experiencias en movimiento.
+            Tres muestras en movimiento. Cualquiera se adapta a su rubro.
           </p>
         </div>
       </div>
