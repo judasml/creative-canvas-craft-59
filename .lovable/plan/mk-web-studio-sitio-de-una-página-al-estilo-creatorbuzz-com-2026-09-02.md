@@ -11,14 +11,14 @@ Construcción completa según el brief, con la estructura, tipografía, ritmo y 
 
 ## Estructura de páginas
 
-| Ruta | Contenido |
-|---|---|
-| `/` | Página completa (secciones abajo) |
-| `/muestras/ficha-de-google` | Anatomía de una ficha bien hecha |
-| `/muestras/sitio-en-celular` | Anatomía de un sitio en celular |
-| `/muestras/antes-y-despues` | Comparación lado a lado |
-| `/terminos` | Términos y condiciones |
-| `/privacidad` | Política de privacidad |
+| Ruta                         | Contenido                         |
+| ---------------------------- | --------------------------------- |
+| `/`                          | Página completa (secciones abajo) |
+| `/muestras/ficha-de-google`  | Anatomía de una ficha bien hecha  |
+| `/muestras/sitio-en-celular` | Anatomía de un sitio en celular   |
+| `/muestras/antes-y-despues`  | Comparación lado a lado           |
+| `/terminos`                  | Términos y condiciones            |
+| `/privacidad`                | Política de privacidad            |
 
 ## Secciones de la portada, en orden
 
@@ -27,10 +27,9 @@ Construcción completa según el brief, con la estructura, tipografía, ritmo y 
 3. Muestras: antetítulo honesto (sin testimonios), párrafo de encuadre y 3 tarjetas 3:4 que navegan con telón.
 4. Enjambre: sección 300vh con sticky; H2 real debajo y canvas 2D encima con ~140 fichas de "basura digital" que se dispersan al bajar (60 sin texto en móvil).
 5. Cuatro tarjetas apiladas (sticky escalonado): ficha de Google, sitio, servicio mensual, e identidad con etiqueta lima `PRÓXIMAMENTE`.
-6. Precios: tarjeta ARRANQUE `L 3,500`, tarjeta SITIO `L 7,500` / `L 12,000` (destacada), nota de descuento por servicio activo, bloque navy con `L 600 al mes` gigante y `L 1,800` pequeño y gris, y las dos promesas.
-7. Doble cinta infinita de rubros (10 fichas, direcciones opuestas, pausa al hover).
-8. CTA final 100vh con fotografía de fondo y velo navy 72%.
-9. Footer navy con tres columnas y la firma gigante `MK WEB STUDIO` recortada a sangre.
+6. Doble cinta infinita de rubros (10 fichas, direcciones opuestas, pausa al hover).
+7. CTA final 100vh con fotografía de fondo y velo navy 72%.
+8. Footer navy con tres columnas y la firma gigante `MK WEB STUDIO` recortada a sangre.
 
 ## Efectos
 
