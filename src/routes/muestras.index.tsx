@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { EnlaceInterno } from "@/components/Telon";
 import ficha from "@/assets/muestra-ficha.jpg";
-import celular from "@/assets/muestra-celular.jpg";
+import sitiosWeb from "@/assets/muestras-sitios-web.webp.asset.json";
 
 const TITULO = "Muestras: fichas de Google y sitios web — MK Web Studio";
 const DESCRIPCION =
@@ -33,8 +33,8 @@ const OPCIONES = [
     detalle:
       "18 diseños de muestra para 6 tipos de negocio. Todos incluidos en su plan.",
     ruta: "/muestras/sitios-web",
-    img: celular,
-    alt: "Sitio de negocio abierto en un celular",
+    img: sitiosWeb.url,
+    alt: "Seis diseños de sitios web de muestra para distintos tipos de negocio",
   },
   {
     titulo: "Páginas Premium",
