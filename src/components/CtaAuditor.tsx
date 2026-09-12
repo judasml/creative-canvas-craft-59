@@ -11,14 +11,13 @@ export function CtaAuditor({
 }) {
   if (!URL_AUDITOR) return null;
 
+  // El diagnóstico es la primera acción del sitio: botón principal.
   const base =
-    "inline-flex items-center justify-center rounded-full border-2 bg-transparent font-bold transition-transform duration-200 hover:-translate-y-0.5";
+    "inline-flex items-center justify-center rounded-full bg-coral font-bold text-navy transition-transform duration-200 hover:-translate-y-0.5";
   const medida =
     tamano === "grande"
       ? "h-14 px-8 text-[17px]"
       : "h-10 px-4 text-[13px] uppercase tracking-tight";
-  const contorno =
-    tono === "oscuro" ? "border-hueso text-hueso" : "border-navy text-navy";
   const nota = tono === "oscuro" ? "text-white/60" : "text-gris-texto";
 
   return (
@@ -27,7 +26,7 @@ export function CtaAuditor({
         href={URL_AUDITOR}
         target="_blank"
         rel="noreferrer"
-        className={`${base} ${medida} ${contorno} ${className}`}
+        className={`${base} ${medida} ${className}`}
       >
         {tamano === "grande" ? TEXTO_AUDITOR : "Auditar"}
       </a>
