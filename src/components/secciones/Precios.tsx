@@ -70,16 +70,16 @@ export function Precios() {
             L 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-            Con opción trimestral: L 1,800 por adelantado
+            O L 1,800 cada tres meses, por adelantado
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
             {[
-              "Su ficha atendida: horarios de feriados, fotos nuevas, publicaciones",
-              "Sus reseñas respondidas",
-              "Reporte cada mes",
-              "2 modificaciones al mes en su sitio, resueltas en 48 horas",
-              "Sitio en línea, dominio y hosting al día, monitoreo",
+              "El rival alcanzable. A quién puede adelantar y cuántas reseñas le faltan para lograrlo.",
+              "El mapa de su zona. Quién le gana y a quién le gana, en rojo y verde.",
+              "Voz del cliente. Qué elogian y qué critican los clientes de su competencia.",
+              "Salud de su ficha, de 0 a 100. Un número que sube cada mes.",
+              "Código QR para reseñas. Lo pega en la caja y sus clientes le dejan reseña desde el celular.",
             ].map((l) => (
               <li key={l} className="flex gap-3">
                 <span className="mt-2 size-[7px] shrink-0 bg-lima" aria-hidden="true" />
@@ -87,6 +87,12 @@ export function Precios() {
               </li>
             ))}
           </ul>
+
+          <p className="etiqueta mt-6 text-[13px] text-[#8A9BB8]">
+            Además: su ficha atendida, sus reseñas respondidas, sitio en línea con
+            dominio y hosting al día, y 2 modificaciones al mes resueltas en 48
+            horas.
+          </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
             Modificación adicional: L 200 — o cinco por L 800. Ficha adicional de
@@ -101,7 +107,7 @@ export function Precios() {
 
       <div className="contenedor mt-[var(--paso)] grid gap-10 md:grid-cols-2">
         <div>
-          <h3 className="editorial text-[28px]">Su cuota mensual no le sube nunca.</h3>
+          <h3 className="editorial text-[28px]">Su precio no sube mientras siga activo.</h3>
           <p className="parrafo mt-4 text-gris-texto">
             El precio que contrata hoy es el que paga en tres años. Si mañana
             subimos el precio, sube para los nuevos, no para usted.

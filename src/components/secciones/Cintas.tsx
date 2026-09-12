@@ -1,19 +1,19 @@
 type Rubro = { nombre: string; tipografia: string; colores: string[] };
 
 const FILA1: Rubro[] = [
-  { nombre: "Barbería", tipografia: "Oswald", colores: ["#141414", "#F0E6D2", "#8C3A2B"] },
-  { nombre: "Restaurante", tipografia: "Playfair Display", colores: ["#2E1B12", "#C8622D", "#F4EDE2"] },
-  { nombre: "Escuela / academia", tipografia: "Poppins", colores: ["#1B4B8F", "#FFC53D", "#FFFFFF"] },
-  { nombre: "Ferretería", tipografia: "Barlow Condensed", colores: ["#F26522", "#3A3A3A", "#111111"] },
   { nombre: "Taller mecánico", tipografia: "Saira", colores: ["#C62026", "#1C1C1C", "#F2C200"] },
+  { nombre: "Restaurante", tipografia: "Playfair Display", colores: ["#2E1B12", "#C8622D", "#F4EDE2"] },
+  { nombre: "Colegio", tipografia: "Poppins", colores: ["#1B4B8F", "#FFC53D", "#FFFFFF"] },
+  { nombre: "Ferretería", tipografia: "Barlow Condensed", colores: ["#F26522", "#3A3A3A", "#111111"] },
+  { nombre: "Clínica", tipografia: "Manrope", colores: ["#0FA3A3", "#F5FBFB", "#2A3B47"] },
 ];
 
 const FILA2: Rubro[] = [
-  { nombre: "Clínica dental", tipografia: "Manrope", colores: ["#0FA3A3", "#F5FBFB", "#2A3B47"] },
-  { nombre: "Gimnasio", tipografia: "Bebas Neue", colores: ["#101010", "#C6FF33", "#5A5A5A"] },
-  { nombre: "Panadería", tipografia: "Bitter", colores: ["#7A4A21", "#E8C88A", "#FBF5EA"] },
-  { nombre: "Farmacia", tipografia: "DM Sans", colores: ["#1D8A4E", "#FFFFFF", "#E8F4EC"] },
+  { nombre: "Consultorio dental", tipografia: "DM Sans", colores: ["#0E7C86", "#FFFFFF", "#E6F4F5"] },
+  { nombre: "Distribuidora", tipografia: "Bebas Neue", colores: ["#101010", "#C6FF33", "#5A5A5A"] },
+  { nombre: "Laboratorio", tipografia: "Bitter", colores: ["#1D8A4E", "#FFFFFF", "#E8F4EC"] },
   { nombre: "Veterinaria", tipografia: "Nunito", colores: ["#3E8E7E", "#FF8B6B", "#FDF6EC"] },
+  { nombre: "Salón", tipografia: "Oswald", colores: ["#141414", "#F0E6D2", "#8C3A2B"] },
 ];
 
 function Ficha({ r }: { r: Rubro }) {
