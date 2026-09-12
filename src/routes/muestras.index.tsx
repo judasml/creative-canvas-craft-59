@@ -31,7 +31,7 @@ const OPCIONES = [
   {
     titulo: "Sitios web",
     detalle:
-      "18 diseños de muestra para 6 tipos de negocio. Todos incluidos en su plan.",
+      "39 diseños de muestra para 13 tipos de negocio. Todos incluidos en su plan.",
     ruta: "/muestras/sitios-web",
     img: sitiosWeb.url,
     alt: "Seis diseños de sitios web de muestra para distintos tipos de negocio",
