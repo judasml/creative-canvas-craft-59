@@ -31,7 +31,7 @@ export function TarjetasApiladas() {
       <div className="contenedor">
         <p className="etiqueta flex items-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-          Por qué estas cuatro cosas y en este orden
+          Por qué estas tres cosas y en este orden
         </p>
       </div>
 
@@ -44,11 +44,6 @@ export function TarjetasApiladas() {
           >
             <div className="flex items-center justify-between">
               <span className="etiqueta opacity-70">{t.n}</span>
-              {t.proximamente && (
-                <span className="etiqueta text-[12px] text-lima">
-                  Próximamente
-                </span>
-              )}
             </div>
             <div>
               <h3 className="editorial text-[clamp(34px,6vw,44px)]">
