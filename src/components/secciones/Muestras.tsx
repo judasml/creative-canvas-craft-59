@@ -83,7 +83,7 @@ export function Muestras() {
             <span aria-hidden="true">↗</span>
           </a>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            18 diseños de muestra para 6 tipos de negocio.
+            18 diseños de muestra, cada uno hecho para un tipo de negocio.
           </p>
         </div>
 
