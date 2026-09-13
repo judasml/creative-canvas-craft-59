@@ -34,8 +34,13 @@ export function PaginaMuestra({
         Demostración hecha por nosotros. No es el trabajo de un cliente real.
       </p>
 
-      <div className="mt-6 overflow-hidden rounded-[var(--radio)] border border-gris bg-navy">
-        <img src={img} alt={alt} loading="lazy" className="w-full object-cover" />
+      <div className="mt-6 overflow-x-auto rounded-[var(--radio)] border border-gris bg-navy">
+        <img
+          src={img}
+          alt={alt}
+          loading="lazy"
+          className="w-full min-w-[720px] object-cover md:min-w-0"
+        />
       </div>
 
       <div className="mt-16 grid gap-10 md:grid-cols-2">
@@ -50,6 +55,13 @@ export function PaginaMuestra({
       <div className="mt-[var(--paso)]">
         <CtaWhatsApp />
       </div>
+
+      <EnlaceInterno
+        to="/muestras"
+        className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
+      >
+        ← Volver
+      </EnlaceInterno>
     </article>
   );
 }

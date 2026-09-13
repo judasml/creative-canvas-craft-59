@@ -6,4 +6,5 @@
 - [x] Portada completa con todas las secciones del brief
 - [x] Subpáginas /muestras/*, /terminos, /privacidad
 - [x] Segunda ronda de comunicación: auditor, muestras, tarjetas y precios
+- [x] Fichas legibles en móvil, navegación de regreso y catálogos alineados con la marca
 - [ ] Metadatos, JSON-LD y datos pendientes (WhatsApp, correo, nombre legal)

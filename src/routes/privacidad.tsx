@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { NOMBRE_LEGAL, CORREO } from "@/lib/site";
+import { EnlaceInterno } from "@/components/Telon";
 
 const TITULO = "Política de privacidad — MK Web Studio";
 const DESCRIPCION =
@@ -23,6 +24,9 @@ const P = "parrafo mt-4 text-gris-texto";
 function Pagina() {
   return (
     <article className="contenedor py-[var(--paso)]">
+      <EnlaceInterno to="/" className="etiqueta text-gris-texto hover:text-coral">
+        ← Volver
+      </EnlaceInterno>
       <h1 className="editorial text-[clamp(36px,7vw,76px)]">
         Política de privacidad
       </h1>
@@ -57,6 +61,12 @@ function Pagina() {
         Puede pedirnos en cualquier momento que borremos la información que tenemos
         suya escribiéndonos a {CORREO}.
       </p>
+      <EnlaceInterno
+        to="/"
+        className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
+      >
+        ← Volver
+      </EnlaceInterno>
     </article>
   );
 }

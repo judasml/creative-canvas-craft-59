@@ -94,6 +94,13 @@ function Pagina() {
           </a>
         ))}
       </div>
+
+      <EnlaceInterno
+        to="/muestras"
+        className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
+      >
+        ← Volver a muestras
+      </EnlaceInterno>
     </article>
   );
 }
