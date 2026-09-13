@@ -20,8 +20,8 @@ function Ficha({ r }: { r: Rubro }) {
   return (
     <div className="flex h-[150px] w-[260px] shrink-0 flex-col justify-between rounded-[var(--radio)] border border-gris bg-white p-4">
       <p
-        className="text-[15px] uppercase leading-tight"
-        style={{ fontFamily: "var(--display)", fontWeight: 700 }}
+        className="text-[15px] leading-[1.05]"
+        style={{ fontFamily: "var(--display)", fontWeight: 300 }}
       >
         {r.nombre}
       </p>

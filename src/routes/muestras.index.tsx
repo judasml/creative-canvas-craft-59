@@ -82,8 +82,8 @@ function Pagina() {
             </div>
             <div className="p-6">
               <h2
-                className="text-[22px] uppercase leading-tight"
-                style={{ fontFamily: "var(--display)", fontWeight: 700 }}
+                className="text-[22px] leading-[1.05]"
+                style={{ fontFamily: "var(--display)", fontWeight: 300 }}
               >
                 {o.titulo}
               </h2>

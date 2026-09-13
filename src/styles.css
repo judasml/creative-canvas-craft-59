@@ -279,7 +279,7 @@ button:focus-visible {
 .enlace .l b {
   height: 1.06em;
   line-height: 1.06em;
-  font-weight: 900;
+  font-weight: 400;
 }
 .enlace .l b:last-child {
   color: var(--coral);
