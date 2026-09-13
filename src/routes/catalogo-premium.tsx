@@ -51,6 +51,15 @@ function Pagina() {
       <div className="mt-14">
         <PremiumCatalog />
       </div>
+
+      <div className="contenedor mt-10">
+        <EnlaceInterno
+          to="/muestras"
+          className="etiqueta inline-flex text-gris-texto hover:text-coral"
+        >
+          ← Volver a muestras
+        </EnlaceInterno>
+      </div>
     </article>
   );
 }

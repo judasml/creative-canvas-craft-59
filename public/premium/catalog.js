@@ -8,4 +8,4 @@ projects.forEach(p=>{io.observe(p);p.querySelector('iframe').addEventListener('l
 viewer.querySelector('button').addEventListener('click',()=>viewer.close());viewer.addEventListener('close',()=>{viewer.querySelector('iframe').removeAttribute('src');projects.forEach(p=>send(p,p.dataset.active==='true'))});
 new ResizeObserver(scale).observe(document.querySelector('.collection'));scale();
 // Allows the optional Lovable React wrapper to avoid nested vertical scrollbars.
-if(parent!==window)new ResizeObserver(()=>parent.postMessage({type:'mk-premium-height',height:document.documentElement.scrollHeight},'*')).observe(document.body);
+if(parent!==window){const shell=document.querySelector('.shell');new ResizeObserver(()=>parent.postMessage({type:'mk-premium-height',height:Math.ceil(shell.getBoundingClientRect().height)},'*')).observe(shell)}

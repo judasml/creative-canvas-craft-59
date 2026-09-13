@@ -95,6 +95,13 @@ function Pagina() {
           </EnlaceInterno>
         ))}
       </div>
+
+      <EnlaceInterno
+        to="/"
+        className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
+      >
+        ← Volver
+      </EnlaceInterno>
     </article>
   );
 }
