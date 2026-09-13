@@ -2,12 +2,69 @@
 
 Construcción completa según el brief, con la estructura, tipografía, ritmo y efectos del sitio de referencia, pero con la marca, el copy y el negocio de MK Web Studio. Cero formularios: todo lleva a WhatsApp.
 
-## Sistema de diseño (exacto al brief)
+## Sistema de diseño
 
-- Color: navy `#011A40`, navy suave `#394C6A`, coral `#FD5C41` (único acento, texto navy encima), hueso `#F6F7F8`, gris `#DEE1E6`, gris texto `#627189`, lima `#AFDE00` solo sobre navy.
-- Tipografía por Google Fonts: Archivo (400/700/900) para rótulos y cuerpo, Newsreader (600 + itálica) para titulares editoriales, IBM Plex Mono para etiquetas y datos. Interlineado 0.80 en rótulos, 0.95 en titulares.
-- Escala: `--paso` clamp(56–128px), `--borde` clamp(20–64px), radio 10px, contenedor 1400px.
-- Todo se define como tokens en `src/styles.css`; ninguna clase de color suelta en componentes.
+### Color
+
+- **Navy eléctrico principal:** `#0A2378`  
+  Color navy por defecto para fondos, bloques principales, navegación y elementos de marca.
+
+- **Navy oscuro:** `#011A40`  
+  Se mantiene para texto sobre fondos claros, coral y lima, donde ofrece mejor contraste.
+
+- **Navy suave:** `#394C6A`  
+  Para elementos secundarios, textos o superficies de menor jerarquía.
+
+- **Coral:** `#FD5C41`  
+  Único acento cálido.  
+  El texto sobre coral debe utilizar `#011A40`.
+
+- **Hueso:** `#F6F7F8`  
+  Fondo principal claro.
+
+- **Gris:** `#DEE1E6`  
+  Bordes, separadores y superficies secundarias.
+
+- **Gris texto:** `#627189`  
+  Texto secundario y descriptivo.
+
+- **Lima:** `#AFDE00`  
+  Acento complementario, principalmente asociado a superficies navy.  
+  Cuando funcione como fondo, utilizar texto `#011A40`.
+
+### Tipografía
+
+- **Familia principal:** Figtree.
+- Utilizar Figtree en toda la interfaz y comunicación visual.
+- **Titulares:** pesos ligeros, composición limpia y tracking ligeramente negativo para una apariencia más compacta.
+- **Texto general:** peso regular.
+- **Etiquetas y microcopy:** minúsculas, peso regular; evitar el uso sistemático de mayúsculas.
+- Referencia estética: tipografías geométricas contemporáneas como General Sans o Satoshi, manteniendo Figtree como fuente oficial por disponibilidad y compatibilidad web.
+
+### Uso de color y contraste
+
+- El navy eléctrico `#0A2378` es el color visual dominante.
+- Para texto sobre coral `#FD5C41` o lima `#AFDE00`, utilizar siempre navy oscuro `#011A40`.
+- No utilizar navy eléctrico como texto sobre coral o lima cuando comprometa el contraste y la accesibilidad.
+
+### Marcas externas
+
+- Cuando aparezca la marca **Google**, mantener siempre sus colores oficiales originales: azul, rojo, amarillo, azul, verde y rojo.
+- No adaptar el logotipo de Google a la paleta de MK Web Studio.
+
+### Escala y layout
+
+- **Espaciado vertical `--paso`:** `clamp(56px, ..., 128px)`.
+- **Margen/borde `--borde`:** `clamp(20px, ..., 64px)`.
+- **Radio estándar:** `10px`.
+- **Ancho máximo del contenedor:** `1400px`.
+
+### Tokens y CSS
+
+- Todos los colores, espacios, radios y medidas globales deben definirse como tokens en `src/styles.css`.
+- Evitar valores de color escritos directamente dentro de componentes.
+- No utilizar clases de color sueltas que rompan el sistema visual.
+- Los componentes deben consumir siempre los tokens globales definidos por el sistema.
 
 ## Estructura de páginas
 
