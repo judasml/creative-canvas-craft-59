@@ -60,8 +60,8 @@ export function Muestras() {
             </div>
             <div className="flex items-start justify-between gap-4 p-5">
               <h3
-                className="text-[18px] uppercase leading-tight"
-                style={{ fontFamily: "var(--display)", fontWeight: 700 }}
+                className="text-[18px] leading-[1.05]"
+                style={{ fontFamily: "var(--display)", fontWeight: 300 }}
               >
                 {t.titulo}
               </h3>

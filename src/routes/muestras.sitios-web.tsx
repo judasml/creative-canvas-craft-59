@@ -83,8 +83,8 @@ function Pagina() {
                 Incluida en tu plan
               </span>
               <h2
-                className="mt-4 text-[18px] uppercase leading-tight"
-                style={{ fontFamily: "var(--display)", fontWeight: 700 }}
+                className="mt-4 text-[18px] leading-[1.05]"
+                style={{ fontFamily: "var(--display)", fontWeight: 300 }}
               >
                 {t.name}
               </h2>
