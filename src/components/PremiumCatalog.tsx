@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 /** Copy the accompanying public/premium folder unchanged into your project. */
 export default function PremiumCatalog() {
   const frame = useRef<HTMLIFrameElement>(null);
-  const observer = useRef<ResizeObserver>();
+  const observer = useRef<ResizeObserver | null>(null);
   const [height, setHeight] = useState(900);
   useEffect(() => {
     const resize = (event: MessageEvent) => {
