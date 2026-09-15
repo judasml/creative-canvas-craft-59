@@ -13,8 +13,15 @@ export default function PremiumCatalog() {
       if (Number.isFinite(value) && value >= 300 && value <= 50000) setHeight(Math.ceil(value));
     };
     window.addEventListener('message', resize);
+    const interval = window.setInterval(() => {
+      const shell = frame.current?.contentDocument?.querySelector<HTMLElement>('.shell');
+      if (shell) setHeight(Math.ceil(shell.getBoundingClientRect().height));
+    }, 500);
+    const stop = window.setTimeout(() => window.clearInterval(interval), 10000);
     return () => {
       window.removeEventListener('message', resize);
+      window.clearInterval(interval);
+      window.clearTimeout(stop);
       observer.current?.disconnect();
     };
   }, []);
