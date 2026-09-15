@@ -27,7 +27,7 @@ function Pagina() {
       <EnlaceInterno to="/" className="etiqueta text-gris-texto hover:text-coral">
         ← Volver
       </EnlaceInterno>
-      <h1 className="editorial text-[clamp(36px,7vw,76px)]">
+      <h1 className="editorial mt-10 text-[clamp(36px,7vw,76px)]">
         Política de privacidad
       </h1>
       <p className={P}>
