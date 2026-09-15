@@ -46,9 +46,13 @@ export function PiePagina() {
           >
             WhatsApp
           </a>
-          <span className="etiqueta text-[13px] text-[#8a9bb8] normal-case">
-            {CORREO}
-          </span>
+          <a
+            href={`mailto:${CORREO}`}
+            className={enlace}
+            style={{ fontWeight: 700 }}
+          >
+            Email
+          </a>
         </div>
 
         <div className="flex flex-col gap-3">
