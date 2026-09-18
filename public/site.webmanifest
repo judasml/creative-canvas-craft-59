@@ -1,0 +1,1 @@
+{"name": "MK Web Studio", "short_name": "MK Web", "icons": [{"src": "/favicon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/favicon-512.png", "sizes": "512x512", "type": "image/png"}], "theme_color": "#011A40", "background_color": "#011A40", "display": "standalone"}

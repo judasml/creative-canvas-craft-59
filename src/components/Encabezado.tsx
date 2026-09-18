@@ -1,7 +1,7 @@
 import { EnlaceLetras } from "./EnlaceLetras";
 import { CtaWhatsApp } from "./CtaWhatsApp";
 import { useTelon } from "./Telon";
-import marcaNavy from "@/assets/marca_mkweb.png.asset.json";
+const LOGO = "/brand/logo/svg/mkweb-horizontal-color.svg";
 
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
@@ -22,16 +22,19 @@ export function Encabezado() {
             if (window.location.pathname === "/") return;
             navegarConTelon("/", e);
           }}
-          className="flex items-center"
+          className="flex items-center gap-3"
           aria-label="MK Web Studio — inicio"
         >
           <img
-            src={marcaNavy.url}
+            src={LOGO}
             alt="MK Web Studio"
-            className="h-[34px] w-auto md:h-[38px]"
-            width={1672}
-            height={941}
+            className="h-[26px] w-auto md:h-[30px]"
+            width={1114}
+            height={120}
           />
+          <span className="etiqueta hidden text-[12px] text-gris-texto lg:inline">
+            sitios web y fichas de Google
+          </span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
