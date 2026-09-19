@@ -7,7 +7,7 @@ const ENLACES = [
   { texto: "El método", href: "/#metodo" },
   { texto: "Precios", href: "/#precios" },
   { texto: "Muestras", href: "/muestras" },
-  { texto: "Contacto", href: "/#contacto" },
+  { texto: "Contacto", href: "/#diagnostico" },
 ];
 
 export function Encabezado() {

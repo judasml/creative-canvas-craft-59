@@ -16,6 +16,28 @@ import { ScrollSuave } from "../components/ScrollSuave";
 import { Encabezado } from "../components/Encabezado";
 import { PiePagina } from "../components/PiePagina";
 
+const DATOS_NEGOCIO = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "MK Web Studio",
+  legalName: "MK Business Solutions S. de R.L.",
+  email: "mkwebstudiohn@gmail.com",
+  telephone: "+50497799379",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "[ciudad]",
+    addressCountry: "HN",
+  },
+  areaServed: [
+    "Honduras",
+    "Guatemala",
+    "El Salvador",
+    "Nicaragua",
+    "Costa Rica",
+    "Panamá",
+  ],
+};
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -120,6 +142,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="es-HN">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(DATOS_NEGOCIO) }}
+        />
       </head>
       <body>
         {children}

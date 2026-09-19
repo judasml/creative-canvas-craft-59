@@ -19,6 +19,10 @@ export function PiePagina() {
           height={120}
           loading="lazy"
         />
+        <p className="mt-3 text-[12px] text-[#7a8dad]">
+          MK Business Solutions S. de R.L. · [Tegucigalpa], Honduras · Atendemos
+          Honduras y Centroamérica
+        </p>
       </div>
 
       <div className="contenedor grid gap-10 sm:grid-cols-3">

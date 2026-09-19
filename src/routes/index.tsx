@@ -60,16 +60,6 @@ function Index() {
         </div>
       </section>
 
-      <div className="border-y border-gris py-10">
-        <p
-          className="contenedor text-[clamp(20px,3.2vw,34px)] italic"
-          style={{ fontFamily: "var(--serifa)", fontWeight: 400 }}
-        >
-          Escriba el nombre de su negocio y vea lo que ve un cliente cuando lo
-          busca en Google — y lo que ve de su competencia.
-        </p>
-      </div>
-
       <Muestras />
       <Enjambre />
       <TarjetasApiladas />
