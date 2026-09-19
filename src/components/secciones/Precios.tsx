@@ -71,7 +71,7 @@ export function Precios() {
             L 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-            O L 1,800 cada tres meses, por adelantado
+             L 1,500 si paga los tres meses por adelantado. equivale a L 500 al mes.
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
@@ -101,8 +101,11 @@ export function Precios() {
           </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
-            ¿Necesita más de 2 cambios en un mes? L 200 por cambio, o 5 cambios por
-            L 800. ¿Tiene otra sucursal? Su ficha adicional cuesta L 300 al mes.
+             ¿necesita más de 2 cambios en un mes? L 200 por cambio. un paquete de 5
+             cambios cuesta L 800.
+
+
+             ¿tiene otra sucursal? su ficha adicional cuesta L 300 al mes.
           </p>
 
           <div className="mt-10">
