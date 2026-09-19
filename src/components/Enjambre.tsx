@@ -163,15 +163,7 @@ export function Enjambre() {
         <h2 className="rotulo contenedor relative z-[1] text-center text-[clamp(38px,9vw,110px)] text-navy">
           Su mejor cliente
           <br />
-          lo buscó en{" "}
-          <span className="inline-flex" aria-label="Google">
-            <span aria-hidden="true" style={{ color: "#4285F4" }}>G</span>
-            <span aria-hidden="true" style={{ color: "#EA4335" }}>o</span>
-            <span aria-hidden="true" style={{ color: "#FBBC05" }}>o</span>
-            <span aria-hidden="true" style={{ color: "#4285F4" }}>g</span>
-            <span aria-hidden="true" style={{ color: "#34A853" }}>l</span>
-            <span aria-hidden="true" style={{ color: "#EA4335" }}>e</span>
-          </span>
+          lo buscó en Google
           <br />
           y no lo encontró
         </h2>

@@ -49,16 +49,6 @@ function Pagina() {
         dentro: todos están incluidos en su plan.
       </p>
 
-      <div className="mt-10">
-        <a
-          href="/plantillas/catalogo-variantes/index.html"
-          className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
-        >
-          Ver catálogo completo
-          <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((t) => (
           <a

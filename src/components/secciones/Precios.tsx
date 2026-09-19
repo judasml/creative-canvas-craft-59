@@ -1,4 +1,5 @@
 import { CtaWhatsApp } from "../CtaWhatsApp";
+import { EnlaceInterno } from "../Telon";
 
 const vinetas = "mt-2 flex gap-3 text-[16px]";
 
@@ -40,7 +41,12 @@ export function Precios() {
           </div>
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
-            <p className="etiqueta text-gris-texto">Sitio web premium</p>
+            <EnlaceInterno
+              to="/catalogo-premium"
+              className="etiqueta text-gris-texto hover:text-coral"
+            >
+              Sitio web premium
+            </EnlaceInterno>
             <p className="editorial mt-6 text-[64px] leading-none">
               <span className="moneda">L</span> 7,500
             </p>
@@ -52,6 +58,7 @@ export function Precios() {
                 "Sitio de hasta 5 páginas, con más secciones y más movimiento",
                 "Todo lo demás igual que Entrada: ficha de Google para una ubicación, dominio a su nombre, hosting, monitoreo, accesos por escrito y 2 meses de servicio incluidos",
                 "Para negocios con varios servicios o varias áreas que necesitan su propia página",
+                "Con animación y efectos, como las tres muestras del catálogo Premium.",
               ].map((l) => (
                 <li key={l} className={vinetas}>
                   <span className="mt-2 size-[7px] shrink-0 bg-coral" aria-hidden="true" />
@@ -70,7 +77,9 @@ export function Precios() {
 
       <div className="mt-[var(--paso)] bg-navy py-[var(--paso)] text-white">
         <div className="contenedor">
-          <p className="etiqueta text-coral">Un solo nivel. No hay otro.</p>
+          <p className="etiqueta text-coral">
+            La mensualidad es la misma para los dos planes.
+          </p>
           <p className="editorial mt-6 text-[clamp(64px,12vw,128px)] leading-none">
             <span className="moneda">L</span> 600 al mes
           </p>
@@ -105,11 +114,15 @@ export function Precios() {
             nuevas.
           </p>
 
-          <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
+          <p className="etiqueta mt-10 text-[#8A9BB8]">
             ¿necesita más de 2 cambios en un mes?{" "}
-            <span className="moneda">L</span> 200 por cambio. un paquete de 5
-            cambios cuesta <span className="moneda">L</span> 800.
-            {"\n\n"}¿tiene otra sucursal? su ficha adicional cuesta{" "}
+            <span className="moneda">L</span> 200 por cambio.
+          </p>
+          <p className="etiqueta mt-10 text-[#8A9BB8]">
+            un paquete de 5 cambios cuesta <span className="moneda">L</span> 800.
+          </p>
+          <p className="etiqueta mt-10 text-[#8A9BB8]">
+            ¿tiene otra sucursal? su ficha adicional cuesta{" "}
             <span className="moneda">L</span> 300 al mes.
           </p>
 

@@ -8,4 +8,4 @@
 - [x] Segunda ronda de comunicación: auditor, muestras, tarjetas y precios
 - [x] Fichas legibles en móvil, navegación de regreso y catálogos alineados con la marca
 - [x] Identidad v2: logos SVG oficiales, favicons y etiquetas para compartir
-- [ ] JSON-LD y datos pendientes (WhatsApp, correo, nombre legal)
+- [x] JSON-LD con teléfono, correo, nombre legal, dirección y área de servicio

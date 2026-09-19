@@ -36,9 +36,8 @@ export function Muestras() {
       </p>
 
       <p className="parrafo mt-6 text-[19px]">
-        Tres piezas para que vea exactamente qué recibe: cómo queda una ficha de
-        Google bien hecha, cómo se ve su negocio en un celular, y la misma ficha
-        antes y después.
+        Abra cada una y fíjese en el detalle: los datos que contesta una ficha sin
+        que el cliente pregunte, y la diferencia entre aparecer y que le escriban.
       </p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -79,7 +78,7 @@ export function Muestras() {
             href="/plantillas/catalogo-variantes/index.html"
             className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
           >
-            Ver plantillas
+            Ver sitios web de su plan
             <span aria-hidden="true">↗</span>
           </a>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
@@ -97,7 +96,9 @@ export function Muestras() {
             <span aria-hidden="true">→</span>
           </EnlaceInterno>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            Tres muestras en movimiento. Cualquiera se adapta a su rubro.
+            Tres muestras con animación. Si quiere un sitio hecho a la medida y no
+            una plantilla, ese es el plan Premium de <span className="moneda">L</span>{" "}
+            7,500.
           </p>
         </div>
       </div>
