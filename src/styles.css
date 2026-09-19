@@ -239,6 +239,10 @@ button:focus-visible {
   line-height: 1.3;
 }
 
+@utility moneda {
+  text-transform: none;
+}
+
 @utility parrafo {
   max-width: 62ch;
   text-wrap: pretty;

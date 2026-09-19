@@ -17,7 +17,9 @@ export function Precios() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-[var(--radio)] border border-gris bg-white p-8">
             <p className="etiqueta text-gris-texto">Entrada</p>
-            <p className="editorial mt-6 text-[64px] leading-none">L 3,750</p>
+            <p className="editorial mt-6 text-[64px] leading-none">
+              <span className="moneda">L</span> 3,750
+            </p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
               Mitad al arrancar, mitad al publicar
             </p>
@@ -39,7 +41,9 @@ export function Precios() {
 
           <div className="rounded-[var(--radio)] border-2 border-navy bg-white p-8">
             <p className="etiqueta text-gris-texto">Sitio web premium</p>
-            <p className="editorial mt-6 text-[64px] leading-none">L 7,500</p>
+            <p className="editorial mt-6 text-[64px] leading-none">
+              <span className="moneda">L</span> 7,500
+            </p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
               Mitad al arrancar, mitad al publicar
             </p>
@@ -68,10 +72,11 @@ export function Precios() {
         <div className="contenedor">
           <p className="etiqueta text-coral">Un solo nivel. No hay otro.</p>
           <p className="editorial mt-6 text-[clamp(64px,12vw,128px)] leading-none">
-            L 600 al mes
+            <span className="moneda">L</span> 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-             L 1,500 si paga los tres meses por adelantado. equivale a L 500 al mes.
+            <span className="moneda">L</span> 1,500 si paga los tres meses por
+            adelantado. equivale a <span className="moneda">L</span> 500 al mes.
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
@@ -101,11 +106,11 @@ export function Precios() {
           </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
-             ¿necesita más de 2 cambios en un mes? L 200 por cambio. un paquete de 5
-             cambios cuesta L 800.
-
-
-             ¿tiene otra sucursal? su ficha adicional cuesta L 300 al mes.
+            ¿necesita más de 2 cambios en un mes?{" "}
+            <span className="moneda">L</span> 200 por cambio. un paquete de 5
+            cambios cuesta <span className="moneda">L</span> 800.
+            {"\n\n"}¿tiene otra sucursal? su ficha adicional cuesta{" "}
+            <span className="moneda">L</span> 300 al mes.
           </p>
 
           <div className="mt-10">
