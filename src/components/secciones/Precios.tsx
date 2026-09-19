@@ -106,11 +106,11 @@ export function Precios() {
           </p>
 
           <p className="etiqueta mt-10 text-[13px] text-[#8A9BB8]">
-             ¿necesita más de 2 cambios en un mes? L 200 por cambio. un paquete de 5
-             cambios cuesta L 800.
-
-
-             ¿tiene otra sucursal? su ficha adicional cuesta L 300 al mes.
+            ¿necesita más de 2 cambios en un mes?{" "}
+            <span className="moneda">L</span> 200 por cambio. un paquete de 5
+            cambios cuesta <span className="moneda">L</span> 800.
+            {"\n\n"}¿tiene otra sucursal? su ficha adicional cuesta{" "}
+            <span className="moneda">L</span> 300 al mes.
           </p>
 
           <div className="mt-10">
