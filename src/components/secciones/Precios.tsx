@@ -17,7 +17,9 @@ export function Precios() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-[var(--radio)] border border-gris bg-white p-8">
             <p className="etiqueta text-gris-texto">Entrada</p>
-            <p className="editorial mt-6 text-[64px] leading-none">L 3,750</p>
+            <p className="editorial mt-6 text-[64px] leading-none">
+              <span className="moneda">L</span> 3,750
+            </p>
             <p className="etiqueta mt-3 text-[13px] text-gris-texto">
               Mitad al arrancar, mitad al publicar
             </p>
