@@ -72,10 +72,11 @@ export function Precios() {
         <div className="contenedor">
           <p className="etiqueta text-coral">Un solo nivel. No hay otro.</p>
           <p className="editorial mt-6 text-[clamp(64px,12vw,128px)] leading-none">
-            L 600 al mes
+            <span className="moneda">L</span> 600 al mes
           </p>
           <p className="etiqueta mt-4 text-[13px] text-[#8A9BB8]">
-             L 1,500 si paga los tres meses por adelantado. equivale a L 500 al mes.
+            <span className="moneda">L</span> 1,500 si paga los tres meses por
+            adelantado. equivale a <span className="moneda">L</span> 500 al mes.
           </p>
 
           <ul className="mt-10 grid gap-3 md:grid-cols-2">
