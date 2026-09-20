@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { EnlaceInterno } from "@/components/Telon";
 import coleccion from "../../public/plantillas/catalogo-variantes/coleccion.json";
 
 const TITULO = "Sitios web de muestra incluidos en su plan — MK Web Studio";

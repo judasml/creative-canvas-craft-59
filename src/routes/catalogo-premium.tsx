@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import PremiumCatalog from "@/components/PremiumCatalog";
-import { EnlaceInterno } from "@/components/Telon";
 
 const TITULO = "Páginas Premium — MK Web Studio";
 const DESCRIPCION =
