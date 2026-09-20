@@ -6,7 +6,7 @@ const LOGO = "/brand/logo/svg/mkweb-horizontal-color.svg";
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
   { texto: "Precios", href: "/#precios" },
-  { texto: "Muestras", href: "/muestras" },
+  { texto: "Muestras", href: "/#muestras" },
   { texto: "Contacto", href: "/#diagnostico" },
 ];
 

@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { EnlaceInterno } from "@/components/Telon";
 import coleccion from "../../public/plantillas/catalogo-variantes/coleccion.json";
 
 const TITULO = "Sitios web de muestra incluidos en su plan — MK Web Studio";
@@ -32,9 +31,9 @@ function Pagina() {
 
   return (
     <article className="contenedor py-[var(--paso)]">
-      <EnlaceInterno to="/muestras" className="etiqueta text-gris-texto hover:text-coral">
+      <a href="/#muestras" className="etiqueta text-gris-texto hover:text-coral">
         ← Volver a muestras
-      </EnlaceInterno>
+      </a>
 
       <p className="etiqueta mt-10 flex items-center gap-3 text-gris-texto">
         <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
@@ -85,12 +84,12 @@ function Pagina() {
         ))}
       </div>
 
-      <EnlaceInterno
-        to="/muestras"
+      <a
+        href="/#muestras"
         className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
       >
         ← Volver a muestras
-      </EnlaceInterno>
+      </a>
     </article>
   );
 }

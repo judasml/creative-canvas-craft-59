@@ -1,5 +1,19 @@
 import { CtaWhatsApp } from "../CtaWhatsApp";
-import { EnlaceInterno } from "../Telon";
+
+function volverAtras(e: React.MouseEvent) {
+  e.preventDefault();
+  if (typeof window === "undefined") return;
+  const interno =
+    window.history.length > 1 &&
+    document.referrer &&
+    new URL(document.referrer).origin === window.location.origin;
+  if (interno) {
+    window.history.back();
+    return;
+  }
+  window.location.href = "/#muestras";
+}
+
 
 export function PaginaMuestra({
   etiqueta,
@@ -18,9 +32,13 @@ export function PaginaMuestra({
 }) {
   return (
     <article className="contenedor py-[var(--paso)]">
-      <EnlaceInterno to="/" className="etiqueta text-gris-texto hover:text-coral">
+      <a
+        href="/#muestras"
+        onClick={volverAtras}
+        className="etiqueta text-gris-texto hover:text-coral"
+      >
         ← Volver
-      </EnlaceInterno>
+      </a>
 
       <p className="etiqueta mt-10 flex items-center gap-3 text-gris-texto">
         <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
@@ -56,12 +74,13 @@ export function PaginaMuestra({
         <CtaWhatsApp />
       </div>
 
-      <EnlaceInterno
-        to="/muestras"
+      <a
+        href="/#muestras"
+        onClick={volverAtras}
         className="etiqueta mt-12 inline-flex text-gris-texto hover:text-coral"
       >
         ← Volver
-      </EnlaceInterno>
+      </a>
     </article>
   );
 }
