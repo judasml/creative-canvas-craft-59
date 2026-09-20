@@ -1,5 +1,19 @@
 import { CtaWhatsApp } from "../CtaWhatsApp";
-import { EnlaceInterno } from "../Telon";
+
+function volverAtras(e: React.MouseEvent) {
+  e.preventDefault();
+  if (typeof window === "undefined") return;
+  const interno =
+    window.history.length > 1 &&
+    document.referrer &&
+    new URL(document.referrer).origin === window.location.origin;
+  if (interno) {
+    window.history.back();
+    return;
+  }
+  window.location.href = "/#muestras";
+}
+
 
 export function PaginaMuestra({
   etiqueta,
