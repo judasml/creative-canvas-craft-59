@@ -24,12 +24,12 @@ function Pagina() {
   return (
     <article className="py-[var(--paso)]">
       <div className="contenedor">
-        <EnlaceInterno
-          to="/muestras"
+        <a
+          href="/#muestras"
           className="etiqueta text-gris-texto hover:text-coral"
         >
           ← Volver
-        </EnlaceInterno>
+        </a>
 
         <p className="etiqueta mt-10 flex items-center gap-3 text-gris-texto">
           <span
@@ -53,12 +53,12 @@ function Pagina() {
       </div>
 
       <div className="contenedor mt-10">
-        <EnlaceInterno
-          to="/muestras"
+        <a
+          href="/#muestras"
           className="etiqueta inline-flex text-gris-texto hover:text-coral"
         >
           ← Volver a muestras
-        </EnlaceInterno>
+        </a>
       </div>
     </article>
   );
