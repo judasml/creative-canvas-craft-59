@@ -52,7 +52,12 @@ function Index() {
           <div className="mb-6 empty:hidden">
             <CtaAuditor />
           </div>
-          <CtaWhatsApp secundario />
+          <a
+            href="/#muestras"
+            className="inline-flex h-14 items-center justify-center rounded-full border-2 border-navy px-8 text-[17px] font-bold text-navy transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Ver cómo trabajamos
+          </a>
           <p className="etiqueta mt-4 text-[13px] text-gris-texto">
             Escriba el nombre de su negocio y vea cómo aparece en Google al lado
             de su competencia. Sin registro, sin dejar sus datos. Un minuto.
