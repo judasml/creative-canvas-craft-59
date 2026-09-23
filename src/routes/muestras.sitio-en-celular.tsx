@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PaginaMuestra } from "@/components/secciones/PaginaMuestra";
-import img from "@/assets/muestra-celular.jpg";
+import img from "@/assets/muestra-celular.webp.asset.json";
 
 const TITULO = "Cómo se ve su negocio en un celular — MK Web Studio";
 const DESCRIPCION =
@@ -24,7 +24,7 @@ function Pagina() {
       etiqueta="Muestra · Sitio"
       titulo="Cómo se ve su negocio en un celular"
       entrada="Su cliente no va a abrir el sitio en una computadora. Lo abre con una mano, en la calle y con datos móviles. Ese es el sitio que hay que hacer bien."
-      img={img}
+      img={img.url}
       alt="Sitio de un negocio abierto en la pantalla de un celular"
       puntos={[
         {
