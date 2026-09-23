@@ -1,6 +1,6 @@
-import ficha from "@/assets/muestra-ficha.jpg";
-import celular from "@/assets/muestra-celular.jpg";
-import antesDespues from "@/assets/muestra-antes-despues.jpg";
+import ficha from "@/assets/muestra-ficha.webp.asset.json";
+import celular from "@/assets/muestra-celular.webp.asset.json";
+import antesDespues from "@/assets/muestra-antes-despues.webp.asset.json";
 import { EnlaceInterno } from "../Telon";
 
 const TARJETAS = [
@@ -8,21 +8,21 @@ const TARJETAS = [
     titulo: "Cómo se ve una ficha de Google bien hecha",
     etiqueta: "Ficha",
     ruta: "/muestras/ficha-de-google",
-    img: ficha,
+    img: ficha.url,
     alt: "Maqueta de una ficha de Google completa y ordenada",
   },
   {
     titulo: "Cómo se ve su negocio en un celular",
     etiqueta: "Sitio",
     ruta: "/muestras/sitio-en-celular",
-    img: celular,
+    img: celular.url,
     alt: "Maqueta de un sitio de negocio abierto en un celular",
   },
   {
     titulo: "La misma ficha, antes y después",
     etiqueta: "Antes / Después",
     ruta: "/muestras/antes-y-despues",
-    img: antesDespues,
+    img: antesDespues.url,
     alt: "Comparación lado a lado de una ficha desordenada y una ordenada",
   },
 ];

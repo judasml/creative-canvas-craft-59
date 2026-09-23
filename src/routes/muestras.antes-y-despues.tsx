@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PaginaMuestra } from "@/components/secciones/PaginaMuestra";
-import img from "@/assets/muestra-antes-despues.jpg";
+import img from "@/assets/muestra-antes-despues.webp.asset.json";
 
 const TITULO = "La misma ficha, antes y después — MK Web Studio";
 const DESCRIPCION =
@@ -24,7 +24,7 @@ function Pagina() {
       etiqueta="Muestra · Antes / Después"
       titulo="La misma ficha, antes y después"
       entrada="El negocio es el mismo. Lo que cambia es lo que encuentra el cliente. A la izquierda, lo que hay cuando nadie la atiende; a la derecha, lo que hay cuando sí."
-      img={img}
+      img={img.url}
       alt="Comparación lado a lado de una ficha desordenada y la misma ficha ordenada"
       puntos={[
         {

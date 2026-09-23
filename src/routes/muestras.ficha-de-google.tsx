@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PaginaMuestra } from "@/components/secciones/PaginaMuestra";
-import img from "@/assets/muestra-ficha.jpg";
+import img from "@/assets/muestra-ficha.webp.asset.json";
 
 const TITULO = "Cómo se ve una ficha de Google bien hecha — MK Web Studio";
 const DESCRIPCION =
@@ -24,7 +24,7 @@ function Pagina() {
       etiqueta="Muestra · Ficha"
       titulo="Cómo se ve una ficha de Google bien hecha"
       entrada="Esto es lo que un cliente ve antes de decidir si le llama. Una ficha completa contesta las preguntas sin que nadie tenga que escribir: dónde está, si está abierto, cómo se ve por dentro y qué dicen los que ya fueron."
-      img={img}
+      img={img.url}
       alt="Ficha de Google completa con fotos, horarios, reseñas y mapa"
       puntos={[
         {
