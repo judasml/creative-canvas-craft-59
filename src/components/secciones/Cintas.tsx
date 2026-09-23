@@ -3,19 +3,19 @@ type Rubro = { nombre: string; tipografia: string; colores: string[]; miniatura:
 const PREVIEWS = "/plantillas/catalogo-variantes/previews/";
 
 const FILA1: Rubro[] = [
-  { nombre: "Taller mecánico", tipografia: "Saira", colores: ["#C62026", "#1C1C1C", "#F2C200"], miniatura: "taller-a.webp" },
-  { nombre: "Restaurante", tipografia: "Playfair Display", colores: ["#2E1B12", "#C8622D", "#F4EDE2"], miniatura: "restaurante-a.webp" },
-  { nombre: "Colegio", tipografia: "Poppins", colores: ["#1B4B8F", "#FFC53D", "#FFFFFF"], miniatura: "colegio-a.webp" },
-  { nombre: "Ferretería", tipografia: "Barlow Condensed", colores: ["#F26522", "#3A3A3A", "#111111"], miniatura: "ferreteria-a.webp" },
-  { nombre: "Clínica", tipografia: "Manrope", colores: ["#0FA3A3", "#F5FBFB", "#2A3B47"], miniatura: "medico-a.webp" },
+  { nombre: "Taller mecánico", tipografia: "Arial", colores: ["#fd6234", "#101112", "#f4f4eb"], miniatura: "taller-a.webp" },
+  { nombre: "Restaurante", tipografia: "Georgia", colores: ["#eab67e", "#1e211a", "#f7eedb"], miniatura: "restaurante-a.webp" },
+  { nombre: "Colegio", tipografia: "Georgia", colores: ["#2d6754", "#233b32", "#f1eee4"], miniatura: "colegio-a.webp" },
+  { nombre: "Ferretería", tipografia: "Georgia", colores: ["#e8bb36", "#161a18", "#f4f0e5"], miniatura: "ferreteria-a.webp" },
+  { nombre: "Clínica", tipografia: "Georgia", colores: ["#326b64", "#173c3a", "#f2f5f2"], miniatura: "medico-a.webp" },
 ];
 
 const FILA2: Rubro[] = [
-  { nombre: "Consultorio dental", tipografia: "DM Sans", colores: ["#0E7C86", "#FFFFFF", "#E6F4F5"], miniatura: "consultorio-a.webp" },
-  { nombre: "Distribuidora", tipografia: "Bebas Neue", colores: ["#101010", "#C6FF33", "#5A5A5A"], miniatura: "ferreteria-c.webp" },
-  { nombre: "Laboratorio", tipografia: "Bitter", colores: ["#1D8A4E", "#FFFFFF", "#E8F4EC"], miniatura: "laboratorio-a.webp" },
-  { nombre: "Veterinaria", tipografia: "Nunito", colores: ["#3E8E7E", "#FF8B6B", "#FDF6EC"], miniatura: "veterinaria-a.webp" },
-  { nombre: "Salón", tipografia: "Oswald", colores: ["#141414", "#F0E6D2", "#8C3A2B"], miniatura: "salon-a.webp" },
+  { nombre: "Consultorio dental", tipografia: "Georgia", colores: ["#55764d", "#293e34", "#f4f1e9"], miniatura: "consultorio-a.webp" },
+  { nombre: "Distribuidora", tipografia: "Georgia", colores: ["#3876f2", "#1f2520", "#f5efe2"], miniatura: "ferreteria-c.webp" },
+  { nombre: "Laboratorio", tipografia: "Georgia", colores: ["#2a7d86", "#173a44", "#edf6f6"], miniatura: "laboratorio-a.webp" },
+  { nombre: "Veterinaria", tipografia: "Georgia", colores: ["#687d31", "#393c28", "#fcf5e9"], miniatura: "veterinaria-a.webp" },
+  { nombre: "Salón", tipografia: "Georgia", colores: ["#83563e", "#3d302a", "#f1eadf"], miniatura: "salon-a.webp" },
 ];
 
 function Ficha({ r }: { r: Rubro }) {
