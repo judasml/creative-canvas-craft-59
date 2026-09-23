@@ -11,7 +11,7 @@ const TARJETAS = [
     n: "02",
     titulo: "El sitio",
     cuerpo:
-      "La ficha lo hace aparecer. El sitio es donde deciden si le escriben o siguen buscando. Sin sitio propio, su negocio se ve igual que los otros ocho de la lista. Hecho para el celular, porque ahí es donde lo van a abrir.",
+      "La ficha lo hace aparecer. El sitio es donde deciden si le escriben o siguen buscando. Sin sitio propio, al cliente le cuesta encontrar una razón para elegirlo frente a las otras opciones. Hecho para el celular, porque ahí es donde lo van a abrir.",
     clase: "bg-coral text-navy",
     top: "9vh",
   },
