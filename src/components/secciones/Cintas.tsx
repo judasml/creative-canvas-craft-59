@@ -1,39 +1,49 @@
-type Rubro = { nombre: string; tipografia: string; colores: string[] };
+type Rubro = { nombre: string; tipografia: string; colores: string[]; miniatura: string };
+
+const PREVIEWS = "/plantillas/catalogo-variantes/previews/";
 
 const FILA1: Rubro[] = [
-  { nombre: "Taller mecánico", tipografia: "Saira", colores: ["#C62026", "#1C1C1C", "#F2C200"] },
-  { nombre: "Restaurante", tipografia: "Playfair Display", colores: ["#2E1B12", "#C8622D", "#F4EDE2"] },
-  { nombre: "Colegio", tipografia: "Poppins", colores: ["#1B4B8F", "#FFC53D", "#FFFFFF"] },
-  { nombre: "Ferretería", tipografia: "Barlow Condensed", colores: ["#F26522", "#3A3A3A", "#111111"] },
-  { nombre: "Clínica", tipografia: "Manrope", colores: ["#0FA3A3", "#F5FBFB", "#2A3B47"] },
+  { nombre: "Taller mecánico", tipografia: "Saira", colores: ["#C62026", "#1C1C1C", "#F2C200"], miniatura: "taller-a.webp" },
+  { nombre: "Restaurante", tipografia: "Playfair Display", colores: ["#2E1B12", "#C8622D", "#F4EDE2"], miniatura: "restaurante-a.webp" },
+  { nombre: "Colegio", tipografia: "Poppins", colores: ["#1B4B8F", "#FFC53D", "#FFFFFF"], miniatura: "colegio-a.webp" },
+  { nombre: "Ferretería", tipografia: "Barlow Condensed", colores: ["#F26522", "#3A3A3A", "#111111"], miniatura: "ferreteria-a.webp" },
+  { nombre: "Clínica", tipografia: "Manrope", colores: ["#0FA3A3", "#F5FBFB", "#2A3B47"], miniatura: "medico-a.webp" },
 ];
 
 const FILA2: Rubro[] = [
-  { nombre: "Consultorio dental", tipografia: "DM Sans", colores: ["#0E7C86", "#FFFFFF", "#E6F4F5"] },
-  { nombre: "Distribuidora", tipografia: "Bebas Neue", colores: ["#101010", "#C6FF33", "#5A5A5A"] },
-  { nombre: "Laboratorio", tipografia: "Bitter", colores: ["#1D8A4E", "#FFFFFF", "#E8F4EC"] },
-  { nombre: "Veterinaria", tipografia: "Nunito", colores: ["#3E8E7E", "#FF8B6B", "#FDF6EC"] },
-  { nombre: "Salón", tipografia: "Oswald", colores: ["#141414", "#F0E6D2", "#8C3A2B"] },
+  { nombre: "Consultorio dental", tipografia: "DM Sans", colores: ["#0E7C86", "#FFFFFF", "#E6F4F5"], miniatura: "consultorio-a.webp" },
+  { nombre: "Distribuidora", tipografia: "Bebas Neue", colores: ["#101010", "#C6FF33", "#5A5A5A"], miniatura: "ferreteria-c.webp" },
+  { nombre: "Laboratorio", tipografia: "Bitter", colores: ["#1D8A4E", "#FFFFFF", "#E8F4EC"], miniatura: "laboratorio-a.webp" },
+  { nombre: "Veterinaria", tipografia: "Nunito", colores: ["#3E8E7E", "#FF8B6B", "#FDF6EC"], miniatura: "veterinaria-a.webp" },
+  { nombre: "Salón", tipografia: "Oswald", colores: ["#141414", "#F0E6D2", "#8C3A2B"], miniatura: "salon-a.webp" },
 ];
 
 function Ficha({ r }: { r: Rubro }) {
   return (
-    <div className="flex h-[150px] w-[260px] shrink-0 flex-col justify-between rounded-[var(--radio)] border border-gris bg-white p-4">
-      <p
-        className="text-[15px] leading-[1.05]"
-        style={{ fontFamily: "var(--display)", fontWeight: 300 }}
-      >
-        {r.nombre}
-      </p>
-      <p className="etiqueta text-[11px] text-gris-texto">{r.tipografia}</p>
-      <div className="flex gap-2">
-        {r.colores.map((c) => (
-          <span
-            key={c}
-            className="size-[22px] rounded-[3px] border border-gris"
-            style={{ backgroundColor: c }}
-          />
-        ))}
+    <div className="flex h-[150px] w-[350px] shrink-0 items-center gap-3 rounded-[var(--radio)] border border-gris bg-white p-3">
+      <img
+        src={`${PREVIEWS}${r.miniatura}`}
+        alt={`Vista previa de sitio para ${r.nombre.toLowerCase()}`}
+        className="h-[120px] w-[180px] shrink-0 rounded-[3px] border border-gris object-contain"
+        loading="lazy"
+      />
+      <div className="flex min-w-0 flex-1 flex-col self-stretch justify-between py-1">
+        <p
+          className="text-[15px] leading-[1.05]"
+          style={{ fontFamily: "var(--display)", fontWeight: 300 }}
+        >
+          {r.nombre}
+        </p>
+        <p className="etiqueta text-[11px] text-gris-texto">{r.tipografia}</p>
+        <div className="flex gap-1.5">
+          {r.colores.map((c) => (
+            <span
+              key={c}
+              className="size-[20px] rounded-[3px] border border-gris"
+              style={{ backgroundColor: c }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
