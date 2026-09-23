@@ -65,8 +65,7 @@ export function Cintas() {
       </div>
 
       <p className="mx-auto mt-10 max-w-[54ch] px-[var(--borde)] text-center">
-        Su negocio no tiene que verse como los demás de su rubro. Tiene que verse
-        como el mejor de su rubro.
+        {`"En un mercado saturado, encajar es fracasar." —Seth Godin. Su negocio no tiene que verse como todos los demas.Tiene que verse como suyo.`}
       </p>
     </section>
   );
