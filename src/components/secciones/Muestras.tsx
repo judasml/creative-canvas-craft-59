@@ -96,9 +96,8 @@ export function Muestras() {
             <span aria-hidden="true">→</span>
           </EnlaceInterno>
           <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            Tres muestras con animación. Si quiere un sitio hecho a la medida y no
-            una plantilla, ese es el plan Premium de <span className="moneda">L</span>{" "}
-            7,500.
+             tres muestras con más movimiento y recursos visuales. para negocios que
+             necesitan más páginas, más secciones y una presentación más amplia.
           </p>
         </div>
       </div>
