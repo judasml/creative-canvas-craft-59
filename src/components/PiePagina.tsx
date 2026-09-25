@@ -70,7 +70,7 @@ export function PiePagina() {
         </div>
       </div>
 
-      <div className="firma -mx-2" aria-hidden="true">
+      <div className="firma" aria-hidden="true">
         MK Web Studio
       </div>
     </footer>

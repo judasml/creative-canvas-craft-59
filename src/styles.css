@@ -192,14 +192,14 @@ body {
   background-color: var(--hueso);
   color: var(--navy);
   font-family: var(--display);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.55;
   overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -283,7 +283,7 @@ button:focus-visible {
 .enlace .l b {
   height: 1.06em;
   line-height: 1.06em;
-  font-weight: 400;
+  font-weight: 700;
 }
 .enlace .l b:last-child {
   color: var(--coral);
@@ -342,12 +342,13 @@ button:focus-visible {
   font-family: var(--display);
   font-weight: 800;
   text-transform: uppercase;
-  font-size: clamp(56px, 15.5vw, 260px);
+  font-size: clamp(43px, 11.8vw, 190px);
   line-height: 0.78;
   letter-spacing: -0.04em;
   color: var(--navy-suave);
   white-space: nowrap;
   overflow: hidden;
+  text-align: center;
   user-select: none;
   margin-top: clamp(48px, 10vw, 120px);
 }

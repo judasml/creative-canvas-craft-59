@@ -12,8 +12,7 @@ export function EnlaceLetras({
       href={href}
       aria-label={texto}
       onClick={onClick}
-      className="enlace text-[14px] leading-none"
-      style={{ fontFamily: "var(--display)", fontWeight: 400 }}
+      className="enlace text-[17px] font-bold leading-none"
     >
       <span aria-hidden="true" className="inline-flex">
         {texto.split("").map((c, i) => (
