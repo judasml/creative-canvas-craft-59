@@ -18,28 +18,37 @@ const FILA2: Rubro[] = [
   { nombre: "Salón", tipografia: "Georgia", colores: ["#83563e", "#3d302a", "#f1eadf"], miniatura: "salon-a.webp" },
 ];
 
-function Ficha({ r }: { r: Rubro }) {
+function Ficha({ r, oscura }: { r: Rubro; oscura?: boolean }) {
   return (
-    <div className="flex h-[150px] w-[350px] shrink-0 items-center gap-3 rounded-[var(--radio)] border border-gris bg-white p-3">
+    <div
+      className={`flex h-[300px] w-[460px] shrink-0 flex-col justify-between rounded-[var(--radio)] border p-6 md:h-[340px] md:w-[500px] ${
+        oscura ? "border-navy bg-navy" : "border-gris bg-white"
+      }`}
+    >
       <img
         src={`${PREVIEWS}${r.miniatura}`}
         alt={`Vista previa de sitio para ${r.nombre.toLowerCase()}`}
-        className="h-[120px] w-[180px] shrink-0 rounded-[3px] border border-gris object-contain"
+        className="h-[176px] w-full rounded-[4px] border border-gris/40 object-cover object-top md:h-[206px]"
         loading="lazy"
       />
-      <div className="flex min-w-0 flex-1 flex-col self-stretch justify-between py-1">
-        <p
-          className="text-[15px] leading-[1.05]"
-          style={{ fontFamily: "var(--display)", fontWeight: 300 }}
-        >
-          {r.nombre}
-        </p>
-        <p className="etiqueta text-[11px] text-gris-texto">{r.tipografia}</p>
-        <div className="flex gap-1.5">
+      <div className="mt-5 flex items-end justify-between gap-4">
+        <div className="min-w-0">
+          <p
+            className={`rotulo text-[30px] md:text-[34px] ${oscura ? "text-white" : "text-navy"}`}
+          >
+            {r.nombre}
+          </p>
+          <p
+            className={`etiqueta mt-2 text-[12px] ${oscura ? "text-white/60" : "text-gris-texto"}`}
+          >
+            {r.tipografia}
+          </p>
+        </div>
+        <div className="flex shrink-0 gap-1.5">
           {r.colores.map((c) => (
             <span
               key={c}
-              className="size-[20px] rounded-[3px] border border-gris"
+              className="size-[26px] rounded-[4px] border border-gris/50"
               style={{ backgroundColor: c }}
             />
           ))}
@@ -54,7 +63,7 @@ function Pista({ rubros, inversa }: { rubros: Rubro[]; inversa?: boolean }) {
     <div className="cinta">
       <div className={`pista ${inversa ? "pista--inversa" : ""}`}>
         {[...rubros, ...rubros, ...rubros, ...rubros].map((r, i) => (
-          <Ficha key={`${r.nombre}-${i}`} r={r} />
+          <Ficha key={`${r.nombre}-${i}`} r={r} oscura={i % 2 === (inversa ? 1 : 0)} />
         ))}
       </div>
     </div>

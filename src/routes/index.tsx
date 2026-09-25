@@ -31,34 +31,36 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
-      <section className="contenedor relative isolate overflow-hidden pb-[var(--paso)] pt-16 md:pt-24">
+      <section className="contenedor relative isolate overflow-hidden pb-[var(--paso)] pt-16 text-center md:pt-24">
         <ParticulasHero />
-        <p className="etiqueta flex items-center gap-3 text-gris-texto">
+        <p className="etiqueta flex items-center justify-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
           Fichas de Google y sitios web para negocios
         </p>
 
-        <h1 className="editorial mt-8 text-[clamp(44px,9vw,104px)]">
+        <h1 className="editorial mx-auto mt-8 max-w-[16ch] text-[clamp(46px,10.5vw,140px)]">
           Que lo encuentren.
           <br />Y que le escriban.
         </h1>
 
-        <p className="mt-8 max-w-[46ch] text-[19px]">
+        <p className="mx-auto mt-8 max-w-[52ch] text-[19px] md:text-[22px]">
           La ficha de Google hace que lo encuentren. El sitio decide si le
           escriben. Uno sin el otro queda a medias.
         </p>
 
         <div className="mt-10">
-          <div className="mb-6 empty:hidden">
-            <CtaAuditor />
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="empty:hidden">
+              <CtaAuditor />
+            </div>
+            <a
+              href="/#muestras"
+              className="inline-flex h-14 items-center justify-center rounded-full border-2 border-navy px-8 text-[17px] font-bold text-navy transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Ver cómo trabajamos
+            </a>
           </div>
-          <a
-            href="/#muestras"
-            className="inline-flex h-14 items-center justify-center rounded-full border-2 border-navy px-8 text-[17px] font-bold text-navy transition-transform duration-200 hover:-translate-y-0.5"
-          >
-            Ver cómo trabajamos
-          </a>
-          <p className="etiqueta mt-4 text-[13px] text-gris-texto">
+          <p className="etiqueta mx-auto mt-6 max-w-[62ch] text-[13px] text-gris-texto">
             Escriba el nombre de su negocio y vea cómo aparece en Google al lado
             de su competencia. Sin registro, sin dejar sus datos. Un minuto.
           </p>
