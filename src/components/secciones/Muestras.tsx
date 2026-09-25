@@ -29,13 +29,14 @@ const TARJETAS = [
 
 export function Muestras() {
   return (
-    <section id="muestras" className="cuadricula contenedor py-[var(--paso)]">
+    <section id="muestras" className="cuadricula py-[var(--paso)]">
+      <div className="contenedor">
       <p className="etiqueta flex items-center gap-3 text-gris-texto">
         <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
         Así trabajamos. Ábralo y véalo por dentro.
       </p>
 
-      <p className="parrafo mt-6 text-[19px]">
+      <p className="parrafo mt-6 text-[22px] font-medium leading-snug md:text-[26px]">
         Abra cada una y fíjese en el detalle: los datos que contesta una ficha sin
         que el cliente pregunte, y la diferencia entre aparecer y que le escriban.
       </p>
@@ -58,10 +59,7 @@ export function Muestras() {
               />
             </div>
             <div className="flex items-start justify-between gap-4 p-5">
-              <h3
-                className="text-[18px] leading-[1.05]"
-                style={{ fontFamily: "var(--display)", fontWeight: 300 }}
-              >
+              <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">
                 {t.titulo}
               </h3>
               <span className="etiqueta shrink-0 text-[12px] text-gris-texto">
@@ -101,7 +99,7 @@ export function Muestras() {
           </p>
         </div>
       </div>
-
+      </div>
     </section>
   );
 }

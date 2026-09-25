@@ -43,7 +43,7 @@ function Index() {
           <br />Y que le escriban.
         </h1>
 
-        <p className="mx-auto mt-8 max-w-[52ch] text-[19px] md:text-[22px]">
+        <p className="mx-auto mt-8 max-w-[52ch] text-[22px] font-medium leading-snug md:text-[26px]">
           La ficha de Google hace que lo encuentren. El sitio decide si le
           escriben. Uno sin el otro queda a medias.
         </p>
@@ -60,7 +60,7 @@ function Index() {
               Ver cómo trabajamos
             </a>
           </div>
-          <p className="etiqueta mx-auto mt-6 max-w-[62ch] text-[13px] text-gris-texto">
+          <p className="etiqueta mx-auto mt-6 max-w-[62ch] text-[15px] text-gris-texto">
             Escriba el nombre de su negocio y vea cómo aparece en Google al lado
             de su competencia. Sin registro, sin dejar sus datos. Un minuto.
           </p>
