@@ -1,4 +1,5 @@
 import { AnimacionBusquedaLocal } from "@/components/AnimacionBusquedaLocal";
+import { AnimacionSitioCelular } from "@/components/AnimacionSitioCelular";
 
 const TARJETAS = [
   {
