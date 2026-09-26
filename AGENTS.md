@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- La ilustración animada de búsqueda local vive en un componente React autónomo y solo se monta en la tarjeta 01; así las otras tarjetas mantienen su estructura y aspecto.

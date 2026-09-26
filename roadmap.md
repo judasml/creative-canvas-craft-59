@@ -9,3 +9,4 @@
 - [x] Fichas legibles en móvil, navegación de regreso y catálogos alineados con la marca
 - [x] Identidad v2: logos SVG oficiales, favicons y etiquetas para compartir
 - [x] JSON-LD con teléfono, correo, nombre legal, dirección y área de servicio
+- [x] Integrar la animación de búsqueda local proporcionada en la tarjeta 01 y verificar 360×640, 390×844 y escritorio.

@@ -1,3 +1,5 @@
+import { AnimacionBusquedaLocal } from "@/components/AnimacionBusquedaLocal";
+
 const TARJETAS = [
   {
     n: "01",
@@ -45,11 +47,12 @@ export function TarjetasApiladas() {
             <div className="flex items-center justify-between">
               <span className="etiqueta opacity-70">{t.n}</span>
             </div>
+            {t.n === "01" && <AnimacionBusquedaLocal className="my-5 flex-1 md:my-8" />}
             <div>
               <h3 className="editorial text-[clamp(34px,6vw,44px)]">
                 {t.titulo}
               </h3>
-              <p className="parrafo mt-6 text-[18px] opacity-90">{t.cuerpo}</p>
+              <p className="parrafo mt-4 text-[16px] opacity-90 md:mt-6 md:text-[18px]">{t.cuerpo}</p>
             </div>
           </div>
         ))}
