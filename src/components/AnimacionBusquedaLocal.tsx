@@ -184,7 +184,7 @@ export function AnimacionBusquedaLocal({ className = "" }: { className?: string 
         if (j === 2) s += 0.45 * fg;
         pin.style.opacity = String(Math.min(1, pq * 3));
         pin.style.transform = `translateY(${-(1 - back(pq)) * 16}px) scale(${s})`;
-        pin.style.color = j === 0 && fb > 0.5 ? C.coral : j === 2 && fg > 0.5 ? C.navy : pin.dataset.c || "";
+        pin.style.color = j === 0 && fb > 0.5 ? C.coral : j === 2 && fg > 0.5 ? C.navy : pin.dataset["c"] || "";
       });
       const pulse = (t % 1600) / 1600;
       me.style.boxShadow = `0 0 0 ${pulse * 9}px rgba(10,35,120,${0.3 * (1 - pulse)})`;
@@ -193,8 +193,8 @@ export function AnimacionBusquedaLocal({ className = "" }: { className?: string 
       const lp = out(p(t, 4150, 4600));
       list.style.opacity = String(lp);
       list.style.transform = `translateY(${(1 - lp) * 14 - ease(p(t, 8500, 9400)) * 188}px)`;
-      cards[0].style.boxShadow = `0 0 0 ${2 * fb}px rgba(253,92,65,${fb})`;
-      cards[2].style.boxShadow = `0 0 0 ${2 * fg}px rgba(10,35,120,${fg})`;
+      if (cards[0]) cards[0].style.boxShadow = `0 0 0 ${2 * fb}px rgba(253,92,65,${fb})`;
+      if (cards[2]) cards[2].style.boxShadow = `0 0 0 ${2 * fg}px rgba(10,35,120,${fg})`;
 
       const etiquetas = (arr: HTMLElement[], a: number, b: number) =>
         arr.forEach((el, i) => {
@@ -234,7 +234,7 @@ export function AnimacionBusquedaLocal({ className = "" }: { className?: string 
 
     const io = new IntersectionObserver(
       ([e]) => {
-        visible = e.isIntersecting;
+        visible = e?.isIntersecting ?? false;
         if (visible) start();
         else stop();
       },
