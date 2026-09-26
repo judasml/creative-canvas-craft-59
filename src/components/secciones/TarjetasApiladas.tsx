@@ -1,4 +1,5 @@
 import { AnimacionBusquedaLocal } from "@/components/AnimacionBusquedaLocal";
+import { AnimacionSitioCelular } from "@/components/AnimacionSitioCelular";
 
 const TARJETAS = [
   {
@@ -48,6 +49,7 @@ export function TarjetasApiladas() {
               <span className="etiqueta opacity-70">{t.n}</span>
             </div>
             {t.n === "01" && <AnimacionBusquedaLocal className="my-5 flex-1 md:my-8" />}
+            {t.n === "02" && <AnimacionSitioCelular className="my-5 flex-1 md:my-8" />}
             <div>
               <h3 className="editorial text-[clamp(34px,6vw,44px)]">
                 {t.titulo}
