@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
+import { reproducirEnPosicion } from "@/lib/reproducirEnPosicion";
 
 /**
  * Animación de búsqueda local (loop de 15 s) para la tarjeta 01 "La ficha de Google".
  * Escena lógica de 320×220 px que se escala para llenar el espacio disponible.
- * Se pausa fuera de pantalla y respeta "reducir movimiento" (muestra el estado final fijo).
+ * Arranca desde cero cuando la tarjeta queda en posición y visible (ver reproducirEnPosicion).
  */
 
 const D = 15000;
@@ -210,53 +211,11 @@ export function AnimacionBusquedaLocal({ className = "" }: { className?: string 
       toast.style.transform = `translateX(-50%) translateY(${(1 - out(p(t, 11500, 11850))) * 8}px)`;
     };
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let raf = 0;
-    let visible = true;
-    let offset = performance.now();
-    let pausedAt = 0;
-
-    const loop = (now: number) => {
-      render((now - offset) % D);
-      raf = requestAnimationFrame(loop);
-    };
-    const start = () => {
-      if (raf || reduce.matches || !visible) return;
-      offset = performance.now() - pausedAt;
-      raf = requestAnimationFrame(loop);
-    };
-    const stop = () => {
-      if (!raf) return;
-      cancelAnimationFrame(raf);
-      raf = 0;
-      pausedAt = (performance.now() - offset) % D;
-    };
-
-    const io = new IntersectionObserver(
-      ([e]) => {
-        visible = e?.isIntersecting ?? false;
-        if (visible) start();
-        else stop();
-      },
-      { threshold: 0.05 }
-    );
-    io.observe(box);
-
-    const onReduce = () => {
-      if (reduce.matches) {
-        stop();
-        render(12400);
-      } else start();
-    };
-    reduce.addEventListener("change", onReduce);
-    if (reduce.matches) render(12400);
-    else start();
+    const detener = reproducirEnPosicion(box, render, D, 12400);
 
     return () => {
-      stop();
-      io.disconnect();
+      detener();
       ro.disconnect();
-      reduce.removeEventListener("change", onReduce);
     };
   }, []);
 

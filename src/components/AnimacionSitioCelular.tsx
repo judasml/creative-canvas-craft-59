@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
+import { reproducirEnPosicion } from "@/lib/reproducirEnPosicion";
 
 /**
  * Animación de la tarjeta 02 "El sitio" (loop de 15 s).
  * La misma persona de la tarjeta 01 compara dos talleres: uno sin sitio propio y otro con sitio.
  * Abre el sitio de Mecánica Express en el celular, revisa servicios y horario, y le escribe.
  * Escena lógica de 320×220 px que se escala al espacio disponible. Pensada para fondo coral.
- * Se pausa fuera de pantalla y respeta "reducir movimiento" (muestra un estado fijo).
+ * Arranca desde cero cuando la tarjeta queda en posición y visible (ver reproducirEnPosicion).
  */
 
 const D = 15000;
@@ -199,53 +200,11 @@ export function AnimacionSitioCelular({ className = "" }: { className?: string }
       etiquetas(tagsGood, 7000, 13600);
     };
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let raf = 0;
-    let visible = true;
-    let offset = performance.now();
-    let pausedAt = 0;
-
-    const loop = (now: number) => {
-      render((now - offset) % D);
-      raf = requestAnimationFrame(loop);
-    };
-    const start = () => {
-      if (raf || reduce.matches || !visible) return;
-      offset = performance.now() - pausedAt;
-      raf = requestAnimationFrame(loop);
-    };
-    const stop = () => {
-      if (!raf) return;
-      cancelAnimationFrame(raf);
-      raf = 0;
-      pausedAt = (performance.now() - offset) % D;
-    };
-
-    const io = new IntersectionObserver(
-      ([e]) => {
-        visible = e?.isIntersecting ?? false;
-        if (visible) start();
-        else stop();
-      },
-      { threshold: 0.05 }
-    );
-    io.observe(box);
-
-    const onReduce = () => {
-      if (reduce.matches) {
-        stop();
-        render(13000);
-      } else start();
-    };
-    reduce.addEventListener("change", onReduce);
-    if (reduce.matches) render(13000);
-    else start();
+    const detener = reproducirEnPosicion(box, render, D, 13000);
 
     return () => {
-      stop();
-      io.disconnect();
+      detener();
       ro.disconnect();
-      reduce.removeEventListener("change", onReduce);
     };
   }, []);
 
