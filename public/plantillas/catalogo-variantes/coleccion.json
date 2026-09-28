@@ -3,6 +3,7 @@
     "key": "medico-a",
     "rubro": "medico",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-medico-a",
     "name": "Vitalis",
     "style": "Médico personal",
@@ -19,6 +20,7 @@
     "key": "medico-b",
     "rubro": "medico",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-medico-b",
     "name": "Serena",
     "style": "Consulta especializada",
@@ -35,6 +37,7 @@
     "key": "medico-c",
     "rubro": "medico",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-medico-c",
     "name": "Ámbito",
     "style": "Centro médico",
@@ -45,12 +48,13 @@
       "Tu salud,",
       "en perspectiva."
     ],
-    "bytes": 49418
+    "bytes": 51014
   },
   {
     "key": "consultorio-a",
     "rubro": "consultorio",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-consultorio-a",
     "name": "Alba",
     "style": "Santuario dental",
@@ -67,6 +71,7 @@
     "key": "consultorio-b",
     "rubro": "consultorio",
     "variant": "b",
+    "family": "impact",
     "folder": "ejemplo-consultorio-b",
     "name": "Forma",
     "style": "Estudio de la sonrisa",
@@ -77,12 +82,13 @@
       "Una sonrisa.",
       "Toda tu esencia."
     ],
-    "bytes": 43280
+    "bytes": 44859
   },
   {
     "key": "consultorio-c",
     "rubro": "consultorio",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-consultorio-c",
     "name": "Nítida",
     "style": "Clínica contemporánea",
@@ -99,6 +105,7 @@
     "key": "taller-a",
     "rubro": "taller",
     "variant": "a",
+    "family": "impact",
     "folder": "ejemplo-taller-a",
     "name": "Torque",
     "style": "Performance garage",
@@ -109,12 +116,13 @@
       "PRECISIÓN",
       "EN MOVIMIENTO."
     ],
-    "bytes": 43077
+    "bytes": 44649
   },
   {
     "key": "taller-b",
     "rubro": "taller",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-taller-b",
     "name": "Distrito Motor",
     "style": "El taller, reimaginado",
@@ -131,6 +139,7 @@
     "key": "taller-c",
     "rubro": "taller",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-taller-c",
     "name": "Apex",
     "style": "Automotive lab",
@@ -148,6 +157,7 @@
     "key": "veterinaria-a",
     "rubro": "veterinaria",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-veterinaria-a",
     "name": "Mimo",
     "style": "Cuidado con personalidad",
@@ -165,6 +175,7 @@
     "key": "veterinaria-b",
     "rubro": "veterinaria",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-veterinaria-b",
     "name": "Numa",
     "style": "Animal wellness",
@@ -182,6 +193,7 @@
     "key": "veterinaria-c",
     "rubro": "veterinaria",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-veterinaria-c",
     "name": "Pata Club",
     "style": "Una vida juntos",
@@ -193,12 +205,13 @@
       "Más paseos.",
       "Más juntos."
     ],
-    "bytes": 43188
+    "bytes": 44749
   },
   {
     "key": "salon-a",
     "rubro": "salon",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-salon-a",
     "name": "Savia",
     "style": "Hair atelier",
@@ -215,6 +228,7 @@
     "key": "salon-b",
     "rubro": "salon",
     "variant": "b",
+    "family": "impact",
     "folder": "ejemplo-salon-b",
     "name": "Noir",
     "style": "Beauty, after ordinary",
@@ -226,12 +240,13 @@
       "EL ESTILO.",
       "SÉ EL ESTILO."
     ],
-    "bytes": 43282
+    "bytes": 44804
   },
   {
     "key": "salon-c",
     "rubro": "salon",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-salon-c",
     "name": "Aura",
     "style": "The beauty edit",
@@ -248,6 +263,7 @@
     "key": "restaurante-a",
     "rubro": "restaurante",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-restaurante-a",
     "name": "Brasa",
     "style": "Cocina de origen",
@@ -264,6 +280,7 @@
     "key": "restaurante-b",
     "rubro": "restaurante",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-restaurante-b",
     "name": "Casa Oliva",
     "style": "La buena mesa",
@@ -280,6 +297,7 @@
     "key": "restaurante-c",
     "rubro": "restaurante",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-restaurante-c",
     "name": "Mesa 504",
     "style": "Sabor sin formalidades",
@@ -290,12 +308,13 @@
       "MUCHO SABOR.",
       "CERO EXCUSAS."
     ],
-    "bytes": 43571
+    "bytes": 45082
   },
   {
     "key": "ferreteria-a",
     "rubro": "ferreteria",
     "variant": "a",
+    "family": "impact",
     "folder": "ejemplo-ferreteria-a",
     "name": "Ferro",
     "style": "Centro de proyectos",
@@ -306,12 +325,13 @@
       "CONSTRUYE",
       "SIN PAUSAS."
     ],
-    "bytes": 59988
+    "bytes": 61602
   },
   {
     "key": "ferreteria-b",
     "rubro": "ferreteria",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-ferreteria-b",
     "name": "Trazo",
     "style": "Catálogo técnico",
@@ -329,6 +349,7 @@
     "key": "ferreteria-c",
     "rubro": "ferreteria",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-ferreteria-c",
     "name": "Norte Suministros",
     "style": "Distribución ágil",
@@ -345,6 +366,7 @@
     "key": "colegio-a",
     "rubro": "colegio",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-colegio-a",
     "name": "Lumen",
     "style": "Campus contemporáneo",
@@ -361,6 +383,7 @@
     "key": "colegio-b",
     "rubro": "colegio",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-colegio-b",
     "name": "Nido",
     "style": "Aprendizaje creativo",
@@ -378,6 +401,7 @@
     "key": "colegio-c",
     "rubro": "colegio",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-colegio-c",
     "name": "Prisma",
     "style": "Educación para el futuro",
@@ -388,12 +412,13 @@
       "HOY APRENDEN.",
       "MAÑANA TRANSFORMAN."
     ],
-    "bytes": 59711
+    "bytes": 61287
   },
   {
     "key": "laboratorio-a",
     "rubro": "laboratorio",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-laboratorio-a",
     "name": "Nexo Lab",
     "style": "Precisión clínica",
@@ -410,6 +435,7 @@
     "key": "laboratorio-b",
     "rubro": "laboratorio",
     "variant": "b",
+    "family": "impact",
     "folder": "ejemplo-laboratorio-b",
     "name": "Materia",
     "style": "Ciencia humana",
@@ -420,12 +446,13 @@
       "CIENCIA QUE",
       "ACOMPAÑA."
     ],
-    "bytes": 60101
+    "bytes": 61734
   },
   {
     "key": "laboratorio-c",
     "rubro": "laboratorio",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-laboratorio-c",
     "name": "Vector",
     "style": "Diagnóstico conectado",
@@ -442,6 +469,7 @@
     "key": "gimnasio-a",
     "rubro": "gimnasio",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-gimnasio-a",
     "name": "Pulso",
     "style": "Movimiento funcional",
@@ -458,6 +486,7 @@
     "key": "gimnasio-b",
     "rubro": "gimnasio",
     "variant": "b",
+    "family": "impact",
     "folder": "ejemplo-gimnasio-b",
     "name": "Carga",
     "style": "Strength club",
@@ -468,12 +497,13 @@
       "MÁS FUERTE.",
       "MÁS TUYO."
     ],
-    "bytes": 59476
+    "bytes": 61039
   },
   {
     "key": "gimnasio-c",
     "rubro": "gimnasio",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-gimnasio-c",
     "name": "Círculo",
     "style": "Club de bienestar",
@@ -491,6 +521,7 @@
     "key": "hotel-a",
     "rubro": "hotel",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-hotel-a",
     "name": "Casa Marea",
     "style": "Refugio tropical",
@@ -507,6 +538,7 @@
     "key": "hotel-b",
     "rubro": "hotel",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-hotel-b",
     "name": "Bruma",
     "style": "Estancia editorial",
@@ -523,6 +555,7 @@
     "key": "hotel-c",
     "rubro": "hotel",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-hotel-c",
     "name": "Postal",
     "style": "Escapada local",
@@ -533,12 +566,13 @@
       "TU PRÓXIMA",
       "HISTORIA EMPIEZA AQUÍ."
     ],
-    "bytes": 59724
+    "bytes": 61290
   },
   {
     "key": "bufete-a",
     "rubro": "bufete",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-bufete-a",
     "name": "Atria Legal",
     "style": "Consejo cercano",
@@ -555,6 +589,7 @@
     "key": "bufete-b",
     "rubro": "bufete",
     "variant": "b",
+    "family": "impact",
     "folder": "ejemplo-bufete-b",
     "name": "Códice",
     "style": "Firma de autor",
@@ -565,12 +600,13 @@
       "EL CONTEXTO",
       "LO CAMBIA TODO."
     ],
-    "bytes": 59843
+    "bytes": 61465
   },
   {
     "key": "bufete-c",
     "rubro": "bufete",
     "variant": "c",
+    "family": "signature",
     "folder": "ejemplo-bufete-c",
     "name": "Norte Jurídico",
     "style": "Práctica estratégica",
@@ -588,6 +624,7 @@
     "key": "contable-a",
     "rubro": "contable",
     "variant": "a",
+    "family": "signature",
     "folder": "ejemplo-contable-a",
     "name": "Libro",
     "style": "Contabilidad precisa",
@@ -604,6 +641,7 @@
     "key": "contable-b",
     "rubro": "contable",
     "variant": "b",
+    "family": "signature",
     "folder": "ejemplo-contable-b",
     "name": "Balance",
     "style": "Asesoría cercana",
@@ -620,6 +658,7 @@
     "key": "contable-c",
     "rubro": "contable",
     "variant": "c",
+    "family": "impact",
     "folder": "ejemplo-contable-c",
     "name": "Cifra",
     "style": "Control empresarial",
@@ -630,6 +669,6 @@
       "DATOS EN ORDEN.",
       "DECISIONES EN FOCO."
     ],
-    "bytes": 60020
+    "bytes": 61632
   }
 ]
