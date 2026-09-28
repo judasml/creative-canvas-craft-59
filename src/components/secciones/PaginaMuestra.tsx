@@ -52,12 +52,12 @@ export function PaginaMuestra({
         Demostración hecha por nosotros. No es el trabajo de un cliente real.
       </p>
 
-      <div className="mt-6 overflow-x-auto rounded-[var(--radio)] border border-gris bg-navy">
+      <div className="mx-auto mt-6 w-full max-w-[640px] overflow-hidden rounded-[var(--radio)] border border-gris bg-navy">
         <img
           src={img}
           alt={alt}
           loading="lazy"
-          className="w-full min-w-[720px] object-cover md:min-w-0"
+          className="block h-auto w-full"
         />
       </div>
 
