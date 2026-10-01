@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { EnlaceLetras } from "./EnlaceLetras";
 import { Button } from "./ui/button";
 import { useTelon } from "./Telon";
-const LOGO = "/brand/logo/svg/mkweb-horizontal-color.svg";
+const LOGO = "/brand/logo/svg/mkws-logo-horizontal-positivo.svg";
 
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
@@ -49,13 +49,10 @@ export function Encabezado() {
           <img
             src={LOGO}
             alt="MK Web Studio"
-            className="h-[26px] w-auto md:h-[30px]"
-            width={1114}
-            height={120}
+            className="h-[40px] w-auto"
+            width={560}
+            height={162}
           />
-          <span className="etiqueta hidden text-[12px] text-gris-texto lg:inline">
-            sitios web y fichas de Google
-          </span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
