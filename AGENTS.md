@@ -10,4 +10,4 @@
 <!-- LOVABLE:END -->
 
 - La ilustración animada de búsqueda local vive en un componente React autónomo y solo se monta en la tarjeta 01; así las otras tarjetas mantienen su estructura y aspecto.
-- Las animaciones de las tarjetas 01 y 02 comparten el control de reproducción en posición fija; así ambas se reinician cuando se cubren y respetan movimiento reducido.
+- Animations in cards 01, 02 and 03 share the sticky-position playback controller so they restart when covered and respect reduced motion.
