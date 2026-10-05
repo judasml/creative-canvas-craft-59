@@ -8,7 +8,7 @@ const LOGO = "/brand/logo/svg/mkws-logo-horizontal-positivo.svg";
 const ENLACES = [
   { texto: "El método", href: "/#metodo" },
   { texto: "Precios", href: "/#precios" },
-  { texto: "Muestras", href: "/#muestras" },
+  { texto: "Muestras", href: "/#disenos" },
   { texto: "Contacto", href: "/#diagnostico" },
 ];
 

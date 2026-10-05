@@ -70,33 +70,33 @@ export function Muestras() {
         ))}
       </div>
 
-      <div className="mt-12 flex flex-wrap items-start gap-4">
-        <div>
+      <div id="disenos" className="mt-12 grid scroll-mt-[96px] gap-6 md:grid-cols-2">
+        <div className="flex flex-col rounded-[var(--radio)] border border-gris bg-white p-6 md:p-8">
+          <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">Sitio de una página</h3>
+          <p className="parrafo mt-3 text-[16px] text-gris-texto">
+            39 diseños para 13 tipos de negocio. Si el suyo no aparece, pregúntenos: se adapta.
+          </p>
           <a
             href="/plantillas/catalogo-variantes/index.html"
-            className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] bg-navy px-7 py-4 text-hueso transition-colors hover:bg-coral hover:text-navy"
+            className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-[var(--radio)] bg-navy px-7 text-[16px] font-semibold text-hueso transition-colors hover:bg-[#011A40]"
           >
-            Ver sitios web de su plan
-            <span aria-hidden="true">↗</span>
+            Ver diseños
+            <span aria-hidden="true">→</span>
           </a>
-          <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-            39 diseños para 13 tipos de negocio. Si el suyo no aparece,
-            pregúntenos: se adapta.
-          </p>
         </div>
 
-        <div>
+        <div className="flex flex-col rounded-[var(--radio)] border border-gris bg-white p-6 md:p-8">
+          <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">Sitio web premium</h3>
+          <p className="parrafo mt-3 text-[16px] text-gris-texto">
+            Hasta 5 páginas, con más secciones y más movimiento.
+          </p>
           <EnlaceInterno
             to="/catalogo-premium"
-            className="etiqueta inline-flex items-center gap-3 rounded-[var(--radio)] border border-navy px-7 py-4 text-navy transition-colors hover:bg-navy hover:text-hueso"
+            className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-[var(--radio)] bg-navy px-7 text-[16px] font-semibold text-hueso transition-colors hover:bg-[#011A40]"
           >
-            Páginas Premium
+            Ver diseños premium
             <span aria-hidden="true">→</span>
           </EnlaceInterno>
-          <p className="etiqueta mt-3 text-[13px] text-gris-texto">
-             tres muestras con más movimiento y recursos visuales. para negocios que
-             necesitan más páginas, más secciones y una presentación más amplia.
-          </p>
         </div>
       </div>
       </div>
