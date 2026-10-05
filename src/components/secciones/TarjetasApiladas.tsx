@@ -1,5 +1,6 @@
 import { AnimacionBusquedaLocal } from "@/components/AnimacionBusquedaLocal";
 import { AnimacionSitioCelular } from "@/components/AnimacionSitioCelular";
+import { AnimacionServicioMensual } from "@/components/AnimacionServicioMensual";
 
 const TARJETAS = [
   {
@@ -50,6 +51,7 @@ export function TarjetasApiladas() {
             </div>
             {t.n === "01" && <AnimacionBusquedaLocal className="my-5 flex-1 md:my-8" />}
             {t.n === "02" && <AnimacionSitioCelular className="my-5 flex-1 md:my-8" />}
+            {t.n === "03" && <AnimacionServicioMensual className="my-5 flex-1 md:my-8" />}
             <div>
               <h3 className="editorial text-[clamp(34px,6vw,44px)]">
                 {t.titulo}
