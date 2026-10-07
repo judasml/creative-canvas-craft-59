@@ -38,7 +38,7 @@ function Lista({ items, color }: { items: ReactNode[]; color?: string }) {
     <ul className="mt-3 space-y-3">
       {items.map((it, i) => (
         <li key={i} className={`flex gap-3 ${texto}`}>
-          <Punto color={color} />
+          <Punto color={color ?? C.coral} />
           <span>{it}</span>
         </li>
       ))}
