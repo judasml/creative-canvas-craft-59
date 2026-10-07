@@ -49,7 +49,7 @@ export function PaginaMuestra({
       <p className="parrafo mt-8 text-[19px]">{entrada}</p>
 
       <p className="etiqueta mt-10 text-[12px] text-gris-texto">
-        Demostración hecha por nosotros. No es el trabajo de un cliente real.
+        {"\n"}
       </p>
 
       <div className="mx-auto mt-6 w-full max-w-[640px] overflow-hidden rounded-[var(--radio)] border border-gris bg-navy">
