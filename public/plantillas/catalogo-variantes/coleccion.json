@@ -670,5 +670,107 @@
       "DECISIONES EN FOCO."
     ],
     "bytes": 61632
+  },
+  {
+    "key": "tecnologia-a",
+    "rubro": "tecnologia",
+    "variant": "a",
+    "family": "impact",
+    "folder": "ejemplo-tecnologia-a",
+    "name": "Núcleo",
+    "style": "Tienda tecnológica",
+    "detail": "Escenario tecnológico cinematográfico, categorías conectadas y recorrido de compra asistida.",
+    "bg": "#0b1017",
+    "ink": "#f4f8ff",
+    "headline": [
+      "TECNOLOGÍA",
+      "QUE SE SIENTE."
+    ],
+    "bytes": 54367
+  },
+  {
+    "key": "tecnologia-b",
+    "rubro": "tecnologia",
+    "variant": "b",
+    "family": "signature",
+    "folder": "ejemplo-tecnologia-b",
+    "name": "Pixel",
+    "style": "Catálogo inteligente",
+    "detail": "Retícula de producto, visor editorial y módulos para comparar categorías.",
+    "bg": "#edf3f7",
+    "ink": "#14243a",
+    "headline": [
+      "TODO CONECTA.",
+      "TODO FLUYE."
+    ],
+    "bytes": 52613
+  },
+  {
+    "key": "tecnologia-c",
+    "rubro": "tecnologia",
+    "variant": "c",
+    "family": "signature",
+    "folder": "ejemplo-tecnologia-c",
+    "name": "Siguiente",
+    "style": "Selección digital",
+    "detail": "Mostrador digital oscuro, fichas flotantes y consulta guiada por necesidad.",
+    "bg": "#15181a",
+    "ink": "#f2f2ea",
+    "headline": [
+      "ELIGE MEJOR.",
+      "AVANZA MÁS."
+    ],
+    "bytes": 53033
+  },
+  {
+    "key": "ropa-a",
+    "rubro": "ropa",
+    "variant": "a",
+    "family": "signature",
+    "folder": "ejemplo-ropa-a",
+    "name": "Trama",
+    "style": "Boutique editorial",
+    "detail": "Campaña de boutique, composición de revista y selección por estilo.",
+    "bg": "#f0ebe4",
+    "ink": "#302925",
+    "headline": [
+      "VÍSTETE",
+      "DE TI."
+    ],
+    "bytes": 52484
+  },
+  {
+    "key": "ropa-b",
+    "rubro": "ropa",
+    "variant": "b",
+    "family": "impact",
+    "folder": "ejemplo-ropa-b",
+    "name": "Distrito",
+    "style": "Moda en movimiento",
+    "detail": "Cartel de moda cinético, tipografía monumental y recorrido de colección por capas.",
+    "bg": "#171515",
+    "ink": "#fff7ed",
+    "headline": [
+      "NUEVA TEMPORADA.",
+      "NUEVA ENERGÍA."
+    ],
+    "bytes": 54147
+  },
+  {
+    "key": "ropa-c",
+    "rubro": "ropa",
+    "variant": "c",
+    "family": "signature",
+    "folder": "ejemplo-ropa-c",
+    "name": "Archivo",
+    "style": "Selección contemporánea",
+    "detail": "Lookbook asimétrico, fichas de colección y una experiencia de boutique serena.",
+    "bg": "#e8e2d8",
+    "ink": "#27302c",
+    "headline": [
+      "PIEZAS QUE",
+      "SIGUEN CONTIGO."
+    ],
+    "bytes": 52867
   }
 ]
