@@ -27,7 +27,7 @@ const PREGUNTAS = [
   },
   {
     p: "Mi sobrino me la puede hacer.",
-    r: "Sí. La pregunta es quién le cambia el horario el 24 de diciembre y quién contesta cuando el sitio deja de cargar. Con el servicio mensual, nosotros, en 48 horas.",
+    r: "Sí. La pregunta es quién le cambia el horario el 24 de diciembre y quién contesta cuando el sitio deja de cargar. Con el servicio mensual, nosotros.",
   },
   {
     p: "Me ofrecieron pago único, sin mensualidad.",
