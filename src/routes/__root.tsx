@@ -29,7 +29,7 @@ const DATOS_NEGOCIO = {
     addressLocality: "Tegucigalpa",
     addressCountry: "HN",
   },
-  areaServed: ["Honduras"],
+  areaServed: ["Honduras", "Guatemala", "El Salvador", "Nicaragua", "Costa Rica", "Panamá"],
 };
 
 function NotFoundComponent() {

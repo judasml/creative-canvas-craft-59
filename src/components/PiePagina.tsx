@@ -20,7 +20,7 @@ export function PiePagina() {
           loading="lazy"
         />
         <p className="mt-3 text-[12px] text-[#7a8dad]">
-          MK Business Solutions S. de R.L. · Tegucigalpa, Honduras
+          MK Business Solutions S. de R.L. · Tegucigalpa, Honduras · Atendemos Honduras y Centroamérica
         </p>
       </div>
 
