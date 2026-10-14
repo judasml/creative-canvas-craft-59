@@ -182,7 +182,13 @@ export function Precios() {
               items={[
                 <>
                   <strong>Sitio Pro:</strong> una página de hasta 7 secciones, diseñado para su rubro y hecho para verse
-                  bien en el celular y en la computadora.
+                  bien en el celular y en la computadora.{" "}
+                  <a
+                    href="/plantillas/catalogo-variantes/index.html"
+                    className="font-bold text-navy underline underline-offset-4"
+                  >
+                    Ver muestras
+                  </a>
                 </>,
                 <>
                   <strong>Sitio web premium:</strong> hasta 5 páginas, con más secciones, animación y efectos. Para
