@@ -74,7 +74,7 @@ export function Muestras() {
         <div className="flex flex-col rounded-[var(--radio)] border border-gris bg-white p-6 md:p-8">
           <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">Sitio de una página</h3>
           <p className="parrafo mt-3 text-[16px] text-gris-texto">
-            39 diseños para 13 tipos de negocio. Si el suyo no aparece, pregúntenos: se adapta.
+            45 diseños para 16 tipos de negocio. Si el suyo no aparece, pregúntenos: se adapta.
           </p>
           <a
             href="/plantillas/catalogo-variantes/index.html"
