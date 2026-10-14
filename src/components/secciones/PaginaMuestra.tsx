@@ -48,11 +48,7 @@ export function PaginaMuestra({
       <h1 className="editorial mt-6 text-[clamp(36px,7vw,76px)]">{titulo}</h1>
       <p className="parrafo mt-8 text-[19px]">{entrada}</p>
 
-      <p className="etiqueta mt-10 text-[12px] text-gris-texto">
-        {"\n"}
-      </p>
-
-      <div className="mx-auto mt-6 w-full max-w-[640px] overflow-hidden rounded-[var(--radio)] border border-gris bg-navy">
+      <div className="mx-auto mt-10 w-full max-w-[640px] overflow-hidden rounded-[var(--radio)] border border-gris bg-navy">
         <img
           src={img}
           alt={alt}

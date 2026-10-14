@@ -7,6 +7,7 @@ import { ParticulasHero } from "@/components/ParticulasHero";
 import { Muestras } from "@/components/secciones/Muestras";
 import { TarjetasApiladas } from "@/components/secciones/TarjetasApiladas";
 import { Precios } from "@/components/secciones/Precios";
+import { ComoEmpezamos } from "@/components/secciones/ComoEmpezamos";
 import { Cintas } from "@/components/secciones/Cintas";
 import { Preguntas } from "@/components/secciones/Preguntas";
 import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
@@ -60,20 +61,20 @@ function Index() {
               Ver cómo trabajamos
             </a>
           </div>
-          <p className="etiqueta mx-auto mt-6 max-w-[62ch] text-[15px] text-gris-texto">
+          <p className="parrafo mx-auto mt-6 max-w-[62ch] text-[18px] font-medium text-navy">
             Escriba el nombre de su negocio y vea cómo aparece en Google al lado
             de su competencia. Sin registro, sin dejar sus datos. Un minuto.
           </p>
         </div>
       </section>
 
-      <Muestras />
       <Enjambre />
       <TarjetasApiladas />
-      <Precios />
+      <Muestras />
       <Cintas />
+      <Precios />
+      <ComoEmpezamos />
       <Preguntas />
-
 
       <section
         id="diagnostico"

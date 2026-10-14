@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 import { CtaWhatsApp } from "../CtaWhatsApp";
+import { CtaAuditor } from "../CtaAuditor";
+import { URL_AUDITOR } from "@/lib/site";
 import { EnlaceInterno } from "../Telon";
 
 /*
@@ -294,8 +296,15 @@ export function Precios() {
           </article>
         </div>
 
-        <div className="mt-14 flex justify-center">
-          <CtaWhatsApp />
+        <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
+          {URL_AUDITOR ? (
+            <>
+              <CtaAuditor />
+              <CtaWhatsApp secundario />
+            </>
+          ) : (
+            <CtaWhatsApp />
+          )}
         </div>
       </div>
 

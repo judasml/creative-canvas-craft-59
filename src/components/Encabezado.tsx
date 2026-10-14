@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import { EnlaceLetras } from "./EnlaceLetras";
 import { Button } from "./ui/button";
 import { useTelon } from "./Telon";
+import { CtaAuditor } from "./CtaAuditor";
+import { URL_AUDITOR } from "@/lib/site";
 const LOGO = "/brand/logo/svg/mkws-logo-horizontal-positivo.svg";
 
 const ENLACES = [
@@ -55,28 +57,34 @@ export function Encabezado() {
           />
         </a>
 
-        <nav className="hidden items-center gap-8 lg:flex">
-          {ENLACES.map((e) => (
-            <EnlaceLetras key={e.href} texto={e.texto} href={e.href} />
-          ))}
-        </nav>
+        <div className="flex items-center gap-6">
+          <nav className="hidden items-center gap-8 lg:flex">
+            {ENLACES.map((e) => (
+              <EnlaceLetras key={e.href} texto={e.texto} href={e.href} />
+            ))}
+          </nav>
 
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          className="size-11 shrink-0 text-navy hover:bg-gris/50 hover:text-navy lg:hidden"
-          aria-label={menuAbierto ? "Cerrar menú" : "Abrir menú"}
-          aria-expanded={menuAbierto}
-          aria-controls="menu-movil"
-          onClick={() => setMenuAbierto((abierto) => !abierto)}
-        >
-          {menuAbierto ? <X aria-hidden="true" className="size-6" /> : <Menu aria-hidden="true" className="size-6" />}
-        </Button>
+          {/* El botón del diagnóstico solo aparece cuando el auditor tiene URL pública. */}
+          {URL_AUDITOR && <CtaAuditor tamano="compacto" className="hidden lg:inline-flex" />}
+
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            className="size-11 shrink-0 text-navy hover:bg-gris/50 hover:text-navy lg:hidden"
+            aria-label={menuAbierto ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={menuAbierto}
+            aria-controls="menu-movil"
+            onClick={() => setMenuAbierto((abierto) => !abierto)}
+          >
+            {menuAbierto ? <X aria-hidden="true" className="size-6" /> : <Menu aria-hidden="true" className="size-6" />}
+          </Button>
+        </div>
       </div>
       {menuAbierto && (
         <nav id="menu-movil" aria-label="Menú principal" className="absolute inset-x-0 top-full border-b border-gris bg-hueso px-[var(--borde)] py-5 shadow-lg lg:hidden">
           <div className="mx-auto flex max-w-[1400px] flex-col">
+            {URL_AUDITOR && <CtaAuditor tamano="compacto" className="mb-4 self-start" />}
             {ENLACES.map((enlace) => (
               <a
                 key={enlace.href}

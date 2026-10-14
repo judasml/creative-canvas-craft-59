@@ -17,7 +17,6 @@ import { Route as MuestrasIndexRouteImport } from './routes/muestras.index'
 import { Route as MuestrasAntesYDespuesRouteImport } from './routes/muestras.antes-y-despues'
 import { Route as MuestrasFichaDeGoogleRouteImport } from './routes/muestras.ficha-de-google'
 import { Route as MuestrasSitioEnCelularRouteImport } from './routes/muestras.sitio-en-celular'
-import { Route as MuestrasSitiosWebRouteImport } from './routes/muestras.sitios-web'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -59,11 +58,6 @@ const MuestrasSitioEnCelularRoute = MuestrasSitioEnCelularRouteImport.update({
   path: '/muestras/sitio-en-celular',
   getParentRoute: () => rootRouteImport,
 } as any)
-const MuestrasSitiosWebRoute = MuestrasSitiosWebRouteImport.update({
-  id: '/muestras/sitios-web',
-  path: '/muestras/sitios-web',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -73,7 +67,6 @@ export interface FileRoutesByFullPath {
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
   '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
   '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
-  '/muestras/sitios-web': typeof MuestrasSitiosWebRoute
   '/muestras/': typeof MuestrasIndexRoute
 }
 export interface FileRoutesByTo {
@@ -84,7 +77,6 @@ export interface FileRoutesByTo {
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
   '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
   '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
-  '/muestras/sitios-web': typeof MuestrasSitiosWebRoute
   '/muestras': typeof MuestrasIndexRoute
 }
 export interface FileRoutesById {
@@ -96,7 +88,6 @@ export interface FileRoutesById {
   '/muestras/antes-y-despues': typeof MuestrasAntesYDespuesRoute
   '/muestras/ficha-de-google': typeof MuestrasFichaDeGoogleRoute
   '/muestras/sitio-en-celular': typeof MuestrasSitioEnCelularRoute
-  '/muestras/sitios-web': typeof MuestrasSitiosWebRoute
   '/muestras/': typeof MuestrasIndexRoute
 }
 export interface FileRouteTypes {
@@ -109,7 +100,6 @@ export interface FileRouteTypes {
     | '/muestras/antes-y-despues'
     | '/muestras/ficha-de-google'
     | '/muestras/sitio-en-celular'
-    | '/muestras/sitios-web'
     | '/muestras/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -120,7 +110,6 @@ export interface FileRouteTypes {
     | '/muestras/antes-y-despues'
     | '/muestras/ficha-de-google'
     | '/muestras/sitio-en-celular'
-    | '/muestras/sitios-web'
     | '/muestras'
   id:
     | '__root__'
@@ -131,7 +120,6 @@ export interface FileRouteTypes {
     | '/muestras/antes-y-despues'
     | '/muestras/ficha-de-google'
     | '/muestras/sitio-en-celular'
-    | '/muestras/sitios-web'
     | '/muestras/'
   fileRoutesById: FileRoutesById
 }
@@ -143,7 +131,6 @@ export interface RootRouteChildren {
   MuestrasAntesYDespuesRoute: typeof MuestrasAntesYDespuesRoute
   MuestrasFichaDeGoogleRoute: typeof MuestrasFichaDeGoogleRoute
   MuestrasSitioEnCelularRoute: typeof MuestrasSitioEnCelularRoute
-  MuestrasSitiosWebRoute: typeof MuestrasSitiosWebRoute
   MuestrasIndexRoute: typeof MuestrasIndexRoute
 }
 
@@ -205,13 +192,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MuestrasSitioEnCelularRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/muestras/sitios-web': {
-      id: '/muestras/sitios-web'
-      path: '/muestras/sitios-web'
-      fullPath: '/muestras/sitios-web'
-      preLoaderRoute: typeof MuestrasSitiosWebRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -223,7 +203,6 @@ const rootRouteChildren: RootRouteChildren = {
   MuestrasAntesYDespuesRoute: MuestrasAntesYDespuesRoute,
   MuestrasFichaDeGoogleRoute: MuestrasFichaDeGoogleRoute,
   MuestrasSitioEnCelularRoute: MuestrasSitioEnCelularRoute,
-  MuestrasSitiosWebRoute: MuestrasSitiosWebRoute,
   MuestrasIndexRoute: MuestrasIndexRoute,
 }
 export const routeTree = rootRouteImport
