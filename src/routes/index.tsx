@@ -36,7 +36,10 @@ function Index() {
         <ParticulasHero />
         <p className="etiqueta flex items-center justify-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-          Fichas de Google y sitios web para negocios en Honduras
+          <span>
+            Fichas de Google y sitios web para negocios en{" "}
+            <span className="normal-case">Honduras</span>
+          </span>
         </p>
 
         <h1 className="editorial mx-auto mt-8 max-w-[16ch] text-[clamp(46px,10.5vw,140px)]">
