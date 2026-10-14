@@ -72,9 +72,9 @@ export function Muestras() {
 
       <div id="disenos" className="mt-12 grid scroll-mt-[96px] gap-6 md:grid-cols-2">
         <div className="flex flex-col rounded-[var(--radio)] border border-gris bg-white p-6 md:p-8">
-          <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">Sitio de una página</h3>
+          <h3 className="text-[24px] font-bold leading-[1.08] md:text-[28px]">Sitio Pro</h3>
           <p className="parrafo mt-3 text-[16px] text-gris-texto">
-            45 diseños para 16 tipos de negocio. Si el suyo no aparece, pregúntenos: se adapta.
+            45 diseños para 15 tipos de negocio. Si el suyo no aparece, pregúntenos: se adapta.
           </p>
           <a
             href="/plantillas/catalogo-variantes/index.html"
@@ -94,7 +94,7 @@ export function Muestras() {
             to="/catalogo-premium"
             className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 self-start rounded-[var(--radio)] bg-navy px-7 text-[16px] font-semibold text-hueso transition-colors hover:bg-[#011A40]"
           >
-            Ver diseños premium
+            Ver diseños del sitio web premium
             <span aria-hidden="true">→</span>
           </EnlaceInterno>
         </div>

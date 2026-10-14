@@ -206,7 +206,7 @@ export function Precios() {
                 "Una ficha de Google, creada o mejorada, para una ubicación.",
                 "Dominio a nombre suyo y hosting.",
                 "Todos sus accesos entregados por escrito.",
-                "Los primeros 2 meses del servicio mensual, sin costo adicional.",
+                "Los primeros 2 meses del servicio mensual, incluidos.",
               ]}
             />
 
@@ -238,7 +238,7 @@ export function Precios() {
               decide si sigue, y puede cancelar cuando quiera.
             </p>
 
-            <p className={subtitulo}>Cada mes recibe por WhatsApp un reporte con</p>
+            <p className={subtitulo}>Con el servicio mensual recibe, por WhatsApp:</p>
             <Lista
               color={C.navy}
               items={[
@@ -256,8 +256,7 @@ export function Precios() {
                   <strong>La salud de su ficha:</strong> una nota de 0 a 100 para ver cómo mejora.
                 </>,
                 <>
-                  <strong>Un código QR para reseñas:</strong> lo pone en la caja y sus clientes le dejan reseña desde el
-                  celular.
+                  <strong>Un código QR para reseñas:</strong> con mensaje listo para WhatsApp. Lo pone en la caja y sus clientes le dejan reseña desde el celular.
                 </>,
               ]}
             />
@@ -269,7 +268,7 @@ export function Precios() {
                 "Mantener su ficha al día: horarios, feriados, fotos y publicaciones.",
                 "Responder sus reseñas.",
                 "Mantener su sitio en línea, con dominio y hosting al día.",
-                "Hacer 2 cambios al mes en su sitio, resueltos en 48 horas. Un cambio es un texto, una foto, un precio o un horario. No incluye secciones nuevas.",
+                "Hacer 2 cambios al mes en su sitio, resueltos en 48 horas. Un cambio es un texto, una foto, un precio o un horario. No incluye secciones nuevas. Los cambios que no use no se acumulan para el mes siguiente.",
               ]}
             />
 
@@ -304,8 +303,7 @@ export function Precios() {
         <div>
           <h3 className="editorial text-[28px]">Su precio no sube mientras siga activo.</h3>
           <p className="parrafo mt-4 text-gris-texto">
-            El precio que contrata hoy es el que paga en tres años. Si mañana subimos el precio, sube para los nuevos, no
-            para usted.
+            Mientras usted siga activo, el precio que contrató no cambia. Si algún día subimos precios, sube para los clientes nuevos, no para usted.
           </p>
         </div>
         <div>

@@ -7,7 +7,7 @@ const TARJETAS = [
     n: "01",
     titulo: "La ficha de Google",
     cuerpo:
-      "Es lo primero que ve un cliente, y casi siempre es lo único que ve. Si su horario está mal o no hay fotos, ya perdió la visita — y ni se enteró. Aquí es donde arranca todo, porque es lo más barato de arreglar y lo que más rápido se nota.",
+      "Es lo que aparece en Google Maps cuando alguien busca su negocio, y lo primero que ve un cliente. Si su horario está mal o no hay fotos, ya perdió la visita — y ni se enteró. Por eso aquí es donde arranca todo.",
     clase: "bg-navy text-white",
     top: "6vh",
   },
@@ -23,7 +23,7 @@ const TARJETAS = [
     n: "03",
     titulo: "El servicio mensual",
     cuerpo:
-      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Un sitio sin mantenimiento se cae, se vence el dominio o deja de ser seguro. Cada mes usted recibe por WhatsApp un reporte que le dice a quién le está ganando, a quién puede alcanzar y qué dicen los clientes de su competencia. Esto es lo que hace que el trabajo del primer mes siga sirviendo en el mes veinte.",
+      "Una ficha se desactualiza sola: cambian los horarios, entran reseñas, Google mueve cosas. Cada mes usted recibe por WhatsApp un reporte que le dice a quién le está ganando, a quién puede alcanzar y qué dicen los clientes de su competencia. Es opcional: los primeros 2 meses vienen incluidos y después usted decide si sigue. Así el trabajo del primer mes sigue sirviendo en el mes veinte.",
     clase: "bg-hueso text-navy border border-gris",
     top: "12vh",
   },

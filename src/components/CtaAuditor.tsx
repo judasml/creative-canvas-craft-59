@@ -23,7 +23,7 @@ export function CtaAuditor({
       rel={URL_AUDITOR ? "noreferrer" : undefined}
       className={`${base} ${medida} ${className}`}
     >
-      {tamano === "grande" ? TEXTO_AUDITOR : "Auditar"}
+      {tamano === "grande" ? TEXTO_AUDITOR : "Ver mi diagnóstico"}
     </a>
   );
 }

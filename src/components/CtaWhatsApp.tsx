@@ -31,7 +31,7 @@ export function CtaWhatsApp({
       rel="noopener noreferrer"
       className={`${base} ${medida} ${estilo} ${className}`}
     >
-      {tamano === "grande" ? TEXTO_CTA : "Diagnóstico"}
+      {tamano === "grande" ? TEXTO_CTA : "WhatsApp"}
     </a>
   );
 }

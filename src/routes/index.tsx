@@ -14,7 +14,7 @@ import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 const TITULO =
   "MK Web Studio — Ficha de Google y sitio web para negocios en Honduras";
 const DESCRIPCION =
-  "Ficha de Google y sitio web hecho para el celular. Precios cerrados: L 3,750 de entrada, L 600 al mes. Vea cómo aparece su negocio en Google, sin registrarse.";
+  "Ficha de Google y sitio web hecho para el celular, con precios cerrados y publicados. Vea cómo aparece su negocio en Google al lado de su competencia, sin registrarse.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +35,7 @@ function Index() {
         <ParticulasHero />
         <p className="etiqueta flex items-center justify-center gap-3 text-gris-texto">
           <span className="inline-block size-[11px] bg-coral" aria-hidden="true" />
-          Fichas de Google y sitios web para negocios
+          Fichas de Google y sitios web para negocios en Honduras
         </p>
 
         <h1 className="editorial mx-auto mt-8 max-w-[16ch] text-[clamp(46px,10.5vw,140px)]">

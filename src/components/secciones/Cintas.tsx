@@ -84,7 +84,7 @@ export function Cintas() {
       </div>
 
       <p className="mx-auto mt-10 max-w-[54ch] px-[var(--borde)] text-center">
-        {`"En un mercado saturado, encajar es fracasar." —Seth Godin. Su negocio no tiene que verse como todos los demas.Tiene que verse como suyo.`}
+        {`"En un mercado saturado, encajar es fracasar." —Seth Godin. Su negocio no tiene que verse como todos los demás. Tiene que verse como suyo.`}
       </p>
     </section>
   );

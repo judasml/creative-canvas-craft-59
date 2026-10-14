@@ -40,7 +40,7 @@ function Pagina() {
         {
           titulo: "Lo que buscan, arriba",
           texto:
-            "Qué hace usted y que ofrece. En ese orden y sin tener que bajar tres pantallas.",
+            "Qué hace usted y qué ofrece. En ese orden y sin tener que bajar tres pantallas.",
         },
         {
           titulo: "Se ve como su negocio",

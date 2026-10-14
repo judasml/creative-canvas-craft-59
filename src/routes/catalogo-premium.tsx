@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import PremiumCatalog from "@/components/PremiumCatalog";
 
-const TITULO = "Páginas Premium — MK Web Studio";
+const TITULO = "Sitio web premium — MK Web Studio";
 const DESCRIPCION =
-  "Tres experiencias premium en movimiento: Cercanía, Horizonte y Esencia. Véalas completas y abra cada demostración.";
+  "Tres diseños del sitio web premium en movimiento: Cercanía, Horizonte y Esencia. Ábralos completos y véalos por dentro.";
 
 export const Route = createFileRoute("/catalogo-premium")({
   head: () => ({
@@ -35,7 +35,7 @@ function Pagina() {
             className="inline-block size-[11px] bg-coral"
             aria-hidden="true"
           />
-          Páginas Premium
+          Sitio web premium
         </p>
 
         <h1 className="editorial mt-6 text-[clamp(36px,7vw,76px)]">
