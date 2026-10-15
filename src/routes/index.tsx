@@ -10,7 +10,6 @@ import { Precios } from "@/components/secciones/Precios";
 import { ComoEmpezamos } from "@/components/secciones/ComoEmpezamos";
 import { Cintas } from "@/components/secciones/Cintas";
 import { Preguntas } from "@/components/secciones/Preguntas";
-import oficinaAsset from "@/assets/oficina-mk-web.webp.asset.json";
 
 const TITULO =
   "MK Web Studio — Ficha de Google y sitio web para negocios en Honduras";
@@ -79,39 +78,43 @@ function Index() {
       <ComoEmpezamos />
       <Preguntas />
 
-      <section
-        id="diagnostico"
-        className="relative flex min-h-screen items-center overflow-hidden"
-      >
-        <img
-          src={oficinaAsset.url}
-          alt="Equipo de MK Web Studio en su oficina en Tegucigalpa"
-          loading="lazy"
-          width={1672}
-          height={941}
-          className="absolute inset-0 size-full object-cover"
-        />
-        <div className="absolute inset-0 bg-navy/[0.72]" aria-hidden="true" />
-        <div className="contenedor relative text-center">
-          <p className="etiqueta text-coral">Sin costo y sin compromiso</p>
-          <h2 className="editorial mx-auto mt-6 max-w-[18ch] text-[clamp(36px,7vw,76px)] text-white">
-            Vea su negocio como lo ve un cliente.
-          </h2>
-          <p className="mx-auto mt-8 max-w-[52ch] text-white/80">
-            Escriba el nombre de su negocio y vea cómo aparece en Google al lado
-            de su competencia. Sin registrarse, sin llenar nada y sin que nadie lo
-            llame. Si después quiere hablar, aquí está el WhatsApp.
-          </p>
-          <div className="mt-10">
-            <div className="mb-6 empty:hidden">
-              <CtaAuditor tono="oscuro" />
+      <section id="diagnostico" className="bg-navy py-[var(--paso)]">
+        <div className="contenedor grid items-center gap-12 md:grid-cols-2 md:gap-16">
+          <div className="text-center md:text-left">
+            <p className="etiqueta text-coral">Sin costo y sin compromiso</p>
+            <h2 className="editorial mt-6 max-w-[18ch] text-[clamp(36px,7vw,76px)] text-white max-md:mx-auto">
+              Vea su negocio como lo ve un cliente.
+            </h2>
+            <p className="mt-8 max-w-[52ch] text-white/80 max-md:mx-auto">
+              Escriba el nombre de su negocio y vea cómo aparece en Google al lado
+              de su competencia. Sin registrarse, sin llenar nada y sin que nadie lo
+              llame. Si después quiere hablar, aquí está el WhatsApp.
+            </p>
+            <div className="mt-10">
+              <div className="mb-6 empty:hidden">
+                <CtaAuditor tono="oscuro" />
+              </div>
+              <CtaWhatsApp tono="oscuro" secundario />
             </div>
-            <CtaWhatsApp tono="oscuro" secundario />
+            <p className="etiqueta mt-4 text-[13px] text-white/60">
+              Le contesta el equipo de MK Web Studio, no un sistema automático. El
+              mismo día.
+            </p>
           </div>
-          <p className="etiqueta mt-4 text-[13px] text-white/60">
-            Le contesta el equipo de MK Web Studio, no un sistema automático. El
-            mismo día.
-          </p>
+
+          <figure className="mx-auto w-full max-w-[640px]">
+            <img
+              src="/brand/auditor/ejemplo-diagnostico.webp"
+              alt="Ejemplo del diagnóstico: puntaje de presencia en Google, comparación con negocios del mismo rubro y lista de lo que se puede corregir"
+              loading="lazy"
+              width={1448}
+              height={1086}
+              className="block h-auto w-full rounded-[28px] bg-white shadow-[8px_8px_0_#fd5c41]"
+            />
+            <figcaption className="etiqueta mt-5 text-center text-[13px] text-white/60">
+              Ejemplo con los datos de MK Business Solutions
+            </figcaption>
+          </figure>
         </div>
       </section>
     </>
