@@ -296,7 +296,11 @@ export function Precios() {
           </article>
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
+        <p className="parrafo mx-auto mt-10 max-w-[62ch] text-center text-gris-texto">
+          Precios en lempiras. Si escribe desde otro país, le cotizamos en su moneda.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           {URL_AUDITOR ? (
             <>
               <CtaAuditor />
