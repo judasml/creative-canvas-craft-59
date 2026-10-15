@@ -112,7 +112,7 @@ function Index() {
               className="block h-auto w-full rounded-[28px] bg-white shadow-[8px_8px_0_#fd5c41]"
             />
             <figcaption className="etiqueta mt-5 text-center text-[13px] text-white/60">
-              Ejemplo con los datos de MK Business Solutions
+              Ejemplo de una parte del diagnóstico
             </figcaption>
           </figure>
         </div>
