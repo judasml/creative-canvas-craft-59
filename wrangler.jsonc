@@ -1,0 +1,10 @@
+// Worker del sitio. Nitro combina esto con lo que genera al construir (el código, los archivos
+// estáticos y la compatibilidad con Node).
+{
+  "name": "mkweb-sitio",
+  "compatibility_date": "2026-10-01",
+  "routes": [
+    { "pattern": "mkwebstio.dev", "custom_domain": true },
+    { "pattern": "www.mkwebstio.dev", "custom_domain": true }
+  ]
+}
